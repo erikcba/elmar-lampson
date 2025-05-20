@@ -4,6 +4,7 @@ import img1 from '../assets/elmar_lampson.jpg'
 import img2 from '../assets/about_music.png'
 import img3 from '../assets/elmar2.png'
 import { useTranslation } from 'react-i18next'
+import Footer from '../components/Footer'
 
 const About = () => {
     const { t } = useTranslation()
@@ -57,6 +58,7 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about27')}</p>
                 </div>
             </section>
+            <Footer/>
         </div>
     )
 }
