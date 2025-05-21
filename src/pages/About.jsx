@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import img1 from '../assets/elmar_lampson.jpg'
 import img2 from '../assets/about_music.png'
-import img3 from '../assets/elmar2.png'
 import { useTranslation } from 'react-i18next'
 import Footer from '../components/Footer'
 
