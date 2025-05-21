@@ -4,12 +4,12 @@ import elmarLogoBlanco from "../assets/elmarLogoWhite.png"
 
 const Footer = () => {
     return (
-        <footer className='bg-fuchsia-975 mt-auto py-24'>
-            <div className='container mx-auto flex flex-col'>
-                <h1 className='orbitron text-2xl font-medium text-white tracking-widest '>
+        <footer className='bg-fuchsia-975 mt-auto sm:py-24 py-12'>
+            <div className='container mx-auto flex flex-col sm:items-start items-center gap-6 '>
+                <h1 className='orbitron text-2xl font-medium text-white tracking-widest'>
                     Contact
                 </h1>
-                <div className='flex flex-row w-full justify-between items-center'>
+                <div className='flex sm:flex-row flex-col w-full justify-between items-center gap-8'>
                     <div>
                         <img src={tybLogo} alt="" />
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className='sm:px-0 px-4'>
                         <img src={elmarLogoBlanco} alt="" />
                     </div>
                 </div>

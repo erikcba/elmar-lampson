@@ -16,4 +16,17 @@
 .bg-fuchsia-975{
     background-color: rgba(50, 30, 58, 1);
 }
+@media screen and (max-width: 768px) {
+    .bg-elmar {
+        height: 460px;
+        background-size: cover;
+        width: 100%;
+        margin-top: 0;
+    }
+}
 
+@media screen and (max-width: 374px) {
+    .bg-elmar {
+        height: 366px;
+    }
+}

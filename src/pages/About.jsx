@@ -11,9 +11,9 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <section className='flex flex-row container mx-auto pt-24 gap-16'>
-                <img className='w-1/2' src={img1} alt="" />
-                <div className='w-1/2 h-max-fit flex flex-col justify-between items-start pb-5'>
+            <section className='flex sm:flex-row flex-col container mx-auto pt-12 sm:pt-24 gap-16 sm:px-0 px-4'>
+                <img className='sm:w-1/2 w-full' src={img1} alt="" />
+                <div className='sm:w-1/2 w-full h-max-fit flex flex-col justify-between items-start pb-5'>
                     <h1 className='orbitron text-4xl font-medium text-fuchsia-800 tracking-widest'>About me</h1>
                     <p className='text-lg font-light'>{t('about1')}</p>
                     <p className='text-lg font-light'>{t('about2')}</p>
@@ -23,9 +23,9 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about6')}</p>
                 </div>
             </section>
-            <section className='flex flex-row-reverse container mx-auto pt-32 gap-16'>
-                <img className='w-1/2' src={img2} alt="" />
-                <div className='w-1/2 h-max-fit flex flex-col justify-start items-start '>
+            <section className='flex sm:flex-row flex-col container mx-auto pt-12 sm:pt-32 gap-16 sm:px-0 px-4'>
+                <img className='sm:w-1/2 w-full' src={img2} alt="" />
+                <div className='sm:w-1/2 w-full h-max-fit flex flex-col justify-start items-start '>
                     <h1 className='orbitron text-4xl font-medium text-fuchsia-800 tracking-widest'>About my music,</h1>
                     <p className='text-xl font-bold py-6'>{t('about7')}</p>
                     <div className='flex flex-col justify-between h-full pb-10'>
@@ -36,9 +36,10 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto py-24 bg-fixed bg-elmar'>
+            <section className='container mx-auto sm:py-24 py-0 sm:px-0 px-4'>
+                <div className='bg-elmar bg-fixed'></div>
             </section>
-            <section className='container mx-auto py-14'>
+            <section className='container mx-auto py-14 px-4'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start gap-5'>
                     <p className='text-lg font-light'>{t('about12')}</p>
                     <p className='text-lg font-light'>{t('about13')}</p>
