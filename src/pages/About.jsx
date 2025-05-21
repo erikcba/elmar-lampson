@@ -23,7 +23,7 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about6')}</p>
                 </div>
             </section>
-            <section className='flex sm:flex-row flex-col container mx-auto pt-12 sm:pt-32 gap-16 sm:px-0 px-4'>
+            <section className='flex sm:flex-row-reverse flex-col container mx-auto pt-12 sm:pt-32 gap-16 sm:px-0 px-4'>
                 <img className='sm:w-1/2 w-full' src={img2} alt="" />
                 <div className='sm:w-1/2 w-full h-max-fit flex flex-col justify-start items-start '>
                     <h1 className='orbitron text-4xl font-medium text-fuchsia-800 tracking-widest'>About my music,</h1>
