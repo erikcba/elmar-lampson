@@ -10,9 +10,13 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <section className='flex md:flex-row relative flex-col container mx-auto p-12 xl:pt-24 xl:gap-16 gap-6 xl:px-0 px-4'>
-                <img className='md:w-1/2 w-full h-1/2 sticky top-0' src={img1} alt="" />
-                <div className='md:w-1/2 w-full h-max-fit flex flex-col justify-between items-start pb-5'>
+            <section className='flex md:flex-row relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-4'>
+                <img
+                    className='md:w-1/2 w-full h-1/2 md:sticky md:top-0'
+                    src={img1}
+                    alt=""
+                />
+                <div className='md:w-1/2 w-full flex flex-col justify-between items-start pb-5'>
                     <h1 className='orbitron text-4xl font-medium text-fuchsia-800 tracking-widest'>About me</h1>
                     <p className='text-lg font-light'>{t('about1')}</p>
                     <p className='text-lg font-light'>{t('about2')}</p>
@@ -22,8 +26,8 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about6')}</p>
                 </div>
             </section>
-            <section className='flex md:flex-row-reverse relative flex-col container mx-auto p-12 xl:pt-24 xl:gap-16 gap-6 xl:px-0 px-4'>
-                <img className='md:w-1/2 w-full h-1/2 sticky top-0' src={img2} alt="" />
+            <section className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-4'>
+                <img className='md:w-1/2 w-full h-1/2 md:sticky md:top-0' src={img2} alt="" />
                 <div className='md:w-1/2 w-full h-max-fit flex flex-col justify-between items-start pb-5 '>
                     <h1 className='orbitron text-4xl font-medium text-fuchsia-800 tracking-widest'>About my music,</h1>
                     <p className='text-xl font-bold py-6'>{t('about7')}</p>
@@ -58,7 +62,7 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about27')}</p>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
