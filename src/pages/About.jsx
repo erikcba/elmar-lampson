@@ -24,6 +24,7 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about4')}</p>
                     <p className='text-lg font-light'>{t('about5')}</p>
                     <p className='text-lg font-light'>{t('about6')}</p>
+                    <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                 </div>
             </section>
             <section className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-4'>
@@ -36,11 +37,12 @@ const About = () => {
                         <p className='text-lg font-light'>{t('about9')}</p>
                         <p className='text-lg font-light'>{t('about10')}</p>
                         <p className='text-lg font-light'>{t('about11')}</p>
+                        <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto xl:py-24 py-0 sm:px-0 px-4'>
-                <div className='bg-elmar bg-fixed'></div>
+            <section className='container mx-auto xl:py-24 py-12 sm:px-0 px-4'>
+                <div className='bg-elmar md:bg-fixed'></div>
             </section>
             <section className='container mx-auto py-14 px-4'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start gap-5'>
@@ -60,6 +62,7 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about25')}</p>
                     <p className='text-lg font-light'>{t('about26')}</p>
                     <p className='text-lg font-light'>{t('about27')}</p>
+                    
                 </div>
             </section>
             <Footer />
