@@ -41,10 +41,10 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto xl:py-24 py-12 sm:px-0 px-4'>
+            <section className='container mx-auto xl:py-12 py-0 sm:px-0 px-4'>
                 <div className='bg-elmar md:bg-fixed'></div>
             </section>
-            <section className='container mx-auto py-14 px-4'>
+            <section className='container mx-auto py-14 sm:px-0 px-4'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start gap-5'>
                     <p className='text-lg font-light'>{t('about12')}</p>
                     <p className='text-lg font-light'>{t('about13')}</p>
@@ -62,7 +62,7 @@ const About = () => {
                     <p className='text-lg font-light'>{t('about25')}</p>
                     <p className='text-lg font-light'>{t('about26')}</p>
                     <p className='text-lg font-light'>{t('about27')}</p>
-                    
+                    <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                 </div>
             </section>
             <Footer />

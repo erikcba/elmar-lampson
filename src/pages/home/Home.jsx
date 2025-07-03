@@ -4,13 +4,30 @@ import arrowDown from '../../assets/arrow-down.png'
 import newsVector from '../../assets/newsFondo.png'
 import aboutHomeImg from '../../assets/about-home.jpg'
 import divisor from '../../assets/divisor.png'
+import logo from '../../assets/logo.png'
+import MenuIcon from '../../components/icons/MenuIcon'
+import vector1 from '../../assets/Vector.png'
+import vector2 from '../../assets/Vector2.png'
+import myMusic from '../../assets/my-music.png'
+import arrowRight from '../../assets/arrow-right.png'
+import albums from '../../assets/albums.png'
+import img1Media from '../../assets/img1-media.jpg'
+import Footer from '../../components/Footer'
 
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <section id='hero' className='bg-hero'>
-
+        <div className='container mx-auto xl:pt-32'>
+          <div className='relative'>
+            <img src={logo} alt="" />
+            <MenuIcon className="absolute left-1/4 top-1/7 cursor-pointer" />
+            <span className="absolute left-2/7 top-1/7 text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer">
+              DE
+            </span>
+          </div>
+        </div>
       </section>
       <section id='news' className='bg-gray-100  mt-10' >
         <div className='bg-news pt-32'>
@@ -43,10 +60,14 @@ const Home = () => {
           <div className='flex flex-row items-start justify-center gap-10 h-full'>
             <div className='w-1/2 h-full flex flex-col items-center justify-start gap-16'>
               <div className='h-1/2 flex flex-col justify-center items-start gap-12'>
-                <h1 className='bg-fuchsia-975-80 text-gray-100 font-normal text-6xl ml-16 w-fit pl-4 pt-3 pr-2 pb-2'>
+                <div>
+                  <img src={vector1} alt="" className='absolute -top-1/5 left-1/6 opacity-65 z-10' />
+                  <img src={vector2} alt="" className='absolute -top-1/5 left-1/7 opacity-65 z-10' />
+                </div>
+                <h1 className='bg-fuchsia-975-80 text-gray-100 font-normal text-6xl ml-16 w-fit pl-4 pt-3 pr-2 pb-2 z-10'>
                   About
                 </h1>
-                <p className='text-3xl font-light'>
+                <p className='text-3xl font-light z-10'>
                   Born in Koblenz, Germany, Elmar Lampson is a renowned
                   composer, conductor, and music educator.
                 </p>
@@ -61,17 +82,61 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='h-fit bg-transparent absolute bottom-1 z-0'>
-          <img src={divisor} alt="" />
+        <div className='h-fit w-full bg-transparent absolute bottom-1 z-0'>
+          <img src={divisor} alt="" className='w-full'/>
         </div>
       </section>
-      <section id="myMusic" className="pt-10 bg-gray-100">
-
+      <section id="myMusic" className="py-12 bg-gray-100">
+        <div className='container mx-auto flex flex-col justify-center items-center gap-10'>
+          <div className='flex flex-row justify-center items-center gap-10'>
+            <div className='w-5/9 h-[687px] overflow-hidden'>
+              <img src={myMusic} alt="" className='object-cover scale-140 z-0' />
+            </div>
+            <div className='w-4/9 flex flex-col items-start justify-center gap-10'>
+              <div className='flex flex-col gap-1'>
+                <h1 className='bg-fuchsia-975 text-gray-100 font-normal text-6xl w-fit py-2 pr-6 leading-none'>
+                  My
+                </h1>
+                <h1 className='bg-fuchsia-975 text-gray-100 font-normal text-6xl w-fit py-2 px-4 ml-6 leading-none'>
+                  Music
+                </h1>
+              </div>
+              <p className='text-3xl font-light w-full'>
+                The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
+              </p>
+              <a href="" className='flex flex-row text-xl font-normal relative'>
+                Complete catalogue <br /> of works
+                <img src={arrowRight} alt="" className='w-fit h-fit self-end absolute left-1/2 bottom-1/12' />
+              </a>
+            </div>
+          </div>
+          <div className='flex flex-row items-center self-end relative'>
+            <div className='absolute -left-1/8 cursor-pointer'>
+              <p className='text-2xl font-normal'>
+                Listen now <br />
+                on your <br />
+                favorite platform
+              </p>
+              <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5' />
+            </div>
+            <div className='bg-white py-6 pr-6 pl-24'>
+              <img src={albums} alt="" />
+            </div>
+          </div>
+        </div>
       </section>
-      <img src={imgMusic} alt="" />
-      <section id='media' className='mt-10'>
-
+      <section className='flex'>
+        <img src={imgMusic} alt="" className='z-20' />
       </section>
+      <section id='media' className='py-12 bg-gray-100 z-20 relative'>
+        <div className='container mx-auto flex flex-col justify-center items-center gap-10'>
+          <h1 className='bg-fuchsia-975-80 text-gray-100 font-normal text-6xl w-fit px-4 py-2 self-start ml-24'>
+            Media
+          </h1>
+          <img src={img1Media} alt="" />
+        </div>
+      </section>
+      <Footer/>
     </div>
   )
 }

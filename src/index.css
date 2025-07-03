@@ -6,11 +6,11 @@
 }
 
 .bg-hero {
-    background-image: url('./assets/portada.jpg');
+    background-image: url('./assets/hero-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 110svh;
+    height: 100svh;
 }
 
 .bg-news {

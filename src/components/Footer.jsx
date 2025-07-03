@@ -4,7 +4,7 @@ import elmarLogoBlanco from "../assets/elmarLogoWhite.png"
 
 const Footer = () => {
     return (
-        <footer className='bg-fuchsia-975 mt-auto sm:py-24 py-12'>
+        <footer className='bg-fuchsia-975 mt-auto sm:py-24 py-12 z-20 relative'>
             <div className='container mx-auto flex flex-col items-start  gap-6 px-10 sm:px-0'>
                 <h1 className='orbitron sm:text-2xl text-xl font-medium text-white tracking-widest'>
                     Contact
