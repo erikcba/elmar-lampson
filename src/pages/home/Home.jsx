@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import imgMusic from '../../assets/myMusic-img.png'
 import arrowDown from '../../assets/arrow-down.png'
 import newsVector from '../../assets/newsFondo.png'
@@ -13,16 +13,27 @@ import arrowRight from '../../assets/arrow-right.png'
 import albums from '../../assets/albums.png'
 import img1Media from '../../assets/img1-media.jpg'
 import Footer from '../../components/Footer'
+import Menu from '../../components/Menu'
 
 
 const Home = () => {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className='overflow-hidden'>
+
+      <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
+
       <section id='hero' className='bg-hero'>
         <div className='container mx-auto xl:pt-32'>
           <div className='relative'>
             <img src={logo} alt="" />
-            <MenuIcon className="absolute left-1/4 top-1/7 cursor-pointer" />
+            <MenuIcon onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer" />
             <span className="absolute left-2/7 top-1/7 text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer">
               DE
             </span>
@@ -83,7 +94,7 @@ const Home = () => {
           </div>
         </div>
         <div className='h-fit w-full bg-transparent absolute bottom-1 z-0'>
-          <img src={divisor} alt="" className='w-full'/>
+          <img src={divisor} alt="" className='w-full' />
         </div>
       </section>
       <section id="myMusic" className="py-12 bg-gray-100">
@@ -136,7 +147,7 @@ const Home = () => {
           <img src={img1Media} alt="" />
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
