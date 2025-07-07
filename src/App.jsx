@@ -1,14 +1,18 @@
 import './index.css'
-import About from './pages/About'
-import Home from './pages/home/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import News from './pages/News'
 
 function App() {
 
 
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/news" element={<News />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

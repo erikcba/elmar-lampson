@@ -13,6 +13,14 @@
     height: 100svh;
 }
 
+.bg-hero-news {
+    background-image: url('./assets/news-hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100svh;
+}
+
 .bg-news {
     background-image: url('./assets/news-img.png');
     background-size: cover;
