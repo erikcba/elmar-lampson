@@ -4,6 +4,9 @@ import Menu from '../components/Menu'
 import logoBlanco from '../assets/logoWhite.png'
 import vectorNews from '../assets/news-title.png'
 import NewsComponent from '../components/NewsComponent'
+import Footer from '../components/Footer'
+import vector1 from '../assets/Vector.png'
+import vector2 from '../assets/vector2.png'
 
 const News = () => {
 
@@ -33,7 +36,11 @@ const News = () => {
                     </h1>
                 </div>
             </section>
-            <section className='container mx-auto py-24 flex flex-col gap-16'>
+            <section className='container mx-auto py-16 flex flex-col gap-16 relative'>
+                <div className='h-full'>
+                    <img className='absolute top-5 -left-1/7 -rotate-1 ' src={vector1} alt="" />
+                    <img className='absolute top-0 -left-1/12 h-full w-1/12 -translate-x-9' src={vector2} alt="" />
+                </div>
                 <NewsComponent title={'The Reviews Are In! '} date={'4.06.2025'} description={<>
                     The premiere of Elmar Lampson’s newest opera, Wellen, was warmly received by both critics and audiences. Reviewers praised the “iridescent score” (Andreas Schnell, Kreiszeitung{" "}
                     <a href="https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
@@ -111,6 +118,7 @@ const News = () => {
                     </>
                 } />
             </section>
+            <Footer />
         </div>
     )
 }

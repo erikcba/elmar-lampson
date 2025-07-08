@@ -17,12 +17,11 @@ const Menu = ({ isOpen, toggleMenu }) => {
           ${isOpen ? 'translate-y-0' : '-translate-y-full'}
         `}
             >
-                {/* MENÚ: 75% superior */}
-                <div className="h-[75svh] bg-gray-100 overflow-hidden">
+                <div className="bg-gray-100 overflow-hidden h-svh">
                     <div className="container mx-auto xl:pt-32 relative">
                         <CloseIcon onClick={toggleMenu} className="ml-auto cursor-pointer" />
-                        <img className="absolute top-0 left-1/2 -translate-12" src={vector2} alt="" />
-                        <img className="absolute top-0 right-3/7 -translate-12" src={vector1} alt="" />
+                        <img className="absolute top-0 left-1/2 -translate-x-12" src={vector2} alt="" />
+                        <img className="absolute top-0 right-3/7 -translate-x-12" src={vector1} alt="" />
 
                         <div className="relative">
                             <Link to="/">
@@ -58,15 +57,6 @@ const Menu = ({ isOpen, toggleMenu }) => {
                         </div>
                     </div>
                 </div>
-
-                {/* OVERLAY: 25% inferior */}
-                <div
-                    className={`
-            h-[25svh] bg-gray-900/75 
-            transition-opacity duration-500 ease-in-out
-          `}
-                    onClick={toggleMenu}
-                />
             </div>
         </>
     )

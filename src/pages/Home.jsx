@@ -44,7 +44,7 @@ const Home = () => {
         <div className='bg-news pt-32'>
           <div className='container flex flex-row justify-start mx-auto pl-12'>
             <div className="relative w-3xs">
-              <h1 className='bg-fuchsia-975-80 flex items-center justify-center w-fit h-fit text-gray-300 pb-2 pt-2 pl-10 font-normal text-6xl relative z-10'>
+              <h1 className='bg-fuchsia-975-80 zilla-slab-regular flex items-center justify-center w-fit h-fit text-gray-300 pb-2 pt-2 pl-10 font-normal text-6xl relative z-10'>
                 News
               </h1>
               <img
@@ -75,7 +75,7 @@ const Home = () => {
                   <img src={vector1} alt="" className='absolute -top-1/5 left-1/6 opacity-65 z-10' />
                   <img src={vector2} alt="" className='absolute -top-1/5 left-1/7 opacity-65 z-10' />
                 </div>
-                <h1 className='bg-fuchsia-975-80 text-gray-100 font-normal text-6xl ml-16 w-fit pl-4 pt-3 pr-2 pb-2 z-10'>
+                <h1 className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal text-6xl ml-16 w-fit pl-4 pt-3 pr-2 pb-2 z-10'>
                   About
                 </h1>
                 <p className='text-3xl font-light z-10'>
@@ -104,11 +104,14 @@ const Home = () => {
               <img src={myMusic} alt="" className='object-cover scale-140 z-0' />
             </div>
             <div className='w-4/9 flex flex-col items-start justify-center gap-10'>
-              <div className='flex flex-col gap-1'>
-                <h1 className='bg-fuchsia-975 text-gray-100 font-normal text-6xl w-fit py-2 pr-6 leading-none'>
+              <div className='flex flex-col gap-1 relative xl:ml-32'>
+                <h1 className='bg-fuchsia-975 text-gray-100 zilla-slab-regular font-normal text-6xl w-fit py-2 pr-6 leading-none z-10'>
                   My
                 </h1>
-                <h1 className='bg-fuchsia-975 text-gray-100 font-normal text-6xl w-fit py-2 px-4 ml-6 leading-none'>
+                <div className='h-24 w-24 bg-sky-200/30 z-0 absolute top-1/4 -left-1/4'>
+
+                </div>
+                <h1 className='bg-fuchsia-975 text-gray-100 zilla-slab-regular font-normal text-6xl w-fit py-2 px-4 ml-6 leading-none z-10'>
                   Music
                 </h1>
               </div>
@@ -141,7 +144,7 @@ const Home = () => {
       </section>
       <section id='media' className='py-12 bg-gray-100 z-20 relative'>
         <div className='container mx-auto flex flex-col justify-center items-center gap-10'>
-          <h1 className='bg-fuchsia-975-80 text-gray-100 font-normal text-6xl w-fit px-4 py-2 self-start ml-24'>
+          <h1 className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal text-6xl w-fit px-4 py-2 self-start ml-24'>
             Media
           </h1>
           <img src={img1Media} alt="" />
