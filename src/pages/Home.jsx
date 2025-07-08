@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import imgMusic from '../assets/myMusic-img.png'
 import arrowDown from '../assets/arrow-down.png'
 import newsVector from '../assets/newsFondo.png'
@@ -14,7 +14,8 @@ import albums from '../assets/albums.png'
 import img1Media from '../assets/img1-media.jpg'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
-
+import VanillaTilt from 'vanilla-tilt'
+import ElmarLogo from '../components/ElmarLogo'
 
 const Home = () => {
 
@@ -23,6 +24,17 @@ const Home = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
+  useEffect(() => {
+    const tiltElements = document.querySelectorAll('.tilt')
+    VanillaTilt.init(tiltElements, {
+      max: 5,
+      speed: 800,
+      scale: 1.02,
+      glare: true,
+      "max-glare": 0.2,
+    });
+  }, [])
 
   return (
     <div className='overflow-hidden'>
@@ -88,7 +100,7 @@ const Home = () => {
                 <img className='h-fit' src={arrowDown} alt="" />
               </div>
             </div>
-            <div className='w-1/2 h-[870px] overflow-hidden py-24 px-12 z-10'>
+            <div className='tilt w-1/2 h-[870px] overflow-hidden py-24 px-12 z-10'>
               <img className='w-full object-cover scale-140 -translate-y-70 -translate-x-20' src={aboutHomeImg} alt="" />
             </div>
           </div>
@@ -100,7 +112,7 @@ const Home = () => {
       <section id="myMusic" className="py-12 bg-gray-100">
         <div className='container mx-auto flex flex-col justify-center items-center gap-10'>
           <div className='flex flex-row justify-center items-center gap-10'>
-            <div className='w-5/9 h-[687px] overflow-hidden'>
+            <div className='tilt w-5/9 h-[687px] overflow-hidden'>
               <img src={myMusic} alt="" className='object-cover scale-140 z-0' />
             </div>
             <div className='w-4/9 flex flex-col items-start justify-center gap-10'>

@@ -14,14 +14,14 @@ const Menu = ({ isOpen, toggleMenu }) => {
                 className={`
           fixed top-0 left-0 w-full h-svh z-50 
           transform transition-transform duration-500 ease-in-out
-          ${isOpen ? 'translate-y-0' : '-translate-y-full'}
+          ${isOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
             >
                 <div className="bg-gray-100 overflow-hidden h-svh">
-                    <div className="container mx-auto xl:pt-32 relative">
+                    <div className="container mx-auto h-full xl:pt-32 relative">
                         <CloseIcon onClick={toggleMenu} className="ml-auto cursor-pointer" />
-                        <img className="absolute top-0 left-1/2 -translate-x-12" src={vector2} alt="" />
-                        <img className="absolute top-0 right-3/7 -translate-x-12" src={vector1} alt="" />
+                        <img className="absolute top-0 left-1/2 h-full -translate-x-15" src={vector2} alt="" />
+                        <img className="absolute top-0 right-3/7 h-full -translate-x-12" src={vector1} alt="" />
 
                         <div className="relative">
                             <Link to="/">
