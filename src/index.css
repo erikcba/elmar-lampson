@@ -12,8 +12,8 @@
     background-image: url('./assets/hero-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-    height: 110svh;
+    background-position:0 -100px;
+    height: 120svh;
 }
 
 .bg-hero-news {
@@ -55,12 +55,15 @@
 
 .zilla-slab-regular {
   font-family: "Zilla Slab", serif;
-  font-weight: 400;
   font-style: normal;
 }
 
 .text-sky{
    color: rgba(93, 123, 191, 1);
+}
+
+.bg-sky-elmar{
+    background-color: rgba(93, 123, 191, 1);
 }
 
 

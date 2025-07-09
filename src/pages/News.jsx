@@ -7,6 +7,7 @@ import NewsComponent from '../components/NewsComponent'
 import Footer from '../components/Footer'
 import vector1 from '../assets/Vector.png'
 import vector2 from '../assets/vector2.png'
+import ElmarLogo from '../components/ElmarLogo'
 
 const News = () => {
 
@@ -22,7 +23,7 @@ const News = () => {
             <section id='hero' className='bg-hero-news relative'>
                 <div className='container mx-auto xl:pt-32'>
                     <div className='relative'>
-                        <img src={logoBlanco} alt="" />
+                        <ElmarLogo bgColor='bg-white mix-blend-lighten text-black' />
                         <MenuIcon color={"white"} onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer" />
                         <span className="absolute left-2/7 top-1/7  text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer">
                             DE

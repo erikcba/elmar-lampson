@@ -9,7 +9,6 @@ import Menu from '../components/Menu'
 import VanillaTilt from 'vanilla-tilt'
 import vectorAbout from '../assets/vector-about.png'
 
-
 const About = () => {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = () => {
@@ -31,7 +30,7 @@ const About = () => {
     return (
         <div className='bg-gray-100 '>
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
-            <Navbar toggleMenu={toggleMenu} />
+            <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
             <div className='container mx-auto flex flex-row items-center justify-center gap-24 py-20 relative'>
                 <div className='w-2/5 self-baseline'>
                     <h1 className='ml-auto w-fit text-sky text-5xl font-bold'>

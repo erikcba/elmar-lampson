@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import imgMusic from '../assets/myMusic-img.png'
 import arrowDown from '../assets/arrow-down.png'
 import newsVector from '../assets/newsFondo.png'
@@ -44,9 +44,9 @@ const Home = () => {
       <section id='hero' className='bg-hero'>
         <div className='container mx-auto xl:pt-32'>
           <div className='relative'>
-            <img src={logo} alt="" />
-            <MenuIcon onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer" />
-            <span className="absolute left-2/7 top-1/7 text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer">
+            <ElmarLogo bgColor='bg-fuchsia-950 mix-blend-multiply text-white' />
+            <MenuIcon onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer z-10" />
+            <span className="absolute left-2/7 top-1/7 text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer z-10">
               DE
             </span>
           </div>

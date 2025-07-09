@@ -1,40 +1,38 @@
-import { useEffect, useRef } from 'react';
+// ScrambleText.jsx
+import { useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
 
-const ScrambleText = ({ text, className = '' }) => {
-  const ref = useRef();
+const ScrambleText = forwardRef(({ text, className = '' }, ref) => {
+  const el = useRef();
+  const original = text;
+  let interval = null;
 
-  useEffect(() => {
-    const el = ref.current;
-    const original = text;
-    let interval = null;
+  const scramble = () => {
+    let iterations = 0;
+    clearInterval(interval);
+    const randomChar = () => {
+      const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*';
+      return chars[Math.floor(Math.random() * chars.length)];
+    }
+    interval = setInterval(() => {
+      el.current.innerText = original
+        .split('')
+        .map((letter, i) => {
+          if (i < iterations) return letter;
+          return randomChar();
+        })
+        .join('');
 
-    const scramble = () => {
-      let iterations = 0;
-      clearInterval(interval);
-      interval = setInterval(() => {
-        el.innerText = original
-          .split('')
-          .map((letter, i) => {
-            if (i < iterations) return letter;
-            return String.fromCharCode(65 + Math.floor(Math.random() * 26));
-          })
-          .join('');
+      iterations += 1 / 8;
+      if (iterations >= original.length) clearInterval(interval);
+    }, 30);
+  };
 
-        iterations += 1 / 6;
+  // 👇 Permite que el padre llame a `scramble()` externamente
+  useImperativeHandle(ref, () => ({
+    triggerScramble: scramble
+  }));
 
-        if (iterations >= original.length) clearInterval(interval);
-      }, 40);
-    };
-
-    el.addEventListener('mouseenter', scramble);
-
-    return () => {
-      el.removeEventListener('mouseenter', scramble);
-      clearInterval(interval);
-    };
-  }, [text]);
-
-  return <h1 ref={ref} className={className}>{text}</h1>;
-};
+  return <h1 ref={el} className={className}>{text}</h1>;
+});
 
 export default ScrambleText;
