@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import News from './pages/News'
 import About from './pages/About'
-import MyMusic from './pages/MyMusic'
+import MyMusic from './pages/mymusic/MyMusic'
 
 
 function App() {
