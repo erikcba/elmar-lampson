@@ -25,9 +25,6 @@ const MyMusic = () => {
         setIsOpen(!isOpen)
     }
 
-
-    console.log(data.writings)
-
     return (
         <div className=''>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />

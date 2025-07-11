@@ -16,6 +16,7 @@ import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import VanillaTilt from 'vanilla-tilt'
 import ElmarLogo from '../components/ElmarLogo'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -52,7 +53,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id='news' className='bg-gray-100  mt-10' >
+      <section id='news' className='bg-gray-100' >
         <div className='bg-news pt-32'>
           <div className='container flex flex-row justify-start mx-auto pl-12'>
             <div className="relative w-3xs">
@@ -71,10 +72,10 @@ const Home = () => {
               with a libretto by Julia Spinola after
               Eduard von Keyserling
             </p>
-            <a href="" className='font-normal text-2xl text-fuchsia-975 self-center flex flex-row items-center justify-start gap-2 pt-10'>
+            <Link to="/news" className='font-normal text-2xl text-fuchsia-975 self-center flex flex-row items-center justify-start gap-2 pt-10'>
               <img src={arrowDown} alt="" />
               Read more
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -95,9 +96,11 @@ const Home = () => {
                   composer, conductor, and music educator.
                 </p>
               </div>
-              <div className='h-1/2 ml-auto flex flex-row justify-center items-start gap-2'>
-                <a href="" className='text-2xl font-normal text-gray-900'>Read more</a>
-                <img className='h-fit' src={arrowDown} alt="" />
+              <div className='h-1/2 ml-auto '>
+                <Link to="/about" className='flex flex-row justify-center items-start gap-2 text-2xl font-normal text-gray-900'>
+                  Read more
+                  <img className='h-fit' src={arrowDown} alt="" />
+                </Link>
               </div>
             </div>
             <div className='tilt w-1/2 h-[870px] overflow-hidden py-24 px-12 z-10'>
@@ -130,10 +133,10 @@ const Home = () => {
               <p className='text-3xl font-light w-full'>
                 The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
               </p>
-              <a href="" className='flex flex-row text-xl font-normal relative'>
+              <Link to="/myMusic" className='flex flex-row text-xl font-normal relative'>
                 Complete catalogue <br /> of works
                 <img src={arrowRight} alt="" className='w-fit h-fit self-end absolute left-1/2 bottom-1/12' />
-              </a>
+              </Link>
             </div>
           </div>
           <div className='flex flex-row items-center self-end relative'>
