@@ -26,14 +26,18 @@ const Tickets = ({ date, place, title, subtitle, director, description, musicDir
         </p>
         <div className='flex flex-row gap-1 items-center justify-start'>
           {
-            musicDirector && <div className='flex flex-row gap-1 items-center justify-start'><p className='text-sm font-semibold'>Musical direction</p><p className='font-light'>{musicDirector}</p></div>
+            musicDirector &&
+            <div className='flex flex-row gap-1 items-center justify-start'>
+              <p className='text-sm font-semibold'>Musical direction</p>
+              <p className='font-light'>{musicDirector}</p>
+            </div>
           }
         </div>
-        <p className='flex flex-row gap-1 items-center justify-start'>
+        <div className='flex flex-row gap-1 items-center justify-start'>
           {
             stageDirector && <div className='flex flex-row gap-1 items-center justify-start'><p className='text-sm font-semibold'>Stage direction</p>  <p className='font-light'>{stageDirector}</p></div>
           }
-        </p>
+        </div>
       </div>
       <button className='bg-sky-100 font-bold text-center w-fit px-5 py-2 rounded-md hover:cursor-pointer hover:bg-sky-200 transition-colors duration-300'>
         Buy tickets
