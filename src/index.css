@@ -10,7 +10,12 @@
     font-family: "Orbitron", sans-serif;
 }
 
+.bg-hero-mobile{
+    display:none
+}
+
 .bg-hero {
+    display: block;
     background-image: url('./assets/hero-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +75,23 @@
 
 
 @media screen and (max-width: 768px) {
+    .bg-hero {
+        display: none;
+    }
+    .bg-hero-mobile {
+        display: block;
+        background-image: url('./assets/bg-hero-mobile.png') ;
+        background-size: cover;
+        height: 100svh;
+    }
+
+    .bg-news {
+        display: block;
+        background-image: url('./assets/news-bg-mobile.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
     .bg-elmar {
         height: 460px;
         background-size: cover;

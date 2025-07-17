@@ -18,12 +18,12 @@ const ElmarLogo = ({ bgColor = '' }) => {
       <ScrambleText
         ref={ref1}
         text="Elmar"
-        className={`text-8xl font-bold ${bgColor} zilla-slab-regular pl-20 pr-4 mb-2 py-2 w-fit`}
+        className={`xl:text-8xl text-4xl select-none font-bold ${bgColor} zilla-slab-regular pl-10 xl:pl-20 pr-2 xl:pr-4 mb-2 py-2 w-fit`}
       />
       <ScrambleText
         ref={ref2}
         text="Lampson"
-        className={`text-8xl font-bold ${bgColor} zilla-slab-regular pr-20 pl-4 ml-8 pb-1 pt-2 w-fit`}
+        className={`xl:text-8xl text-4xl select-none font-bold ${bgColor} zilla-slab-regular pr-10 xl:pr-20 pl-2 xl:pl-4 ml-8 pb-1 pt-2 w-fit`}
       />
     </div>
   );

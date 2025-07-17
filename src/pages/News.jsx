@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import MenuIcon from '../components/icons/MenuIcon'
 import Menu from '../components/Menu'
-import logoBlanco from '../assets/logoWhite.png'
 import vectorNews from '../assets/news-title.png'
 import NewsComponent from '../components/NewsComponent'
 import Footer from '../components/Footer'
 import vector1 from '../assets/Vector.png'
 import vector2 from '../assets/vector2.png'
 import ElmarLogo from '../components/ElmarLogo'
+import { useTranslation } from 'react-i18next'
+import Navbar from '../components/Navbar'
 
 const News = () => {
 
@@ -17,19 +18,13 @@ const News = () => {
         setIsOpen(!isOpen)
     }
 
+    const { t } = useTranslation()
+
     return (
         <div className='overflow-hidden'>
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
             <section id='hero' className='bg-hero-news relative'>
-                <div className='container mx-auto xl:pt-32'>
-                    <div className='relative'>
-                        <ElmarLogo bgColor='bg-white mix-blend-lighten text-black' />
-                        <MenuIcon color={"white"} onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer" />
-                        <span className="absolute left-2/7 top-1/7  text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer">
-                            DE
-                        </span>
-                    </div>
-                </div>
+                <Navbar menuColor={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
                 <img src={vectorNews} className='absolute bottom-25' alt="" />
                 <div className='container mx-auto'>
                     <h1 className='text-white  text-5xl font-bold absolute bottom-10'>

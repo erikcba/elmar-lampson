@@ -4,6 +4,7 @@ import vector1 from '../assets/vector1-menu.png'
 import vector2 from '../assets/vector2-menu.png'
 import CloseIcon from './icons/CloseIcon'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Menu = ({ isOpen, toggleMenu }) => {
 
@@ -18,40 +19,35 @@ const Menu = ({ isOpen, toggleMenu }) => {
         `}
             >
                 <div className="bg-gray-100 overflow-hidden h-svh">
-                    <div className="container mx-auto h-full xl:pt-32 relative">
-                        <CloseIcon onClick={toggleMenu} className="ml-auto cursor-pointer" />
-                        <img className="absolute top-0 left-1/2 h-full -translate-x-15" src={vector2} alt="" />
-                        <img className="absolute top-0 right-3/7 h-full -translate-x-20" src={vector1} alt="" />
+                    <div className="container mx-auto h-full xl:py-32 relative xl:px-0 px-6">
+                        <CloseIcon onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-3 top-10 z-20" />
+                        <img className="absolute top-0 left-1/2 md:h-full h-auto md:-translate-x-24 translate-x-18" src={vector2} alt="" />
+                        <img className="absolute top-0 right-3/7 md:h-full h-auto md:-translate-x-20 translate-x-38" src={vector1} alt="" />
 
                         <div className="relative">
-                            <Link to="/">
-                                <img src={logo} alt="" />
-                            </Link>
-                            <span className="absolute left-2/7 top-1/7 text-xl font-bold text-fuchsia-975 bg-white rounded-full py-3 px-2 leading-none cursor-pointer">
-                                DE
-                            </span>
+                           <Navbar toggleMenu={toggleMenu} bgLang={'bg-white text-black'} isOpen={isOpen} bgColor='bg-fuchsia-950 mix-blend-multiply text-white' />
                         </div>
 
-                        <div className="flex flex-row items-center justify-center w-full pb-48">
+                        <div className="flex sm:flex-row flex-row-reverse items-center justify-center w-full pb-48">
                             <div className="w-1/2"></div>
                             <ul className="w-1/2 flex flex-col items-start justify-start xl:pl-24 gap-6">
                                 <Link to="/news">
-                                    <li className="text-4xl font-bold text-left text-sky-600 cursor-pointer">News</li>
+                                    <li className="text-4xl xl:text-6xl font-bold text-left text-sky-600 cursor-pointer">News</li>
                                 </Link>
                                 <Link to="/about">
-                                    <li className="text-4xl font-bold text-left text-sky-600 cursor-pointer">About</li>
+                                    <li className="text-4xl xl:text-6xl font-bold text-left text-sky-600 cursor-pointer">About</li>
                                 </Link>
                                 <Link to="/myMusic">
-                                    <li className="text-4xl font-bold text-left text-sky-600 cursor-pointer">My music</li>
+                                    <li className="text-4xl xl:text-6xl font-bold text-left text-sky-600 cursor-pointer">My music</li>
                                 </Link>
                                 <Link to="/media">
-                                    <li className="text-4xl font-bold text-left text-sky-600 cursor-pointer">Media</li>
+                                    <li className="text-4xl xl:text-6xl font-bold text-left text-sky-600 cursor-pointer">Media</li>
                                 </Link>
                                 <Link to="/calendar">
-                                    <li className="text-4xl font-bold text-left text-sky-600 cursor-pointer">Calendar</li>
+                                    <li className="text-4xl xl:text-6xl font-bold text-left text-sky-600 cursor-pointer">Calendar</li>
                                 </Link>
                                 <Link to="/contact">
-                                    <li className="text-4xl font-bold text-left text-sky-600 cursor-pointer">Contact</li>
+                                    <li className="text-4xl xl:text-6xl font-bold text-left text-sky-600 cursor-pointer">Contact</li>
                                 </Link>
                             </ul>
                         </div>

@@ -14,6 +14,7 @@ const About = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
+    
     const { t } = useTranslation()
 
     useEffect(() => {
