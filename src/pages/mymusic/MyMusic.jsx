@@ -28,11 +28,10 @@ const MyMusic = () => {
     return (
         <div className=''>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
-            <section>
+            <section className='px-6 xl:px-0 xl:pt-32'>
                 <div className='container mx-auto'>
-                    <div className='relative'>
+                    <div className='relative '>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
-                        <MenuIcon color={"white"} onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer" />
                     </div>
                     <div className='flex flex-col gap-6'>
                         <h1 className='text-sky text-5xl font-bold'>

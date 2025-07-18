@@ -14,7 +14,7 @@ const About = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
-    
+
     const { t } = useTranslation()
 
     useEffect(() => {
@@ -31,40 +31,42 @@ const About = () => {
     return (
         <div className='bg-gray-100 '>
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
-            <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
-            <div className='container mx-auto flex flex-row items-center justify-center gap-24 py-20 relative'>
+            <div className='px-6 xl:px-0 xl:pt-32'>
+                <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+            </div>
+            <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-0 relative'>
                 <div className='w-2/5 self-baseline'>
                     <h1 className='ml-auto w-fit text-sky text-5xl font-bold'>
                         <span>On </span>
                         <span className='italic'>Waves</span>
                     </h1>
                 </div>
-                <div className='absolute left-4/11 -translate-x-2 h-5/6 top-12'>
-                    <img src={vectorAbout} alt="" />
+                <div className='absolute xl:left-4/11 right-1/3 xl:-translate-x-2  top-8 xl:top-12'>
+                    <img src={vectorAbout} alt="" className='xl:h-5/6 h-40' />
                 </div>
-                <div className='w-3/5 flex flex-col gap-6'>
+                <div className='xl:w-3/5 w-full flex flex-col gap-6'>
                     <div >
-                        <p className='font-semibold text-2xl'>
+                        <p className='font-semibold text-xl xl:text-2xl'>
                             “contains passages of unearthly beauty”
                         </p>
-                        <p className="text-2xl">
+                        <p className="text-xl xl:text-2xl">
                             (Wolfgang Denker, Der Opernfreund)
                         </p>
                     </div>
                     <div>
-                        <p className='font-semibold text-2xl'>
+                        <p className='font-semibold text-xl xl:text-2xl'>
                             an “iridescent score”
                         </p>
-                        <p className="text-2xl">
+                        <p className="text-xl xl:text-2xl">
                             (Andreas Schnell, Kreiszeitung)
                         </p>
                     </div>
                     <div>
-                        <p className='font-semibold text-2xl'>
+                        <p className='font-semibold text-xl xl:text-2xl'>
                             "Lampson’s music holds nothing back: it moves between wild and tender, between major and minor, with numerous pentatonic touches and hugely demanding ensemble sections... it repeatedly manages to create completely unexpected constellations and confrontations. The percussion formations positioned on both sides of the stage are thrilling."
 
                         </p>
-                        <p className="text-2xl">
+                        <p className="text-xl xl:text-2xl">
                             (Ute Schalz-Laurenze, Neue Musikzeitung)
                         </p>
                     </div>

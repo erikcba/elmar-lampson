@@ -16,10 +16,9 @@ const Calendar = () => {
         <div>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
             <section className='py-12'>
-                <div className=''>
+                <div className='px-6 xl:px-0 xl:pt-32'>
                     <div className='relative'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
-                        <MenuIcon color={"white"} onClick={toggleMenu} className="absolute left-1/4 top-1/7 cursor-pointer" />
                     </div>
                     <div className='relative z-10'>
                         <div className='container flex flex-col gap-8 mx-auto z-10'>

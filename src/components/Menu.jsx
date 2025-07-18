@@ -20,7 +20,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
             >
                 <div className="bg-gray-100 overflow-hidden h-svh">
                     <div className="container mx-auto h-full xl:py-32 relative xl:px-0 px-6">
-                        <CloseIcon onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-3 top-10 z-20" />
+                        <CloseIcon onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-20 top-10 z-20" />
                         <img className="absolute top-0 left-1/2 md:h-full h-auto md:-translate-x-24 translate-x-18" src={vector2} alt="" />
                         <img className="absolute top-0 right-3/7 md:h-full h-auto md:-translate-x-20 translate-x-38" src={vector1} alt="" />
 

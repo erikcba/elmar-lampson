@@ -1,5 +1,5 @@
-// ScrambleText.jsx
-import { useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
+
+import {  useRef, forwardRef, useImperativeHandle } from 'react'
 
 const ScrambleText = forwardRef(({ text, className = '' }, ref) => {
   const el = useRef();
@@ -8,9 +8,9 @@ const ScrambleText = forwardRef(({ text, className = '' }, ref) => {
 
   const scramble = () => {
     let iterations = 0;
-    clearInterval(interval);
+    clearInterval(interval)
     const randomChar = () => {
-      const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*';
+      const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*'
       return chars[Math.floor(Math.random() * chars.length)];
     }
     interval = setInterval(() => {
@@ -27,7 +27,6 @@ const ScrambleText = forwardRef(({ text, className = '' }, ref) => {
     }, 30);
   };
 
-  // 👇 Permite que el padre llame a `scramble()` externamente
   useImperativeHandle(ref, () => ({
     triggerScramble: scramble
   }));

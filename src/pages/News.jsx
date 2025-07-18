@@ -23,17 +23,19 @@ const News = () => {
     return (
         <div className='overflow-hidden'>
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
-            <section id='hero' className='bg-hero-news relative'>
-                <Navbar menuColor={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
-                <img src={vectorNews} className='absolute bottom-25' alt="" />
-                <div className='container mx-auto'>
-                    <h1 className='text-white  text-5xl font-bold absolute bottom-10'>
-                        News
-                    </h1>
+            <section id='hero' className='bg-hero-news relative '>
+                <img src={vectorNews} className='absolute bottom-25 xl:w-fit w-1/2' alt="" />
+                <div className='px-6 xl:px-0 xl:pt-32'>
+                    <Navbar menuColor={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
+                    <div className='container mx-auto'>
+                        <h1 className='text-white  text-5xl font-bold absolute bottom-10'>
+                            News
+                        </h1>
+                    </div>
                 </div>
             </section>
-            <section className='container mx-auto py-16 flex flex-col gap-16 relative'>
-                <div className='h-full'>
+            <section className='container mx-auto py-16 flex flex-col gap-16 relative xl:px-0 px-6'>
+                <div className='h-full md:block hidden'>
                     <img className='absolute top-5 -left-1/7 -rotate-1 ' src={vector1} alt="" />
                     <img className='absolute top-0 -left-1/12 h-full w-1/12 -translate-x-9' src={vector2} alt="" />
                 </div>
