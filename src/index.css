@@ -73,6 +73,11 @@
     background-color: rgba(93, 123, 191, 1);
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(121, 23, 159)!important;
+}
+
 
 @media screen and (max-width: 768px) {
     .bg-hero {

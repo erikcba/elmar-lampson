@@ -11,13 +11,12 @@ import arrowRight from '../assets/arrow-right.png'
 import albums from '../assets/albums.png'
 import album1Mobile from '../assets/albums1-mobile.png'
 import album2Mobile from '../assets/albums2-mobile.png'
-import img1Media from '../assets/img1-media.jpg'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import VanillaTilt from 'vanilla-tilt'
-import ElmarLogo from '../components/ElmarLogo'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import CarouselHome from '../components/Carousel'
 
 const Home = () => {
 
@@ -171,7 +170,7 @@ const Home = () => {
           <h1 className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl w-fit px-4 py-2 self-start xl:ml-24'>
             Media
           </h1>
-          <img src={img1Media} alt="" />
+          <CarouselHome/>
         </div>
       </section>
       <Footer />

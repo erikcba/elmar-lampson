@@ -18,7 +18,7 @@ const Navbar = ({ bgColor, toggleMenu, bgLang, menuColor, isOpen }) => {
         <MenuIcon color={menuColor} onClick={toggleMenu} className={`absolute right-15 xl:left-1/4 xl:top-1/7 top-1 cursor-pointer ${isOpen ? 'opacity-0' : 'opacity-100 transition-opacity duration-1000 '}`} />
         <span
           onClick={toggleLanguage}
-          className={`absolute md:left-2/7 right-0 top-1 md:top-1/7 text-xl font-bold ${bgLang} rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
+          className={`absolute md:left-2/7 right-0 top-1 md:top-1/7 text-xl w-fit font-bold ${bgLang} rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
         >
           {t('language')}
         </span>

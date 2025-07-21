@@ -1,14 +1,71 @@
 import React from 'react'
 import imgAlbum from '../assets/mysterienszenen.png'
 import MediaCard from '../components/MediaCard'
+import apple from '../assets/apple.png'
+import spotify from '../assets/spotify.png'
+import youtube from '../assets/youtube.png'
+import soundcloud from '../assets/soundcloud.png'
+import deezer from '../assets/deezer.png'
+import youtubeMusic from '../assets/youtubeMusic.png'
+import amazon from '../assets/amazonMedia.png'
+import itunes from '../assets/itunes.png'
+import pandora from '../assets/pandora.png'
+import tidal from '../assets/tidal.png'
 
 const Media = () => {
 
-    const mediaItems = Array(10).fill({
-        action: 'Listen',
-        logoPlatform: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Spotify_logo_with_text.svg',
-        link: 'https://open.spotify.com/album/0x1Z2Y3X4W5V6U7T8S9R0Q1P2O3N4M5L6K7J8H9G'
-    });
+    const mediaItems = [
+        {
+            action: 'Listen',
+            logoPlatform: apple,
+            link: 'https://classical.music.apple.com/gb/artist/83224972'
+        },
+        {
+            action: 'Soon',
+            logoPlatform: amazon,
+            link: ''
+        },
+        {
+            action: 'Soon',
+            logoPlatform: deezer,
+            link: ''
+        },
+        {
+            action: 'Soon',
+            logoPlatform: itunes,
+            link: ''
+        },
+        {
+            action: 'Soon',
+            logoPlatform: pandora,
+            link: ''
+        },
+        {
+            action: 'Soon',
+            logoPlatform: soundcloud,
+            link: ''
+        },
+        {
+            action: 'Listen',
+            logoPlatform: spotify,
+            link: 'https://open.spotify.com/artist/0aVVCnadWDlwvkETQTzHAE'
+        },
+        {
+            action: 'Soon',
+            logoPlatform: tidal,
+            link: ''
+        },
+        {
+            action: 'Soon',
+            logoPlatform: youtubeMusic,
+            link: ''
+        },
+        {
+            action: 'Soon',
+            logoPlatform: youtube,
+            link: ''
+        }
+    ]
 
     return (
         <div className='bg-violet-100 py-16'>
@@ -23,7 +80,7 @@ const Media = () => {
                             Choose service music below
                         </p>
                     </div>
-                    <div className='flex flex-col items-center justify-center mt-4 bg-white px-3 rounded-lg w-5/6'>
+                    <div className='flex flex-col items-center justify-center mt-4 bg-white px-5 rounded-lg w-5/6'>
                         {mediaItems.map((item, index) => (
                             <MediaCard
                                 key={index}
