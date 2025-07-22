@@ -15,17 +15,17 @@ const Calendar = () => {
     return (
         <div>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
-            <section className='py-12'>
-                <div className='px-6 xl:px-0 xl:pt-32'>
-                    <div className='relative'>
+            <section className='xl:py-12 py-0'>
+                <div className=' xl:pt-32 pt-0'>
+                    <div className='relative px-6 xl:px-0'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>
-                    <div className='relative z-10'>
-                        <div className='container flex flex-col gap-8 mx-auto z-10'>
-                            <h1 className='text-sky text-5xl font-bold'>
+                    <div className='relative z-10 px-6 xl:px-0'>
+                        <div className='container flex flex-col md:gap-8 gap-4 mx-auto z-10'>
+                            <h1 className='text-sky md:text-5xl text-3xl font-bold'>
                                 Calendar
                             </h1>
-                            <p className='font-bold text-4xl relative z-10'>
+                            <p className='font-bold md:text-4xl text-2xl relative z-10'>
                                 Upcoming Concerts
                             </p>
                             <div className='flex flex-col gap-8 pt-8'>
@@ -40,23 +40,23 @@ const Calendar = () => {
                                 <TicketsCard date={'Summer 2026'} place={'Schenzhen Concert Hal'} title={'World Premiere: Sea Symphony Parts I, II and II'} subtitle={'Commissioned by Theater Bremen'} />
                             </div>
                         </div>
-                        <img className='absolute w-full xl:top-0 2xl:translate-y-15 z-0' src={divisor1} alt="" />
+
                     </div>
                     <div className='py-12 relative'>
-                        <h1 className='font-bold text-3xl z-10 relative container mx-auto'>
+                        <h1 className='font-bold xl:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                             Previous Concerts
                         </h1>
-                        <img className='absolute w-full xl:top-0 z-0' src={divisor2} alt="" />
-                        <div className='flex flex-col container mx-auto 2xl:gap-6 2xl:py-12'>
+                        <img className='absolute w-full xl:top-0 top-6 h-14 z-0' src={divisor2} alt="" />
+                        <div className='flex flex-col container mx-auto 2xl:gap-6 gap-8 2xl:py-12 px-6 xl:px-0'>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
-                                    <h3 className='text-2xl font-semibold'>
+                                    <h3 className='xl:text-2xl text-xl font-semibold'>
                                         18 May 2025, 11:00AM,
                                     </h3>
                                     <p className='text-sm font-light'>
                                         Theater Bremen
                                     </p>
-                                    <h1 className='text-3xl font-bold'>
+                                    <h1 className='xl:text-3xl text-2xl font-bold'>
                                         Matinee for the opera Wellen premiere
                                     </h1>
                                     <p className='text-sm font-light'>
@@ -74,13 +74,13 @@ const Calendar = () => {
                             </div>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
-                                    <h3 className='text-2xl font-semibold'>
+                                    <h3 className='xl:text-2xl text-xl font-semibold'>
                                         26 October 2024
                                     </h3>
                                     <p className='text-sm font-light'>
                                         Shenzhen Concert Hall
                                     </p>
-                                    <h1 className='text-3xl font-bold'>
+                                    <h1 className='xl:text-3xl text-2xl font-bold'>
                                         World Premiere: Sea Symphony Part II – 1. Dreams and Inklings, 2. Eerie Morning (2024)
                                     </h1>
                                     <p className='text-sm font-light'>
@@ -98,13 +98,13 @@ const Calendar = () => {
                             </div>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
-                                    <h3 className='text-2xl font-semibold'>
+                                    <h3 className='xl:text-2xl text-xl font-semibold'>
                                         8 December 2023
                                     </h3>
                                     <p className='text-sm font-light'>
                                         Shenzhen Concert Hall
                                     </p>
-                                    <h1 className='text-3xl font-bold'>
+                                    <h1 className='xl:text-3xl text-2xl font-bold'>
                                         World Premiere: Sea Symphony Part I – The Stormy Sea (2020–2023)                                    </h1>
                                     <p className='text-sm font-light'>
                                         Commissioned by the Shenzhen Symphony Orchestra
@@ -121,13 +121,13 @@ const Calendar = () => {
                             </div>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
-                                    <h3 className='text-2xl font-semibold'>
+                                    <h3 className='xl:text-2xl text-xl font-semibold'>
                                         17 September 2023
                                     </h3>
                                     <p className='text-sm font-light'>
                                         The Ernst Deutsch Theater, Hamburg
                                     </p>
-                                    <h1 className='text-3xl font-bold'>
+                                    <h1 className='xl:text-3xl text-2xl font-bold'>
                                         Music for St. Michaelis
                                     </h1>
                                     <p className='text-sm font-semibold'>
@@ -146,10 +146,10 @@ const Calendar = () => {
                             </div>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
-                                    <h3 className='text-2xl font-semibold'>
+                                    <h3 className='xl:text-2xl text-xl font-semibold'>
                                         4 October 2020
                                     </h3>
-                                    <h1 className='text-3xl font-bold'>
+                                    <h1 className='xl:text-3xl text-2xl font-bold'>
                                         World Premiere. Prayers at the Sea (2017–2020) <br />
                                         for Choir and Percussion (2)
                                     </h1>
@@ -172,6 +172,8 @@ const Calendar = () => {
                         </div>
                     </div>
                 </div>
+                <img className='absolute w-full xl:top-62 top-8 translate-y-53 h-14 2xl:translate-y-100 z-0' src={divisor1} alt="" />
+
             </section>
         </div>
     )

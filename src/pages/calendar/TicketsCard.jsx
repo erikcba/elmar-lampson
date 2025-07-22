@@ -4,13 +4,13 @@ const Tickets = ({ date, place, title, subtitle, director, description, musicDir
   return (
     <div className='flex flex-col gap-0'>
       <div className='flex flex-col mb-3'>
-        <h3 className='text-2xl font-semibold'>
+        <h3 className='xl:text-2xl text-xl font-semibold'>
           {date}
         </h3>
         <p className='text-sm font-light'>
           {place}
         </p>
-        <h1 className='text-3xl font-bold'>
+        <h1 className='xl:text-3xl text-2xl font-bold'>
           {title}
         </h1>
         <p className='text-sm font-light'>

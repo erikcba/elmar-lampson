@@ -70,7 +70,7 @@ const Media = () => {
     return (
         <div className='bg-violet-100 py-16'>
             <div className='container mx-auto px-4 py-8 flex items-center justify-center'>
-                <div className='flex flex-col items-center justify-center w-1/3'>
+                <div className='flex flex-col items-center justify-center w-full sm:w-1/3'>
                     <div>
                         <img src={imgAlbum} alt="" />
                         <h1 className='text-2xl text-center font-bold mt-4'>
@@ -80,7 +80,7 @@ const Media = () => {
                             Choose service music below
                         </p>
                     </div>
-                    <div className='flex flex-col items-center justify-center mt-4 bg-white px-5 rounded-lg w-5/6'>
+                    <div className='flex flex-col items-center justify-center mt-4 bg-white px-5 rounded-lg w-full sm:w-5/6'>
                         {mediaItems.map((item, index) => (
                             <MediaCard
                                 key={index}
