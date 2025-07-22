@@ -8,11 +8,11 @@ import instagram from "../assets/instagramIcon.png"
 const Footer = () => {
     return (
         <footer className='bg-fuchsia-975 mt-auto sm:py-24 py-12 z-20 relative'>
-            <div className='container mx-auto flex flex-col items-start  gap-4 px-10 sm:px-0'>
+            <div className='container mx-auto flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 sm:px-0'>
                 <h1 className='sm:text-4xl text-xl font-medium text-white tracking-widest'>
                     Contact
                 </h1>
-                <div className='flex sm:flex-row flex-col w-full justify-between sm:items-center items-start sm:gap-8 gap-10'>
+                <div className='flex sm:flex-row flex-col w-full justify-between items-center  sm:gap-8 gap-10'>
                     <div>
                         <img src={tybLogo} alt="" />
                     </div>
@@ -26,9 +26,9 @@ const Footer = () => {
                         <a href="https://www.tybarts.com" target="_blank" rel="noreferrer" className='text-white text-xl'>www.tybarts.com </a>
 
                     </div>
-                    <div className='relative px-12'>
+                    <div className='relative px-12 sm:pb-0 pb-16'>
                         <img src={logoSky} alt="" />
-                        <div className='flex flex-row items-center gap-2 pt-4 absolute top-5 right-0'>
+                        <div className='flex flex-row items-center gap-2 pt-4 absolute sm:top-5 bottom-0 right-1/4 sm:right-0'>
                             <a href="https://www.instagram.com/elmarlampson/" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
                                <img src={instagram} alt="" />
                             </a>
