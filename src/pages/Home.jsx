@@ -17,6 +17,7 @@ import VanillaTilt from 'vanilla-tilt'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import CarouselHome from '../components/Carousel'
+import HamburgerMenu from '../components/icons/HamburguerMenu'
 
 const Home = () => {
 
@@ -42,10 +43,10 @@ const Home = () => {
 
       <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
 
-      <section id='hero' className='bg-hero bg-hero-mobile'>
-        <div className='container mx-auto px-6 xl:px-0 xl:pt-32'>
+      <section id='hero' className='bg-hero bg-hero-mobile xl:pt-32'>
+        <div className='container mx-auto px-6 xl:px-0 '>
           <div className='relative'>
-            <Navbar toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-fuchsia-950 mix-blend-multiply text-white' />
+            <Navbar toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
           </div>
         </div>
       </section>
@@ -68,9 +69,11 @@ const Home = () => {
               with a libretto by Julia Spinola after
               Eduard von Keyserling
             </p>
-            <Link to="/news" className='font-normal text-2xl text-fuchsia-975 xl:self-center self-end flex flex-row items-center justify-start gap-2 pt-10'>
-              <img src={arrowDown} alt="" />
-              Read more
+            <Link to="/news" className='group bounce-y-hover font-normal text-2xl text-fuchsia-975 xl:self-center self-end flex flex-row items-center justify-start gap-2 pt-10'>
+              <img src={arrowDown} alt="" className=' bounce-y transition-all ease-in-out' />
+              <span className=" group-hover:scale-105 transition-all ease-in-out">
+                Read more
+              </span>
             </Link>
           </div>
         </div>
@@ -93,9 +96,11 @@ const Home = () => {
                 </p>
               </div>
               <div className='sm:block hidden sm:h-1/2 ml-auto '>
-                <Link to="/about" className='flex flex-row justify-center items-start gap-2 text-2xl font-normal text-gray-900'>
-                  Read more
-                  <img className='h-fit' src={arrowDown} alt="" />
+                <Link to="/about" className='flex flex-row group bounce-y-hover justify-center items-start gap-2 text-2xl font-normal text-gray-900'>
+                  <span className=" group-hover:scale-105 transition-all ease-in-out">
+                    Read more
+                  </span>
+                  <img className='h-fit bounce-y' src={arrowDown} alt="" />
                 </Link>
               </div>
             </div>
@@ -129,33 +134,35 @@ const Home = () => {
               <p className='md:text-3xl text-xl font-light w-full'>
                 The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
               </p>
-              <Link to="/myMusic" className='flex flex-row text-xl font-normal relative'>
-                Complete catalogue <br /> of works
-                <img src={arrowRight} alt="" className='w-fit h-fit self-end absolute left-1/2 bottom-1/12' />
+              <Link to="/myMusic" className='flex flex-row text-xl font-normal relative group bounce-x-hover'>
+                <span className='group-hover:scale-105 transition-all ease-in-out'>
+                  Complete catalogue <br /> of works
+                </span>
+                <img src={arrowRight} alt="" className='w-fit h-fit self-end absolute left-1/2 bottom-1/12 bounce-x transition-all ease-in-out' />
               </Link>
             </div>
           </div>
-          <div className='flex xl:flex-row flex-col items-center xl:self-end relative'>
+          <div className='flex xl:flex-row flex-col items-center xl:self-end relative bounce-x-hover group'>
             <div className='absolute xl:block hidden -left-1/8 cursor-pointer'>
-              <p className='text-2xl font-normal'>
+              <p className='text-2xl font-normal group-hover:scale-105 transition-all ease-in-out'>
                 Listen now <br />
                 on your <br />
                 favorite platform
               </p>
-              <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5' />
+              <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5 bounce-x transition-all ease-in-out' />
             </div>
             <div className='bg-white xl:py-6 py-12 xl:pr-6 px-8 xl:pl-24'>
               <img src={albums} alt="" className='xl:block hidden' />
               <div className='xl:hidden flex flex-col items-center justify-between gap-4 w-full relative'>
                 <img src={album1Mobile} alt="" className='w-full h-fit' />
                 <img src={album2Mobile} alt="" className='w-full h-fit' />
-                <div className='relative self-start cursor-pointer'>
-                  <p className='text-2xl font-normal'>
+                <div className='relative self-start cursor-pointer bounce-x-hover group'>
+                  <p className='text-2xl font-normal group-hover:scale-105 transition-all ease-in-out'>
                     Listen now <br />
                     on your <br />
                     favorite platform
                   </p>
-                  <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5' />
+                  <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5 bounce-x transition-all ease-in-out' />
                 </div>
               </div>
             </div>
@@ -170,7 +177,7 @@ const Home = () => {
           <h1 className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl w-fit px-4 py-2 self-start xl:ml-24'>
             Media
           </h1>
-          <CarouselHome/>
+          <CarouselHome />
         </div>
       </section>
       <Footer />

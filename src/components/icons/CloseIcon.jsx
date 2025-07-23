@@ -1,5 +1,5 @@
 import React from "react"
 const CloseIcon = (props) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width={64} height={64} fill={"rgba(50, 30, 58, 1)"} viewBox="0 0 24 24" {...props} >{/* Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free */}<path d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z"></path></svg>
+    <img src="./assets/cerrar.png" alt="" />
 )
 export default CloseIcon;
