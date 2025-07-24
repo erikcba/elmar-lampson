@@ -12,15 +12,15 @@ const Footer = () => {
                 <h1 className='sm:text-4xl text-xl font-medium text-white tracking-widest md:pb-6'>
                     Contact
                 </h1>
-                <div className='flex sm:flex-row flex-col w-full justify-between items-start  sm:gap-8 gap-10'>
-                    <div>
-                        <img src={tybLogo} alt="" />
+                <div className='flex sm:flex-row flex-col w-full justify-between sm:items-start items-center  sm:gap-8 gap-10'>
+                    <div className='flex items-center justify-center'>
+                        <img className='sm:w-full w-2/3' src={tybLogo} alt="" />
                     </div>
-                    <div>
+                    <div className='sm:text-left text-center'>
                         <p className='text-white text-xl'>General Management</p>
                         <p className='font-medium text-white text-xl'>Thomas Yaksic Beckdorf</p>
                     </div>
-                    <div>
+                    <div className='sm:text-left text-center'>
                         <a href="mailto:contact@tybarts.com" className='text-white text-xl'>contact@tybarts.com</a>
                         <p className='text-white text-xl'>+44 20 3535 5611</p>
                         <a href="https://www.tybarts.com" target="_blank" rel="noreferrer" className='text-white text-xl'>www.tybarts.com </a>

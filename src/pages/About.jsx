@@ -29,7 +29,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className='bg-gray-100 '>
+        <div className='bg-white '>
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
             <div className='px-6 xl:px-0 xl:pt-32'>
                 <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
@@ -109,7 +109,7 @@ const About = () => {
             </section>
             <section className='container mx-auto py-14 sm:px-0 px-4'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start xl:gap-32'>
-                    <div className='flex flex-row items-start justify-start xl:gap-16'>
+                    <div className='flex md:flex-row flex-col items-start justify-start xl:gap-16'>
                         <div>
                             <p className='text-lg font-light'>{t('about12')}</p>
                             <p className='text-lg font-light'>{t('about13')}</p>
@@ -124,11 +124,11 @@ const About = () => {
                             <p className='text-lg font-light'>{t('about20')}</p>
                         </div>
                     </div>
-                    <div className='flex flex-row gap-16'>
-                        <div className='w-1/2'>
+                    <div className='flex md:flex-row flex-col md:gap-16 gap-10 md:mt-0 mt-6'>
+                        <div className='md:w-1/2 w-full'>
                             <img className='tilt shadow-none hover:shadow-xl' src={img3} alt="" />
                         </div>
-                        <div className='w-1/2 flex flex-col justify-around items-start'>
+                        <div className='md:w-1/2 w-full flex flex-col justify-around items-start md:gap-8 gap-4'>
                             <div>
                                 <p className='text-xl font-bold pb-6'>{t('about21')}</p>
                                 <p className='text-lg font-light pb-6'>{t('about22')}</p>

@@ -168,6 +168,7 @@
         background-image: url('./assets/bg-hero-mobile.png');
         background-size: cover;
         height: 100svh;
+        background-position: right;
     }
 
     .bg-news {

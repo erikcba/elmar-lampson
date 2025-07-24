@@ -4,10 +4,16 @@ import vector2 from '../assets/vector2-menu.png'
 import CloseIcon from '../assets/cerrar.png'
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
+import { useTranslation } from 'react-i18next'
 
 const Menu = ({ isOpen, toggleMenu }) => {
 
+    const { i18n, t } = useTranslation();
 
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'de' ? 'en' : 'de';
+        i18n.changeLanguage(newLang)
+    }
     return (
         <>
             <div
@@ -18,18 +24,24 @@ const Menu = ({ isOpen, toggleMenu }) => {
         `}
             >
                 <div className="bg-gray-100 overflow-hidden h-svh  ">
-                    <div className="container mx-auto h-full xl:pb-32 xl:pt-20 relative xl:px-0 px-6">
-                        <img src={CloseIcon} alt="" onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-10 top-10 z-20" />
+                    <div className="container mx-auto h-full md:pb-32 md:pt-20 relative md:px-0 px-6">
+                        <img src={CloseIcon} alt="" onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-5 top-13 z-20" />
                         <img className="absolute top-0 left-1/2 md:h-full h-auto md:-translate-x-20 translate-x-18" src={vector2} alt="" />
                         <img className="absolute top-0 right-3/7 md:h-full h-auto md:-translate-x-20 translate-x-38" src={vector1} alt="" />
 
                         <div className="relative">
-                           <Navbar toggleMenu={toggleMenu} bgLang={'bg-white text-black'} isOpen={isOpen} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
+                            <Navbar toggleMenu={toggleMenu} hide={'hidden'} bgLang={'bg-white text-black'} isOpen={isOpen} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
+                            <span
+                                onClick={toggleLanguage}
+                                className={`absolute md:left-2/7 md:translate-x-20 md:mt-0 mt-12 left-53 bg-white top-1 md:top-1/7 md:text-2xl text-xl w-fit font-bold rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
+                            >
+                                {t('language')}
+                            </span>
                         </div>
 
                         <div className="flex sm:flex-row flex-row-reverse items-center justify-center w-full ">
                             <div className="w-1/2"></div>
-                            <ul className="w-1/2 flex flex-col items-start justify-start xl:pl-24 gap-6">
+                            <ul className="w-1/2 flex flex-col items-start justify-start md:pl-24 gap-6 md:pt-0 pt-12">
                                 <Link to="/news">
                                     <li className="text-4xl xl:text-6xl font-bold text-left text-sky cursor-pointer">News</li>
                                 </Link>
