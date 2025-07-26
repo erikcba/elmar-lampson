@@ -3,87 +3,95 @@
 @import "tailwindcss";
 
 * {
-    scroll-behavior: smooth;
-    scroll-padding-top: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
+body::selection {
+    background-color: #321E3A;
+    color: #fff;
 }
 
 .orbitron {
-    font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .bg-hero-mobile {
-    display: none
+  display: none
 }
 
 .bg-hero {
-    display: block;
-    background-image: url('./assets/hero-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 -100px;
-    height: 120vh;
+  display: block;
+  background-image: url('./assets/hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+  height: 120vh;
 }
 
 .bg-hero-news {
-    background-image: url('./assets/news-hero.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 110svh;
+  background-image: url('./assets/news-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 110svh;
 }
 
 .bg-news {
-    background-image: url('./assets/news-img.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1032px;
+  background-image: url('./assets/news-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1032px;
 }
 
 .bg-elmar {
-    background-image: url('./assets/elmar2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 796px;
-    margin-top: 32px;
+  background-image: url('./assets/elmar2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 796px;
+  margin-top: 32px;
 }
 
 .bg-fuchsia-975 {
-    background-color: #321E3A;
+  background-color: #321E3A;
 }
 
 .bg-fuchsia-975-80 {
-    background-color: rgba(50, 30, 58, 0.85);
+  background-color: rgba(50, 30, 58, 0.85);
 }
 
 .text-fuchsia-975 {
-    color: rgba(50, 30, 58, 1);
+  color: rgba(50, 30, 58, 1);
 }
 
 .zilla-slab-regular {
-    font-family: "Zilla Slab", serif;
-    font-style: normal;
+  font-family: "Zilla Slab", serif;
+  font-style: normal;
 }
 
 .text-sky {
-    color: rgba(93, 123, 191, 1);
+  color: rgba(93, 123, 191, 1);
 }
 
 .bg-sky-elmar {
-    background-color: rgba(93, 123, 191, 1);
+  background-color: rgba(93, 123, 191, 1);
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: rgb(121, 23, 159) !important;
+  color: rgb(121, 23, 159) !important;
 }
 
 @keyframes bounce-x {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: translateX(10px);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -95,10 +103,13 @@
 }
 
 @keyframes bounce-y {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: translateY(10px);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -133,9 +144,12 @@
 
 /* Animación wave */
 @keyframes wave {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scaleX(1);
   }
+
   50% {
     transform: scaleX(0.5);
   }
@@ -157,37 +171,43 @@
   animation-delay: 0.3s;
 }
 
+@media screen and (max-width: 1440px) {
+  .bg-hero {
+    background-position: right;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
-    .bg-hero {
-        display: none;
-    }
+  .bg-hero {
+    display: none;
+  }
 
-    .bg-hero-mobile {
-        display: block;
-        background-image: url('./assets/bg-hero-mobile.png');
-        background-size: cover;
-        height: 100svh;
-        background-position: right;
-    }
+  .bg-hero-mobile {
+    display: block;
+    background-image: url('./assets/bg-hero-mobile.png');
+    background-size: cover;
+    height: 100svh;
+    background-position: right;
+  }
 
-    .bg-news {
-        display: block;
-        background-image: url('./assets/news-bg-mobile.png');
-        background-size: cover;
-        background-position: center center;
-    }
+  .bg-news {
+    display: block;
+    background-image: url('./assets/news-bg-mobile.png');
+    background-size: cover;
+    background-position: center center;
+  }
 
-    .bg-elmar {
-        height: 460px;
-        background-size: cover;
-        width: 100%;
-        margin-top: 0;
-    }
+  .bg-elmar {
+    height: 460px;
+    background-size: cover;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 374px) {
-    .bg-elmar {
-        height: 366px;
-    }
+  .bg-elmar {
+    height: 366px;
+  }
 }

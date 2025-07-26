@@ -25,10 +25,10 @@ const Menu = ({ isOpen, toggleMenu }) => {
         `}
             >
                 <div className="bg-gray-100 overflow-hidden h-screen  ">
-                    <div className="container mx-auto h-full md:pb-32 md:pt-20 relative md:px-0 px-6">
+                    <div className="container mx-auto h-full md:pb-32 md:pt-20 relative xl:px-0 px-6">
                         <img src={CloseIcon} alt="" onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-5 top-13 z-20" />
-                        <img className="absolute top-0 left-1/2 md:h-full h-auto md:-translate-x-20 translate-x-18" src={vector2} alt="" />
-                        <img className="absolute top-0 right-3/7 md:h-full h-auto md:-translate-x-20 translate-x-38" src={vector1} alt="" />
+                        <img className="absolute top-0 left-1/2 md:h-full h-auto xl:-translate-x-15 md:-translate-x-5 translate-x-18" src={vector2} alt="" />
+                        <img className="absolute top-0 right-3/7 md:h-full h-auto md:-translate-x-0 lg:-translate-x-5 xl:-translate-x-20 translate-x-38" src={vector1} alt="" />
 
                         <div className="relative">
                             <Navbar toggleMenu={toggleMenu} hide={'hidden'} bgLang={'bg-white text-black'} isOpen={isOpen} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
@@ -52,7 +52,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                 <Link to="/myMusic">
                                     <li className="text-4xl xl:text-6xl font-bold text-left text-sky cursor-pointer">My music</li>
                                 </Link>
-                                <Link to="/media">
+                                <Link to="/media" target='_blank' rel='noreferrer' >
                                     <li className="text-4xl xl:text-6xl font-bold text-left text-sky cursor-pointer">Media</li>
                                 </Link>
                                 <Link to="/calendar">

@@ -76,7 +76,7 @@ const Media = () => {
                         <h1 className='text-2xl text-center font-bold mt-4'>
                             Mysterienszenen
                         </h1>
-                        <p className='text-sm text-gray-500 mr-auto font-normal mt-2'>
+                        <p className='text-sm text-gray-500 text-center font-normal mt-2'>
                             Choose service music below
                         </p>
                     </div>
