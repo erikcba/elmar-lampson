@@ -7,7 +7,7 @@ import instagram from "../assets/instagramIcon.png"
 
 const Footer = () => {
     return (
-        <footer className='bg-fuchsia-975 mt-auto sm:py-12 py-8 z-20 relative'>
+        <footer id='contact' className='bg-fuchsia-975 mt-auto sm:py-12 py-8 z-20 relative'>
             <div className='container mx-auto flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 sm:px-0'>
                 <h1 className='sm:text-4xl text-xl font-medium text-white tracking-widest md:pb-6'>
                     Contact

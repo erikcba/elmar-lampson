@@ -5,6 +5,7 @@ import MenuIcon from '../../components/icons/MenuIcon'
 import divisor1 from '../../assets/divisor-mymusic1.png'
 import divisor2 from '../../assets/divisor-mymusic2.png'
 import TicketsCard from './TicketsCard'
+import Footer from '../../components/Footer'
 
 const Calendar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -15,12 +16,12 @@ const Calendar = () => {
     return (
         <div>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
-            <section className='xl:py-12 py-0'>
+            <section >
                 <div className=' xl:pt-32 pt-0'>
                     <div className='relative px-6 xl:px-0'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>
-                    <div className='relative z-10 px-6 xl:px-0'>
+                    <div className='relative z-10 px-6 md:pb-12 md: pt-24 xl:px-0'>
                         <div className='container flex flex-col md:gap-8 gap-4 mx-auto z-10'>
                             <h1 className='text-sky md:text-5xl text-3xl font-bold'>
                                 Calendar
@@ -46,7 +47,7 @@ const Calendar = () => {
                         <h1 className='font-bold xl:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                             Previous Concerts
                         </h1>
-                        <img className='absolute w-full xl:top-0 top-6 h-14 z-0' src={divisor2} alt="" />
+                        <img className='absolute w-full top-6 h-16 z-0' src={divisor2} alt="" />
                         <div className='flex flex-col container mx-auto 2xl:gap-6 gap-8 2xl:py-12 px-6 xl:px-0'>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
@@ -172,9 +173,10 @@ const Calendar = () => {
                         </div>
                     </div>
                 </div>
-                <img className='absolute w-full xl:top-62 top-8 translate-y-53 h-14 2xl:translate-y-100 z-0' src={divisor1} alt="" />
+                <img className='absolute w-full xl:top-31 top-8 translate-y-53 h-14 2xl:translate-y-100 z-0' src={divisor1} alt="" />
 
             </section>
+            <Footer/>
         </div>
     )
 }

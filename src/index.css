@@ -4,6 +4,7 @@
 
 * {
     scroll-behavior: smooth;
+    scroll-padding-top: 0;
 }
 
 .orbitron {
@@ -20,7 +21,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -100px;
-    height: 120svh;
+    height: 120vh;
 }
 
 .bg-hero-news {
@@ -124,7 +125,6 @@
 .hamburger-menu span {
   display: block;
   height: 4px;
-  background-color: black;
   border-radius: 2px;
   transform-origin: left;
   transition: transform 0.3s ease;

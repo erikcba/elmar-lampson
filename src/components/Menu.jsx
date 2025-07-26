@@ -14,16 +14,17 @@ const Menu = ({ isOpen, toggleMenu }) => {
         const newLang = i18n.language === 'de' ? 'en' : 'de';
         i18n.changeLanguage(newLang)
     }
+
     return (
         <>
             <div
                 className={`
-          fixed top-0 left-0 w-full h-svh z-50 
+          fixed top-0 left-0 w-full h-screen z-50 
           transform transition-transform duration-500 ease-in-out 
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}
         `}
             >
-                <div className="bg-gray-100 overflow-hidden h-svh  ">
+                <div className="bg-gray-100 overflow-hidden h-screen  ">
                     <div className="container mx-auto h-full md:pb-32 md:pt-20 relative md:px-0 px-6">
                         <img src={CloseIcon} alt="" onClick={toggleMenu} className="ml-auto cursor-pointer absolute md:relative right-5 top-13 z-20" />
                         <img className="absolute top-0 left-1/2 md:h-full h-auto md:-translate-x-20 translate-x-18" src={vector2} alt="" />
@@ -57,9 +58,9 @@ const Menu = ({ isOpen, toggleMenu }) => {
                                 <Link to="/calendar">
                                     <li className="text-4xl xl:text-6xl font-bold text-left text-sky cursor-pointer">Calendar</li>
                                 </Link>
-                                <Link to="/contact">
+                                <a href='#contact' onClick={toggleMenu} >
                                     <li className="text-4xl xl:text-6xl font-bold text-left text-sky cursor-pointer">Contact</li>
-                                </Link>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -70,3 +71,4 @@ const Menu = ({ isOpen, toggleMenu }) => {
 }
 
 export default Menu
+
