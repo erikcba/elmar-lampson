@@ -90,7 +90,7 @@ const About = () => {
                     <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                 </div>
             </section>
-            <section className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-4'>
+            <section className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-6'>
                 <img className='md:w-1/2 w-full h-1/2 md:sticky md:top-0 tilt hover:shadow-xl shadow-none' src={img2} alt="" />
                 <div className='md:w-1/2 w-full h-max-fit flex flex-col justify-between items-start pb-5 '>
                     <h1 className='text-6xl font-bold text-sky'>About my work</h1>
@@ -104,19 +104,19 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto xl:py-12 py-0 sm:px-0 px-4'>
+            <section className='container mx-auto xl:py-12 py-6 sm:px-0 px-4'>
                 <div className='bg-elmar md:bg-fixed'></div>
             </section>
-            <section className='container mx-auto py-14 sm:px-0 px-4'>
+            <section className='container mx-auto md:py-8 py-6 xl:px-0 px-6'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start xl:gap-32'>
-                    <div className='flex md:flex-row flex-col items-start justify-start xl:gap-16'>
-                        <div>
+                    <div className='flex lg:flex-row flex-col items-start justify-start xl:gap-16 gap-6 lg:mb-0 mb-6 '>
+                        <div className='w-1/2'>
                             <p className='text-lg font-light'>{t('about12')}</p>
                             <p className='text-lg font-light'>{t('about13')}</p>
                             <p className='text-lg font-light'>{t('about14')}</p>
                             <p className='text-lg font-light'>{t('about15')}</p>
                         </div>
-                        <div>
+                        <div className='w-1/2'>
                             <p className='text-lg font-light'>{t('about16')}</p>
                             <p className='text-xl font-bold pt-8'>{t('about17')}</p>
                             <p className='text-lg font-light'>{t('about18')}</p>
@@ -124,11 +124,11 @@ const About = () => {
                             <p className='text-lg font-light'>{t('about20')}</p>
                         </div>
                     </div>
-                    <div className='flex md:flex-row flex-col md:gap-16 gap-10 md:mt-0 mt-6'>
-                        <div className='md:w-1/2 w-full'>
-                            <img className='tilt shadow-none hover:shadow-xl' src={img3} alt="" />
+                    <div className='flex lg:flex-row flex-col xl:gap-16 gap-6 xl:mt-0 mt-6'>
+                        <div className='lg:w-1/2 w-full'>
+                            <img className='tilt shadow-none hover:shadow-xl md:sticky md:top-0' src={img3} alt="" />
                         </div>
-                        <div className='md:w-1/2 w-full flex flex-col justify-around items-start md:gap-8 gap-4'>
+                        <div className='lg:w-1/2 w-full flex flex-col justify-around items-start md:gap-8 gap-4'>
                             <div>
                                 <p className='text-xl font-bold pb-6'>{t('about21')}</p>
                                 <p className='text-lg font-light pb-6'>{t('about22')}</p>
