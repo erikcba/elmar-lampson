@@ -5,7 +5,7 @@ import NewsComponent from '../components/NewsComponent'
 import Footer from '../components/Footer'
 import vector1 from '../assets/Vector.png'
 import vector2 from '../assets/vector2.png'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import Navbar from '../components/Navbar'
 import img1 from '../assets/img01.png'
 import img2 from '../assets/img02.png'
@@ -19,12 +19,13 @@ import img8 from '../assets/img08.png'
 const News = () => {
 
     const [isOpen, setIsOpen] = useState(false)
-
+    const newsImages = [img1, img2, img3, img4, img5, img6, img7, img8]
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
 
     const { t } = useTranslation()
+    const articles = t('pressArticles', { returnObjects: true });
 
     return (
         <div className='overflow-hidden'>
@@ -45,7 +46,35 @@ const News = () => {
                     <img className='absolute top-5 -left-1/7 -rotate-1 ' src={vector1} alt="" />
                     <img className='absolute top-0 -left-1/12 h-full w-1/12 -translate-x-9' src={vector2} alt="" />
                 </div>
-                <NewsComponent image={img1} title={'The Reviews Are In! '} date={'4.06.2025'} description={<>
+
+                {articles.map((article, index) => (
+                    <div key={index} className="flex xl:flex-row flex-col items-start gap-10 justify-start">
+                        <div className='h-52 w-80 md:shrink-0'>
+                            <img src={newsImages[index % newsImages.length]} alt="" />
+                        </div>
+                        <div className='flex flex-col w-full gap-2'>
+                            <h2 className="font-bold text-xl">{article.title}</h2>
+                            <div className='flex flex-col gap-2'>
+                                <p className='font-bold text-md xl:text-xl text-sky-700'>
+                                    {article.date}
+                                </p>
+                                <p className='font-light text-md xl:text-xl '>
+                                    <Trans i18nKey={article.summary} components={[
+                                        <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                        <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"  />,
+                                        <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"/>,
+                                        <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"/>,
+                                    ]} >
+
+                                    </Trans>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                ))}
+
+                {/* <NewsComponent image={img1} title={'The Reviews Are In! '} date={'4.06.2025'} description={<>
                     The premiere of Elmar Lampson’s newest opera, Wellen, was warmly received by both critics and audiences. Reviewers praised the “iridescent score” (Andreas Schnell, Kreiszeitung{" "}
                     <a href="https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words ">
                         https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html
@@ -120,7 +149,7 @@ const News = () => {
                             https://www.zeit.de/2003/26/P-Lampson
                         </a>
                     </>
-                } />
+                } /> */}
             </section>
             <Footer />
         </div>

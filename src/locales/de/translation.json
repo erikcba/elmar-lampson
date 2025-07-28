@@ -1,6 +1,6 @@
 {
     "language": "EN",
-    "about1": "Elmar Lampson wurde in Koblenz geboren und ist ein renommierter Komponist, Dirigent und Musikpädagoge. Er studierte Komposition, Musiktheorie und Violine an den Musikhochschulen in Hannover und Würzburg. Er ist Ehrenpräsident der Hochschule für Musik und Theater Hamburg, deren Präsident er 18 Jahre lang war. Derzeit ist Lampson Composer in Residence beim Shenzhen Symphony Orchestra.",
+    "about1": "Geboren in Koblenz, Deutschland, ist Elmar Lampson ein renommierter Komponist, Dirigent und Musikpädagoge. Er studierte Komposition, Musiktheorie und Violine an den Musikhochschulen in Hannover und Würzburg. Er ist Ehrenpräsident der Hochschule für Musik und Theater Hamburg, wo er 18 Jahre lang Präsident war. Derzeit ist Lampson Komponist in Residence beim Shenzhen Symphony Orchestra.",
     "about2": "Lampson hat eine beeindruckende internationale Karriere als Komponist und Dirigent aufgebaut und trat auf Festivals und Konzerttourneen in Deutschland und Osteuropa auf. Seine Werke wurden bei großen Labels wie Sony Classical und col legno veröffentlicht. 1993 dirigierte er Werke von Alfred Schnittke mit der Orchesterakademie Hamburg, mit Irina Schnittke und Mark Lubotsky. Seine Kompositionen umfassen verschiedene Genres, darunter Chormusik, Orchestermusik, Kammermusik und Oper.",
     "about3": "Als bedeutende Figur der zeitgenössischen Musik war er Mitbegründer des Festivals „Hörwelten“, das von 1989 bis 1998 jährlich stattfand. Er leitete 15 Jahre lang die Orchesterakademie Hamburg. An der Universität Witten/Herdecke lehrte er Musikphänomenologie und war bis 2004 Dekan der Fakultät für Grundlagenstudien. Im Laufe seiner Karriere arbeitete Lampson mit zahlreichen renommierten Komponisten zusammen, darunter György Ligeti, Sofia Gubaidulina, Arvo Pärt und Alfred Schnittke.",
     "about4": "2011 wurde Lampson mit dem Dr. Günther Buch-Preis für Kulturwissenschaften ausgezeichnet. Seine Lehrphilosophie betont die Bedeutung von Musik als kulturelles und gesellschaftliches Instrument. 2016 wurde ihm vom Shanghai Conservatory of Music eine Ehrenprofessur für Komposition verliehen. 2023 erhielt er den „Gustaf-Gründgens-Preis“ in Hamburg und 2024 den „Hsiao You-Mei“-Preis.",
@@ -26,5 +26,66 @@
     "about24": "Wo Grenzen und Normen sich auflösen",
     "about25": "Meine Musik spielt mit der Autonomie musikalischer Elemente und folgt ihr bis in die Bereiche der Mikrotonalität der Obertöne, wo das westliche Tonsystem vollständig zerfällt. Als eigenständige Elemente unterscheiden sich Töne und Geräusche nur graduell voneinander, und in der Kontingenz der Klänge lösen sich alle Grenzen und Normen auf. Doch auch Tonsysteme lassen sich rekonstruieren – sie erscheinen dann schlicht und unverziert, einfach als das, was sie sind. Eine Kadenz, ein Intervall, eine Geste aus chromatischem Material, eine pentatonische oder modale Skala nimmt eine neue Form an und schafft einen einzigartig zeitgenössischen Kontext – nur um sich wieder in Glissandi, Geräusche oder Klangfarben aufzulösen, aus denen sich erneut Formen, Übergänge und bedeutungsvolle Strukturen bilden können.",
     "about26": "Für mich ist ein solch differenziertes Hören im „Jetzt“ der autonomen Elemente eine intensive Form der Spiritualität. Diese Art des Hörens löst Automatismen in den Hörgewohnheiten auf. Alles kann frisch und neu klingen – oder auch flach, ambivalent und hohl. Die Suche nach sinnvollen, ausdrucksstarken, selbstidentischen Formen an dieser Grenze kann zu einem Prozess der Selbsterkenntnis führen – ein Drahtseilakt, aus dem es kein Zurück in alte Normen gibt und in dem neue Heilsversprechen keine Gültigkeit haben.",
-    "about27": ""
+    "composer": "Komponist",
+    "waves1": "Zu",
+    "waves2": "»Wellen«",
+    "waves3": "„hat Passagen von überirdischer Schönheit“ ",
+    "waves4": "(Wolfgang Denker, Der Opernfreund)",
+    "waves5": "eine „schillernde Partitur“ ",
+    "waves6": "(Andreas Schnell, Kreiszeitung)",
+    "waves7": "„Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen: mitreißend die an beiden Seiten postierten Schlagzeugformationen“ ",
+    "waves8": "(Ute Schalz-Laurenze, Neue Musikzeitung).",
+    "pressArticles": [
+        {
+            "title": "Die Kritiken sind da!",
+            "date": "4.06.2025",
+            "summary": "Die Premiere von Elmar Lampsons neuester Oper Wellen wurde sowohl von Kritikern als auch vom Publikum warm aufgenommen. Rezensenten lobten die „schillernde Partitur“ (Andreas Schnell, Kreiszeitung <0>https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html</0>) mit „Passagen von überirdischer Schönheit“ (Wolfgang Denker, Der Opernfreund <1>https://deropernfreund.de/theater-bremen/bremen-wellen-elmar-lampson/</1>). „Die Musik von Elmar Lampson bleibt immer im Fluss und trägt … die Handlung“ (Christine Gorny, Bremen Zwei, <2>https://www.bremenzwei.de/themen/oper-wellen-theater-bremen-100.html</2>) — „Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen. Mitreißend die an beiden Seiten postierten Schlagzeugformationen“ (Ute Schalz-Laurenze, Neue Musikzeitung). Die Oper wird im Theater Bremen noch bis zum 18. Juni aufgeführt — sichern Sie sich hier Ihre Tickets, damit Sie es nicht verpassen! <3>https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events</3>",
+            "link1": "https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html",
+            "link2": "https://deropernfreund.de/theater-bremen/bremen-wellen-elmar-lampson/",
+            "link3": "https://www.bremenzwei.de/themen/oper-wellen-theater-bremen-100.html",
+            "link4": "https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events"
+        },
+        {
+            "title": "Für Elmar Lampson fühlt sich das Komponieren nicht wie Arbeit an",
+            "date": "23.05.2025",
+            "summary": "Der Komponist spricht in einem exklusiven Interview mit Bremen Zwei über seine neueste Oper. <0>Zum Interview</0> ",
+            "link1": "https://www.bremenzwei.de/audios/elmar-lampson-komponist-wellen-oper-theater-bremen-100.html"
+        },
+        {
+            "title": "Wellen feiert Uraufführung am Theater Bremen",
+            "date": "20.05.2025",
+            "summary": "Elmar Lampsons neue Oper, mit einem Libretto von Julia Spinola nach dem Roman von Eduard von Keyserling, feiert Premiere im Theater am Goetheplatz in Bremen – dem Auftraggeber des Werks. Die Inszenierung unter der Regie von Philipp Rosendahl und der musikalischen Leitung von Yoel Gamzou läuft vom 24. Mai bis zum 18. Juni. Wellen spielt in einem Ostseebad am Vorabend des Ersten Weltkriegs und beleuchtet den Zusammenbruch utopischer Ideale durch Keyserlings ironische Gesellschaftskritik. <0>Zum Programm auf der Website des Theater Bremen.</0></0>",
+            "link1": "https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events"
+        },
+        {
+            "title": "SZSO bringt neues Werk von Elmar Lampson zur Uraufführung",
+            "date": "23.10.2024",
+            "summary": "Das Shenzhen Symphony Orchestra unter der Leitung von Lin Daye bringt Elmar Lampsons „Stormy Sea No. 2“ im Shenzhen Concert Hall zur Uraufführung. Diese neue Sinfonie wurde vom Orchester in Auftrag gegeben und folgt auf den ersten Teil „Stormy Sea“, der im Dezember 2023 debütierte. Während das ursprüngliche Werk die rohe Kraft des Ozeans einfing, widmet sich die Fortsetzung den introspektiven Gefühlen von Strandbesuchern bei Sonnenaufgang. <0>Zur Meldung</0>",
+            "link1": "https://www.eyeshenzhen.com/content/2024-10/23/content_31290169.htm"
+        },
+        {
+            "title": "Präsident der HfMT Hamburg feierlich verabschiedet",
+            "date": "4.10.2022",
+            "summary": "Professor Elmar Lampson wurde in einer feierlichen Zeremonie für seine 18-jährige Amtszeit als Präsident der Hochschule für Musik und Theater Hamburg (HfMT) geehrt. Unter seiner Leitung seit 2004 erlebte die Hochschule tiefgreifende Veränderungen, darunter die Gründung der JazzHall und neue Einrichtungen für die Theaterakademie sowie das Institut für Kultur- und Medienmanagement. Die Abschiedsfeier umfasste Beiträge prominenter Persönlichkeiten wie Kent Nagano und die Uraufführung eines eigens komponierten Harfenkonzerts. <0>Zur Nachricht auf MIZ</0>",
+            "link1": "https://miz.org/de/nachrichten/praesident-der-hfmt-hamburg-elmar-lampson-wurde-feierlich-verabschiedet"
+        },
+        {
+            "title": "Hochschule für Musik und Theater Hamburg eröffnet modernisierten Campus",
+            "date": "15.10.2017",
+            "summary": "Elmar Lampson spricht über die Wiedereröffnung des modernisierten Campus der Hochschule für Musik und Theater Hamburg. Dabei hebt er neue Initiativen wie das Projekt „Stage_2.0: Alsterphilharmonie“ hervor, das auf die Entwicklung interaktiver Bühnenräume und internationaler Kooperationen abzielt, um die Hochschule als führende Institution für innovative Musik- und Theaterausbildung zu positionieren. <0>Zum Artikel in Die Welt</0>",
+            "link1": "https://www.welt.de/regionales/hamburg/article169646409/Das-groesste-kulturelle-Ereignis-seit-Eroeffnung-der-Elbphilharmonie.html"
+        },
+        {
+            "title": "HfMT Hamburg und Konservatorium in Peking schließen Partnerschaft",
+            "date": "30.04.2013",
+            "summary": "Die Hochschule für Musik und Theater Hamburg (HfMT) hat ein Kooperationsabkommen mit dem Central Conservatory of Music in Peking geschlossen. Die Partnerschaft, die von den Präsidenten Elmar Lampson und Wang Cizhao im Hamburger Rathaus unterzeichnet wurde, umfasst Studierenden- und Dozierendenaustausch, gegenseitige Anerkennung von Studienleistungen sowie gemeinsame Projekte. <0>Zur Pressemitteilung.</0>",
+            "link1": "https://www.musik-heute.de/4932/hfmt-hamburg-kooperiert-mit-musikhochschule-peking/"
+        },
+        {
+            "title": "„Wie klingt eine Untertasse?“",
+            "date": "18.06.2003",
+            "summary": "Elmar Lampsons innovativer Zugang zur Musikpädagogik wurde in Die Zeit porträtiert. Professor Lampson fordert seine Studierenden dazu auf, ihre Hörwahrnehmung neu zu denken – und setzt dabei auch unkonventionelle Mittel wie eine Kantinen-Untertasse ein. Seine Methoden spiegeln sein dauerhaftes Engagement für ein erfahrungsorientiertes und philosophisches Musikverständnis wider. <0>Zum vollständigen Interview in Die Zeit</0>",
+            "link1": "https://www.zeit.de/2003/26/P-Lampson"
+        }
+    ]
 }

@@ -135,7 +135,7 @@ const Home = () => {
                   The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
                 </p>
                 <Link to="/myMusic" className='flex flex-row text-xl font-normal relative group bounce-x-hover z-20'>
-                  <span className='group-hover:scale-105 transition-all ease-in-out '>
+                  <span className='group-hover:scale-105 text-2xl transition-all ease-in-out '>
                     Complete catalogue <br /> of works
                   </span>
                   <img src={arrowRight} alt="" className='w-fit h-fit self-end absolute left-1/2 bottom-1/12 bounce-x transition-all ease-in-out' />
@@ -143,7 +143,7 @@ const Home = () => {
               </div>
             </div>
             <div className='flex xl:flex-row flex-col items-center xl:self-end relative  xl:w-auto w-full'>
-              <Link to={"/media"} target='_blank' className='absolute xl:block hidden -left-1/8 cursor-pointer bounce-x-hover group'>
+              <Link to={"/media"} target='_blank' className='absolute xl:block hidden -left-1/8 cursor-pointer bounce-x-hover group z-20'>
                 <p className='text-2xl font-normal group-hover:scale-105 transition-all ease-in-out'>
                   Listen now <br />
                   on your <br />
@@ -156,7 +156,7 @@ const Home = () => {
                 <div className='xl:hidden flex flex-col items-center justify-between gap-4 w-3/4 mx-auto relative'>
                   <img src={album1Mobile} alt="" className='w-full h-fit z-20' />
                   <img src={album2Mobile} alt="" className='w-full h-fit z-20' />
-                  <Link to={"/media"} target='_blank'className='relative self-start cursor-pointer bounce-x-hover group '>
+                  <Link to={"/media"} target='_blank'className='relative self-start cursor-pointer bounce-x-hover group z-20'>
                     <p className='text-2xl font-normal group-hover:scale-105 transition-all ease-in-out '>
                       Listen now <br />
                       on your <br />

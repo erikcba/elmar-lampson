@@ -43,8 +43,8 @@ const Calendar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='md:py-6 py-12 relative'>
-                        <h1 className='font-bold xl:text-3xl text-2xl z-10 relative container mx-auto mb-4 px-6 xl:px-0'>
+                    <div className='md:py-6 2xl:py-10 py-12 relative'>
+                        <h1 className='font-bold xl:text-3xl 2xl:text-4xl text-2xl z-10 relative container mx-auto mb-4 px-6 xl:px-0'>
                             Previous Concerts
                         </h1>
                         <img className='absolute w-full sm:-top-1 top-5 xl:h-fit h-16 z-0' src={divisor2} alt="" />

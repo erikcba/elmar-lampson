@@ -37,8 +37,8 @@ const About = () => {
             <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-0 relative'>
                 <div className='w-2/5 self-baseline'>
                     <h1 className='ml-auto w-fit text-sky text-5xl font-bold'>
-                        <span>On </span>
-                        <span className='italic'>Waves</span>
+                        <span>{t('waves1')} </span>
+                        <span className='italic'> {t('waves2')}</span>
                     </h1>
                 </div>
                 <div className='absolute xl:left-4/11 right-1/3 xl:-translate-x-2  top-8 xl:top-12'>
@@ -47,27 +47,26 @@ const About = () => {
                 <div className='xl:w-3/5 w-full flex flex-col gap-6'>
                     <div >
                         <p className='font-semibold text-xl xl:text-2xl'>
-                            “contains passages of unearthly beauty”
+                            {t('waves3')}
                         </p>
                         <p className="text-xl xl:text-2xl">
-                            (Wolfgang Denker, Der Opernfreund)
+                            {t('waves4')}
                         </p>
                     </div>
                     <div>
                         <p className='font-semibold text-xl xl:text-2xl'>
-                            an “iridescent score”
+                            {t('waves5')}
                         </p>
                         <p className="text-xl xl:text-2xl">
-                            (Andreas Schnell, Kreiszeitung)
+                            {t('waves6')}
                         </p>
                     </div>
                     <div>
                         <p className='font-semibold text-xl xl:text-2xl'>
-                            "Lampson’s music holds nothing back: it moves between wild and tender, between major and minor, with numerous pentatonic touches and hugely demanding ensemble sections... it repeatedly manages to create completely unexpected constellations and confrontations. The percussion formations positioned on both sides of the stage are thrilling."
-
+                            {t('waves7')}
                         </p>
                         <p className="text-xl xl:text-2xl">
-                            (Ute Schalz-Laurenze, Neue Musikzeitung)
+                            {t('waves8')}
                         </p>
                     </div>
                 </div>
@@ -80,7 +79,7 @@ const About = () => {
                 />
                 <div className='md:w-1/2 w-full flex flex-col justify-between items-start pb-5'>
                     <h1 className='text-6xl font-bold text-sky'>About</h1>
-                    <p className='text-xl font-bold py-4'>Composer</p>
+                    <p className='text-xl font-bold py-4'>{t('composer')}</p>
                     <p className='text-lg font-light'>{t('about1')}</p>
                     <p className='text-lg font-light'>{t('about2')}</p>
                     <p className='text-lg font-light'>{t('about3')}</p>
@@ -110,13 +109,13 @@ const About = () => {
             <section className='container mx-auto md:py-8 py-6 xl:px-0 px-6'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start xl:gap-32'>
                     <div className='flex lg:flex-row flex-col items-start justify-start xl:gap-16 gap-6 lg:mb-0 mb-6 '>
-                        <div className='w-1/2'>
+                        <div className='lg:w-1/2 w-full'>
                             <p className='text-lg font-light'>{t('about12')}</p>
                             <p className='text-lg font-light'>{t('about13')}</p>
                             <p className='text-lg font-light'>{t('about14')}</p>
                             <p className='text-lg font-light'>{t('about15')}</p>
                         </div>
-                        <div className='w-1/2'>
+                        <div className='lg:w-1/2 w-full'>
                             <p className='text-lg font-light'>{t('about16')}</p>
                             <p className='text-xl font-bold pt-8'>{t('about17')}</p>
                             <p className='text-lg font-light'>{t('about18')}</p>
