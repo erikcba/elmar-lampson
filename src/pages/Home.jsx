@@ -49,9 +49,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id='news' className='bg-gray-100' >
-        <div className='bg-news bg-news-mobile xl:px-0 px-6 xl:pt-32 pt-12'>
-          <div className='container flex xl:flex-row flex-col justify-start mx-auto pl-0 xl:pl-12'>
+      <section  id='news' className='bg-gray-100' >
+        <div className='bg-news bg-news-mobile xl:px-0 px-6 xl:pt-32 pt-12 '>
+          <div data-aos="fade-up" className='container flex xl:flex-row flex-col justify-start mx-auto pl-0 xl:pl-12'>
             <div className="relative w-3xs">
               <h1 className='bg-fuchsia-975-80 zilla-slab-regular flex items-center justify-center w-fit h-fit text-gray-300 xl:pb-2 xl:pt-2 py-1 xl:pl-10 pl-4 font-normal xl:text-6xl text-3xl relative z-10'>
                 News
@@ -87,10 +87,10 @@ const Home = () => {
                     <img src={vector1} alt="" className='sm:block hidden absolute  xl:-top-1/5 xl:left-1/6 left-2/8 opacity-65 z-10' />
                     <img src={vector2} alt="" className='sm:block hidden absolute  xl:-top-1/5 xl:left-1/7 left-1/5 opacity-65 z-10' />
                   </div>
-                  <h1 className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl xl:ml-16 w-fit pl-4 xl:pt-3 pr-2 xl:pb-2 py-1 z-10'>
+                  <h1 data-aos="fade-up"  className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl xl:ml-16 w-fit pl-4 xl:pt-3 pr-2 xl:pb-2 py-1 z-10'>
                     About
                   </h1>
-                  <p className='md:text-3xl text-xl font-light z-20'>
+                  <p data-aos="fade-up"  className='md:text-3xl text-xl font-light z-20'>
                     Born in Koblenz, Germany, Elmar Lampson is a renowned
                     composer, conductor, and music educator.
                   </p>
@@ -104,7 +104,7 @@ const Home = () => {
                   </Link>
                 </div>
               </div>
-              <div className='tilt xl:w-1/2 w-full xl:h-[870px] h-[600px] overflow-hidden xl:py-24 py-0 xl:px-12 px-0 z-10'>
+              <div data-aos="fade-left"  className='tilt xl:w-1/2 w-full xl:h-[870px] h-[600px] overflow-hidden xl:py-24 py-0 xl:px-12 px-0 z-30'>
                 <img className='w-full object-cover scale-140 xl:-translate-y-70 -translate-y-30 xl:-translate-x-20 -translate-x-0' src={aboutHomeImg} alt="" />
               </div>
             </div>
@@ -116,22 +116,21 @@ const Home = () => {
         <section id="myMusic" className="py-12 bg-gray-100">
           <div className='container mx-auto flex flex-col justify-center items-center gap-10'>
             <div className='flex lg:flex-row px-6 xl:px-0 flex-col-reverse justify-center items-center gap-10'>
-              <div className='tilt w-full lg:w-1/2  overflow-hidden'>
+              <div data-aos="fade-right"  className='tilt w-full lg:w-1/2  overflow-hidden'>
                 <img src={myMusic} alt="" className='object-cover xl:h-[687px] md:h-[500px] h-[350px] scale-140 z-0' />
               </div>
               <div className='lg:w-1/2 w-full flex flex-col items-start justify-center gap-10'>
-                <div className='flex flex-col gap-1 relative md:ml-24 xl:ml-32'>
+                <div data-aos="fade-up"  className='flex flex-col gap-1 relative md:ml-24 xl:ml-32'>
                   <h1 className='bg-fuchsia-975 text-gray-100 zilla-slab-regular font-normal text-4xl xl:text-6xl w-fit py-2 pr-6 leading-none z-10'>
                     My
                   </h1>
                   <div className='md:h-24 h-16 w-24 bg-sky-200/30 z-0 absolute md:top-1/4 md:-left-1/4 left-1/2 top-1/3 '>
-
                   </div>
                   <h1 className='bg-fuchsia-975 text-gray-100 zilla-slab-regular font-normal text-4xl xl:text-6xl w-fit py-2 px-4 ml-6 leading-none z-10'>
                     Music
                   </h1>
                 </div>
-                <p className='md:text-3xl text-xl font-light w-full z-20'>
+                <p data-aos="fade-up"  className='md:text-3xl text-xl font-light w-full z-20'>
                   The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
                 </p>
                 <Link to="/myMusic" className='flex flex-row text-xl font-normal relative group bounce-x-hover z-20'>
@@ -169,8 +168,8 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='flex'>
-          <img src={imgMusic} alt="" className='z-20' />
+        <section   className='flex'>
+          <img data-aos="fade-up" src={imgMusic} alt="" className='z-20' />
         </section>
         <section id='media' className='py-12 bg-gray-100 z-20 relative'>
           <div className='container mx-auto flex flex-col justify-center items-center gap-10 px-6 xl:px-0'>

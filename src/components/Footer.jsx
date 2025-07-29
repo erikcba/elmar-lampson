@@ -9,10 +9,10 @@ const Footer = () => {
     return (
         <footer id='contact' className='bg-fuchsia-975 mt-auto sm:py-12 py-8 z-20 relative'>
             <div className='container mx-auto flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-0'>
-                <h1 className='sm:text-4xl text-xl font-medium text-white tracking-widest md:pb-6'>
+                <h1 className='sm:text-4xl text-xl font-medium text-white mx-auto lg:mx-0 tracking-widest md:pb-6'>
                     Contact
                 </h1>
-                <div className='flex sm:flex-row flex-col w-full justify-between sm:items-start items-center  sm:gap-8 gap-10'>
+                <div className='flex lg:flex-row flex-col w-full justify-between lg:items-start items-center  lg:gap-8 gap-10'>
                     <div className='flex items-center justify-center'>
                         <img className='sm:w-full w-2/3' src={tybLogo} alt="" />
                     </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                     <div className='relative px-12 sm:pb-0 pb-16'>
                         <img src={logoSky} alt="" />
-                        <div className='flex flex-row items-center gap-2 pt-4 h-fit absolute sm:top-5 bottom-0 right-1/4 sm:right-0'>
+                        <div className='flex flex-row items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit absolute bottom-0 right-1/4 sm:top-5 sm:right-0 md:top-5 md:right-5 lg:top-0 lg:right-0 xl:top-5'>
                             <a href="https://www.instagram.com/elmarlampson/" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
                                <img src={instagram} alt="" />
                             </a>

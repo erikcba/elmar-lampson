@@ -81,8 +81,9 @@ body::selection {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: rgb(121, 23, 159) !important;
+  color: #93278F !important;
 }
+
 
 @keyframes bounce-x {
 

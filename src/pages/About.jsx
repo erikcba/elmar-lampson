@@ -71,7 +71,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <section className='flex md:flex-row relative flex-col container mx-auto pt-12 xl:gap-16 gap-12 xl:px-0 px-4'>
+            <section data-aos="fade-up" className='flex md:flex-row relative flex-col container mx-auto pt-12 xl:gap-16 gap-12 xl:px-0 px-4'>
                 <img
                     className='md:w-1/2 w-full h-1/2 md:sticky md:top-0 tilt hover:shadow-xl shadow-none'
                     src={img1}
@@ -89,7 +89,7 @@ const About = () => {
                     <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                 </div>
             </section>
-            <section className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-6'>
+            <section data-aos="fade-up" className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-6'>
                 <img className='md:w-1/2 w-full h-1/2 md:sticky md:top-0 tilt hover:shadow-xl shadow-none' src={img2} alt="" />
                 <div className='md:w-1/2 w-full h-max-fit flex flex-col justify-between items-start pb-5 '>
                     <h1 className='text-6xl font-bold text-sky'>About my work</h1>

@@ -14,25 +14,27 @@ import img5 from '../assets/carrusel/foto05.png'
 
 function CarouselHome() {
     return (
-        <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation
-            pagination={false}
-            scrollbar={{ draggable: true }}
-            className="w-full h-full" 
-        >
-            {[img1, img2, img3, img4, img5].map((img, index) => (
-                <SwiperSlide key={index} className="flex items-center justify-center">
-                    <img
-                        src={img}
-                        alt={`Slide ${index + 1}`}
-                        className="object-cover w-full h-full shadow-md"
-                    />
-                </SwiperSlide>
-            ))}
-        </Swiper>
+        <div className="relative w-full h-full overflow-visible">
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={20}
+                slidesPerView={1}
+                navigation
+                pagination={false}
+                scrollbar={{ draggable: true }}
+                className="w-full h-full"
+            >
+                {[img1, img2, img3, img4, img5].map((img, index) => (
+                    <SwiperSlide key={index} className="flex items-center justify-center">
+                        <img
+                            src={img}
+                            alt={`Slide ${index + 1}`}
+                            className="object-cover w-full md:w-10/12 lg:w-11/12 mx-auto h-full shadow-md"
+                        />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
 
     );
 }
