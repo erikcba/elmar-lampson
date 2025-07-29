@@ -47,7 +47,7 @@ const MyMusic = () => {
                         </p>
                     </div>
                 </div>
-                <div className='md:py-12 py-6 relative'>
+                <div data-aos="fade-up" className='md:py-12 py-6 relative'>
                     <h1 className='font-bold md:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                         Orchestal Works
                     </h1>
@@ -61,7 +61,7 @@ const MyMusic = () => {
                                     </h1>
                                     <div className='flex flex-col'>
                                         {item.integrantes.map((nombre, idx) => (
-                                            <p key={idx} className='text-base'>
+                                            <p key={idx} className='text-md'>
                                                 {nombre}
                                             </p>
                                         ))}
@@ -71,7 +71,7 @@ const MyMusic = () => {
                         }
                     </div>
                 </div>
-                <div className='sm:py-12 py-6 relative'>
+                <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
                     <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                         Chamber Music and Solo Works
                     </h1>
@@ -83,7 +83,7 @@ const MyMusic = () => {
                                     <h1 className="font-bold text-lg">{item.titulo}</h1>
                                     <div className="flex flex-col">
                                         {item.integrantes.map((nombre, idx) => (
-                                            <p key={idx} className="text-base">{nombre}</p>
+                                            <p key={idx} className="text-md">{nombre}</p>
                                         ))}
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ const MyMusic = () => {
                                     <h1 className="font-bold text-lg">{item.titulo}</h1>
                                     <div className="flex flex-col">
                                         {item.integrantes.map((nombre, idx) => (
-                                            <p key={idx} className="text-base">{nombre}</p>
+                                            <p key={idx} className="text-md">{nombre}</p>
                                         ))}
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ const MyMusic = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sm:py-12 py-6 relative'>
+                <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
                     <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                         Vocal Music
                     </h1>
@@ -117,7 +117,7 @@ const MyMusic = () => {
                                     </h1>
                                     <div className='flex flex-col'>
                                         {item.integrantes.map((nombre, idx) => (
-                                            <p key={idx} className='text-base'>
+                                            <p key={idx} className='text-md'>
                                                 {nombre}
                                             </p>
                                         ))}
@@ -127,12 +127,12 @@ const MyMusic = () => {
                         }
                     </div>
                 </div>
-                <div className='sm:py-12 py-6 relative'>
+                <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
                     <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                         Music Theatre and Opera
                     </h1>
                     <img className='absolute w-full md:top-6 h-12 sm:h-16 2xl:top-0 top-2 2xl:translate-y-6 z-0' src={divisor2} alt="" />
-                    <div className='flex flex-col sm:flex-wrap 2xl:h-[700px] container mx-auto 2xl:gap-6 gap-4 sm:py-12 pt-6 px-6 xl:px-0'>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 2xl:h-[700px] container mx-auto 2xl:gap-0 gap-4 sm:py-12 pt-6 px-6 xl:px-0'>
                         {
                             data.musicTheatreAndOpera.map((item, index) => (
                                 <div key={index} className='flex flex-col sm:gap-1'>
@@ -141,7 +141,7 @@ const MyMusic = () => {
                                     </h1>
                                     <div className='flex flex-col'>
                                         {item.integrantes.map((nombre, idx) => (
-                                            <p key={idx} className='text-base'>
+                                            <p key={idx} className='text-md'>
                                                 {nombre}
                                             </p>
                                         ))}
@@ -151,7 +151,7 @@ const MyMusic = () => {
                         }
                     </div>
                 </div>
-                <div className='sm:py-12 py-6 relative'>
+                <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
                     <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
                         Writings
                     </h1>
@@ -161,7 +161,7 @@ const MyMusic = () => {
                             data.writings.map((item, index) => (
                                 <div key={index} className='flex flex-col sm:w-2/3 w-full '>
                                     <div className='flex flex-col'>
-                                        <p key={index} className='text-base'>
+                                        <p key={index} className='text-md'>
                                             {item}
                                         </p>
                                     </div>
@@ -172,7 +172,7 @@ const MyMusic = () => {
                 </div>
             </section>
             <section className='bg-gray-200 py-12'>
-                <div className='container mx-auto flex flex-col xl:px-0 px-6'>
+                <div data-aos="fade-up" className='container mx-auto flex flex-col xl:px-0 px-6'>
                     <div className='flex flex-col gap-4'>
                         <h1 className='font-bold text-3xl'>
                             CD Recordings

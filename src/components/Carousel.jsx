@@ -14,7 +14,7 @@ import img5 from '../assets/carrusel/foto05.png'
 
 function CarouselHome() {
     return (
-        <div className="relative w-full h-full overflow-visible">
+        <div data-aos="fade-left" className="relative w-full h-full overflow-visible">
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={20}

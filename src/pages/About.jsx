@@ -80,12 +80,12 @@ const About = () => {
                 <div className='md:w-1/2 w-full flex flex-col justify-between items-start pb-5'>
                     <h1 className='text-6xl font-bold text-sky'>About</h1>
                     <p className='text-xl font-bold py-4'>{t('composer')}</p>
-                    <p className='text-lg font-light'>{t('about1')}</p>
-                    <p className='text-lg font-light'>{t('about2')}</p>
-                    <p className='text-lg font-light'>{t('about3')}</p>
-                    <p className='text-lg font-light'>{t('about4')}</p>
-                    <p className='text-lg font-light'>{t('about5')}</p>
-                    <p className='text-lg font-light'>{t('about6')}</p>
+                    <p className='sm:text-lg text-md font-light'>{t('about1')}</p>
+                    <p className='sm:text-lg text-md font-light'>{t('about2')}</p>
+                    <p className='sm:text-lg text-md font-light'>{t('about3')}</p>
+                    <p className='sm:text-lg text-md font-light'>{t('about4')}</p>
+                    <p className='sm:text-lg text-md font-light'>{t('about5')}</p>
+                    <p className='sm:text-lg text-md font-light'>{t('about6')}</p>
                     <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                 </div>
             </section>
@@ -95,10 +95,10 @@ const About = () => {
                     <h1 className='text-6xl font-bold text-sky'>About my work</h1>
                     <p className='text-xl font-bold py-6'>{t('about7')}</p>
                     <div className='flex flex-col justify-between h-full pb-10'>
-                        <p className='text-lg font-light'>{t('about8')}</p>
-                        <p className='text-lg font-light'>{t('about9')}</p>
-                        <p className='text-lg font-light'>{t('about10')}</p>
-                        <p className='text-lg font-light'>{t('about11')}</p>
+                        <p className='sm:text-lg text-md font-light'>{t('about8')}</p>
+                        <p className='sm:text-lg text-md font-light'>{t('about9')}</p>
+                        <p className='sm:text-lg text-md font-light'>{t('about10')}</p>
+                        <p className='sm:text-lg text-md font-light'>{t('about11')}</p>
                         <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                     </div>
                 </div>
@@ -108,36 +108,36 @@ const About = () => {
             </section>
             <section className='container mx-auto md:py-8 py-6 xl:px-0 px-6'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start xl:gap-32'>
-                    <div className='flex lg:flex-row flex-col items-start justify-start xl:gap-16 gap-6 lg:mb-0 mb-6 '>
+                    <div data-aos="fade-up" className='flex lg:flex-row flex-col items-start justify-start xl:gap-16 gap-6 lg:mb-0 mb-6 '>
                         <div className='lg:w-1/2 w-full'>
-                            <p className='text-lg font-light'>{t('about12')}</p>
-                            <p className='text-lg font-light'>{t('about13')}</p>
-                            <p className='text-lg font-light'>{t('about14')}</p>
-                            <p className='text-lg font-light'>{t('about15')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about12')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about13')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about14')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about15')}</p>
                         </div>
                         <div className='lg:w-1/2 w-full'>
-                            <p className='text-lg font-light'>{t('about16')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about16')}</p>
                             <p className='text-xl font-bold pt-8'>{t('about17')}</p>
-                            <p className='text-lg font-light'>{t('about18')}</p>
-                            <p className='text-lg font-light'>{t('about19')}</p>
-                            <p className='text-lg font-light'>{t('about20')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about18')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about19')}</p>
+                            <p className='sm:text-lg text-md font-light'>{t('about20')}</p>
                         </div>
                     </div>
-                    <div className='flex lg:flex-row flex-col xl:gap-16 gap-6 xl:mt-0 mt-6'>
+                    <div data-aos="fade-up" className='flex lg:flex-row flex-col xl:gap-16 gap-6 xl:mt-0 mt-6'>
                         <div className='lg:w-1/2 w-full'>
                             <img className='tilt shadow-none hover:shadow-xl md:sticky md:top-0' src={img3} alt="" />
                         </div>
                         <div className='lg:w-1/2 w-full flex flex-col justify-around items-start md:gap-8 gap-4'>
                             <div>
                                 <p className='text-xl font-bold pb-6'>{t('about21')}</p>
-                                <p className='text-lg font-light pb-6'>{t('about22')}</p>
-                                <p className='text-lg font-light'>{t('about23')}</p>
+                                <p className='sm:text-lg text-md font-light pb-6'>{t('about22')}</p>
+                                <p className='sm:text-lg text-md font-light'>{t('about23')}</p>
                             </div>
                             <div>
                                 <p className='text-xl font-bold pb-6'>{t('about24')}</p>
-                                <p className='text-lg font-light'>{t('about25')}</p>
-                                <p className='text-lg font-light'>{t('about26')}</p>
-                                <p className='text-lg font-light'>{t('about27')}</p>
+                                <p className='sm:text-lg text-md font-light'>{t('about25')}</p>
+                                <p className='sm:text-lg text-md font-light'>{t('about26')}</p>
+                                <p className='sm:text-lg text-md font-light'>{t('about27')}</p>
                                 <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                             </div>
                         </div>
