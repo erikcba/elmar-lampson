@@ -33,7 +33,7 @@ const MyMusic = () => {
     return (
         <div className=''>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
-            <section className='xl:px-0 xl:pt-32'>
+            <section className='xl:px-0 xl:pt-16 2xl:pt-32'>
                 <div className='container mx-auto'>
                     <div className='relative container mx-auto px-6 xl:px-0'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />

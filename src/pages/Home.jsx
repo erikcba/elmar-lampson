@@ -62,7 +62,7 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <p className='font-bold xl:text-3xl text-xl xl:w-1/3 w-full text-fuchsia-975 xl:ml-4 ml-0 xl:mt-0 mt-6'>
+            <p className='font-bold xl:text-2xl 2xl:text-3xl text-xl xl:w-1/3 w-full text-fuchsia-975 xl:ml-4 ml-0 xl:mt-0 mt-6'>
               Waves <br />
               A new opera by Elmar Lampson
               with a libretto by Julia Spinola after
@@ -90,7 +90,7 @@ const Home = () => {
                   <h1 data-aos="fade-up"  className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl xl:ml-16 w-fit pl-4 xl:pt-3 pr-2 xl:pb-2 py-1 z-10'>
                     About
                   </h1>
-                  <p data-aos="fade-up"  className='md:text-3xl text-xl font-light z-20'>
+                  <p data-aos="fade-up"  className='xl:text-2xl 2xl:text-3xl text-xl font-light z-20'>
                     Born in Koblenz, Germany, Elmar Lampson is a renowned
                     composer, conductor, and music educator.
                   </p>
@@ -130,7 +130,7 @@ const Home = () => {
                     Music
                   </h1>
                 </div>
-                <p data-aos="fade-up"  className='md:text-3xl text-xl font-light w-full z-20'>
+                <p data-aos="fade-up"  className='xl:text-2xl 2xl:text-3xl text-xl font-light w-full z-20'>
                   The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
                 </p>
                 <Link to="/myMusic" className='flex flex-row text-xl font-normal relative group bounce-x-hover z-20'>

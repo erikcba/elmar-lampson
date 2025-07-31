@@ -17,7 +17,7 @@ const Calendar = () => {
         <div>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
             <section >
-                <div className=' xl:pt-32 pt-0'>
+                <div className=' xl:pt-16 2xl:pt-32 pt-0'>
                     <div className='relative px-6 xl:px-0'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>

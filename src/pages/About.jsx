@@ -31,7 +31,7 @@ const About = () => {
     return (
         <div className='bg-white '>
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
-            <div className='px-6 xl:px-0 xl:pt-32'>
+            <div className='px-6 xl:px-0 xl:pt-16 2xl:pt-32'>
                 <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
             </div>
             <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-0 relative'>

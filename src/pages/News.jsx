@@ -32,7 +32,7 @@ const News = () => {
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
             <section id='hero' className='bg-hero-news relative '>
                 <img src={vectorNews} className='absolute bottom-25 xl:w-fit w-1/2' alt="" />
-                <div className='px-6 xl:px-0 xl:pt-32'>
+                <div className='px-6 xl:pt-16 2xl:pt-32'>
                     <Navbar menuColor={'white'} theme={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
                     <div className='container mx-auto'>
                         <h1 className='text-white  text-5xl font-bold absolute bottom-10'>

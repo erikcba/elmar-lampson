@@ -34,7 +34,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
                             <Navbar toggleMenu={toggleMenu} hide={'hidden'} bgLang={'bg-white text-black'} isOpen={isOpen} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
                             <span
                                 onClick={toggleLanguage}
-                                className={`absolute md:left-2/7 lg:left-50 xl:left-75 xl:top-2 md:translate-x-20 md:top-3 md:mt-0 mt-12 left-53 bg-white top-14 md:text-2xl text-xl w-fit font-bold rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
+                                className={`absolute md:left-2/7 lg:left-50 xl:left-75 xl:top-2 md:translate-x-20 md:top-3 md:mt-0 mt-12 left-53 2xl:top-8 2xl:left-100 bg-white top-14 md:text-2xl text-xl w-fit font-bold rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
                             >
                                 {t('language')}
                             </span>
