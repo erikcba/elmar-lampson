@@ -35,10 +35,10 @@ const MyMusic = () => {
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
             <section className='xl:px-0 xl:pt-16 2xl:pt-32'>
                 <div className='container mx-auto'>
-                    <div className='relative container mx-auto px-6 xl:px-0'>
+                    <div className='relative container mx-auto px-6 xl:px-20 2xl:px-0'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>
-                    <div className='flex flex-col gap-6 md:pt-24 pt-12 px-6 xl:px-0'>
+                    <div className='flex flex-col gap-6 md:pt-24 pt-12 px-6 xl:px-20 2xl:px-0'>
                         <h1 className='text-sky md:text-5xl text-4xl font-bold'>
                             My music
                         </h1>
@@ -48,11 +48,11 @@ const MyMusic = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up" className='md:py-12 py-6 relative'>
-                    <h1 className='font-bold md:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
+                    <h1 className='font-bold md:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-20 2xl:px-0'>
                         Orchestal Works
                     </h1>
                     <img className='absolute w-full md:top-10 h-12 lg:top-10 2xl:top-4 top-2 2xl:translate-y-6 z-0' src={divisor1} alt="" />
-                    <div className='grid grid-cols-1 sm:grid-cols-2 container mx-auto sm:gap-6 gap-4 sm:py-12 pt-6 px-6 xl:px-0'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 container mx-auto sm:gap-6 gap-4 sm:py-12 pt-6 px-6 xl:px-20 2xl:px-0'>
                         {
                             data.orchestralWorks.map((item, index) => (
                                 <div key={index} className='flex flex-col sm:w-2/3 w-full 2xl:gap-1'>
@@ -72,11 +72,11 @@ const MyMusic = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
-                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
+                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-20 2xl:px-0'>
                         Chamber Music and Solo Works
                     </h1>
                     <img className='absolute w-full md:top-6 h-12 sm:h-16 2xl:top-0 top-2 2xl:translate-y-6 z-0' src={divisor2} alt="" />
-                    <div className='grid grid-cols-1 sm:grid-cols-2 container mx-auto 2xl:gap-6 sm:py-12 pt-6 px-6 xl:px-0'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 container mx-auto 2xl:gap-6 sm:py-12 pt-6 xl:px-20 2xl:px-0'>
                         <div className="flex flex-col gap-4">
                             {primeraColumna.map((item, index) => (
                                 <div key={index} className="flex flex-col">
@@ -104,11 +104,11 @@ const MyMusic = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
-                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
+                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-20 2xl:px-0'>
                         Vocal Music
                     </h1>
                     <img className='absolute w-full md:top-10 h-12 lg:top-10 2xl:top-4 top-3 2xl:translate-y-6 z-0' src={divisor1} alt="" />
-                    <div className='grid sm:grid-cols-2 grid-cols-1 container mx-auto 2xl:gap-6 gap-4 sm:py-12 pt-6 px-6 xl:px-0'>
+                    <div className='grid sm:grid-cols-2 grid-cols-1 container mx-auto 2xl:gap-6 gap-4 sm:py-12 pt-6 px-6 xl:px-20 2xl:px-0'>
                         {
                             data.vocalMusic.map((item, index) => (
                                 <div key={index} className='flex flex-col sm:w-2/3 w-full 2xl:gap-1'>
@@ -128,11 +128,11 @@ const MyMusic = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
-                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
+                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-20 2xl:px-0'>
                         Music Theatre and Opera
                     </h1>
                     <img className='absolute w-full md:top-6 h-12 sm:h-16 2xl:top-0 top-2 2xl:translate-y-6 z-0' src={divisor2} alt="" />
-                    <div className='grid lg:grid-cols-2 grid-cols-1 2xl:h-[700px] container mx-auto 2xl:gap-0 gap-4 sm:py-12 pt-6 px-6 xl:px-0'>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 2xl:h-[700px] container mx-auto 2xl:gap-0 gap-4 sm:py-12 pt-6 px-6 xl:px-20 2xl:px-0'>
                         {
                             data.musicTheatreAndOpera.map((item, index) => (
                                 <div key={index} className='flex flex-col sm:gap-1'>
@@ -152,11 +152,11 @@ const MyMusic = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up" className='sm:py-12 py-6 relative'>
-                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-0'>
+                    <h1 className='font-bold sm:text-3xl text-2xl z-10 relative container mx-auto px-6 xl:px-20 2xl:px-0'>
                         Writings
                     </h1>
                     <img className='absolute w-full md:top-10 h-12 lg:top-10 2xl:top-4 top-3 2xl:translate-y-6 z-0' src={divisor1} alt="" />
-                    <div className='grid sm:grid-cols-2 grid-cols-1 container mx-auto 2xl:gap-0 sm:py-12 pt-6 px-6 xl:px-0'>
+                    <div className='grid sm:grid-cols-2 grid-cols-1 container mx-auto 2xl:gap-0 sm:py-12 pt-6 px-6 xl:px-20 2xl:px-0'>
                         {
                             data.writings.map((item, index) => (
                                 <div key={index} className='flex flex-col sm:w-2/3 w-full '>
@@ -172,7 +172,7 @@ const MyMusic = () => {
                 </div>
             </section>
             <section className='bg-gray-200 py-12'>
-                <div data-aos="fade-up" className='container mx-auto flex flex-col xl:px-0 px-6'>
+                <div data-aos="fade-up" className='container mx-auto flex flex-col xl:px-20 2xl:px-0 px-6'>
                     <div className='flex flex-col gap-4'>
                         <h1 className='font-bold text-3xl'>
                             CD Recordings

@@ -41,7 +41,7 @@ const News = () => {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto py-16 flex flex-col gap-16 relative xl:px-0 px-6'>
+            <section className='container mx-auto py-16 flex flex-col gap-16 relative xl:px-20 2xl:px-0 px-6'>
                 <div className='h-full md:block hidden'>
                     <img className='absolute top-5 -left-1/7 -rotate-1 ' src={vector1} alt="" />
                     <img className='absolute top-0 -left-1/12 h-full w-1/12 -translate-x-9' src={vector2} alt="" />

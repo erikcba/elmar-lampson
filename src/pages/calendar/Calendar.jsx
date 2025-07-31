@@ -18,19 +18,19 @@ const Calendar = () => {
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
             <section >
                 <div className=' xl:pt-16 2xl:pt-32 pt-0'>
-                    <div className='relative px-6 xl:px-0'>
+                    <div className='relative px-6 xl:px-20 2xl:px-0'>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>
                     <div className='relative z-10  md:pb-12  pt-12 xl:px-0'>
                         <div  className=' flex flex-col md:gap-8 gap-4 z-10'>
-                            <h1 className='container mx-auto xl:pt-14 xl:px-0 px-6 text-sky md:text-5xl text-3xl font-bold'>
+                            <h1 className='container mx-auto xl:pt-14 xl:px-20 2xl:px-0 px-6 text-sky md:text-5xl text-3xl font-bold'>
                                 Calendar
                             </h1>
                             <img data-aos="fade-up" className='absolute w-full md:top-30 md:h-14 xl:top-44 2xl:top-40 xl:h-fit top-22 h-12  z-0' src={divisor1} alt="" />
-                            <p data-aos="fade-up" className='font-bold md:text-4xl px-6 text-2xl relative z-10 container mx-auto xl:px-0'>
+                            <p data-aos="fade-up" className='font-bold md:text-4xl px-6 text-2xl relative z-10 container mx-auto xl:px-20 2xl:px-0'>
                                 Upcoming Concerts
                             </p>
-                            <div data-aos="fade-up" className='flex flex-col gap-8 pt-2 px-6 container mx-auto xl:px-0'>
+                            <div data-aos="fade-up" className='flex flex-col gap-8 pt-2 px-6 container mx-auto xl:px-20 2xl:px-0'>
                                 <TicketsCard date={'24 May 2025'} place={'Theater Bremen'} title={'Premiere of the opera Wellen'} subtitle={'Comissioned by Theater Bremen'} director={'Opera by Elmar Lampson'} description={'Text by Julia Spinola after Eduard von Keyserling, In German with German surtitles'} musicDirector={'Yoel Gamzou'} stageDirector={'Philipp Rosendahl'} />
                                 <TicketsCard date={'27 May 2025, 7:00PM'} place={'Theater Bremen'} title={'Wellen'} />
                                 <TicketsCard date={'5 June 2025, 7:00PM'} place={'Theater Bremen'} title={'Wellen'} />
@@ -44,11 +44,11 @@ const Calendar = () => {
                         </div>
                     </div>
                     <div data-aos="fade-up" className='md:py-6 2xl:py-10 py-12 relative'>
-                        <h1 className='font-bold xl:text-3xl 2xl:text-4xl text-2xl z-10 relative container mx-auto mb-4 px-6 xl:px-0'>
+                        <h1 className='font-bold xl:text-3xl 2xl:text-4xl text-2xl z-10 relative container mx-auto mb-4 px-6 xl:px-20 2xl:px-0'>
                             Previous Concerts
                         </h1>
                         <img className='absolute w-full sm:-top-1 top-5 xl:h-fit h-16 z-0' src={divisor2} alt="" />
-                        <div className='flex flex-col container mx-auto 2xl:gap-6 gap-4 2xl:py-12 px-6 xl:px-0'>
+                        <div className='flex flex-col container mx-auto 2xl:gap-6 gap-4 2xl:py-12 px-6 xl:px-20 2xl:px-0'>
                             <div className='flex flex-col gap-0'>
                                 <div className='flex flex-col mb-3'>
                                     <h3 className='xl:text-2xl text-xl font-semibold'>

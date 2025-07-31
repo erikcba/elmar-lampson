@@ -34,7 +34,7 @@ const About = () => {
             <div className='px-6 xl:px-0 xl:pt-16 2xl:pt-32'>
                 <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
             </div>
-            <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-0 relative'>
+            <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-20 2xl:px-0 relative'>
                 <div className='w-2/5 self-baseline'>
                     <h1 className='ml-auto w-fit text-sky text-5xl font-bold'>
                         <span>{t('waves1')} </span>
@@ -71,7 +71,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <section data-aos="fade-up" className='flex md:flex-row relative flex-col container mx-auto pt-12 xl:gap-16 gap-12 xl:px-0 px-4'>
+            <section data-aos="fade-up" className='flex md:flex-row relative flex-col container mx-auto pt-12 xl:gap-16 gap-12 xl:px-20 2xl:px-0 px-4'>
                 <img
                     className='md:w-1/2 w-full h-1/2 md:sticky md:top-0 tilt hover:shadow-xl shadow-none'
                     src={img1}
@@ -89,7 +89,7 @@ const About = () => {
                     <p className='text-md font-light pt-4'>Photo By ©Neda Navaee </p>
                 </div>
             </section>
-            <section data-aos="fade-up" className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-0 px-6'>
+            <section data-aos="fade-up" className='flex md:flex-row-reverse relative flex-col container mx-auto pt-12 xl:pt-24 xl:gap-16 gap-12 xl:px-20 2xl:px-0 px-6'>
                 <img className='md:w-1/2 w-full h-1/2 md:sticky md:top-0 tilt hover:shadow-xl shadow-none' src={img2} alt="" />
                 <div className='md:w-1/2 w-full h-max-fit flex flex-col justify-between items-start pb-5 '>
                     <h1 className='text-6xl font-bold text-sky'>About my work</h1>
@@ -103,10 +103,10 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='container mx-auto xl:py-12 py-6 sm:px-0 px-4'>
+            <section className='container mx-auto xl:py-12 py-6 xl:px-20 2xl:px-0 px-6'>
                 <div className='bg-elmar md:bg-fixed'></div>
             </section>
-            <section className='container mx-auto md:py-8 py-6 xl:px-0 px-6'>
+            <section className='container mx-auto md:py-8 py-6 xl:px-20 2xl:px-0 px-6'>
                 <div className='w-full h-max-fit flex flex-col justify-start items-start xl:gap-32'>
                     <div data-aos="fade-up" className='flex lg:flex-row flex-col items-start justify-start xl:gap-16 gap-6 lg:mb-0 mb-6 '>
                         <div className='lg:w-1/2 w-full'>
