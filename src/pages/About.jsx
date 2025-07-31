@@ -46,26 +46,26 @@ const About = () => {
                 </div>
                 <div className='xl:w-3/5 w-full flex flex-col gap-6'>
                     <div >
-                        <p className='font-semibold text-xl xl:text-2xl'>
+                        <p className='font-semibold text-md xl:text-lg 2xl:text-xl'>
                             {t('waves3')}
                         </p>
-                        <p className="text-xl xl:text-2xl">
+                        <p className="text-md xl:text-lg 2xl:text-xl">
                             {t('waves4')}
                         </p>
                     </div>
                     <div>
-                        <p className='font-semibold text-xl xl:text-2xl'>
+                        <p className='font-semibold text-md xl:text-lg 2xl:text-xl'>
                             {t('waves5')}
                         </p>
-                        <p className="text-xl xl:text-2xl">
+                        <p className="text-md xl:text-lg 2xl:text-xl">
                             {t('waves6')}
                         </p>
                     </div>
                     <div>
-                        <p className='font-semibold text-xl xl:text-2xl'>
+                        <p className='font-semibold text-md xl:text-lg 2xl:text-xl'>
                             {t('waves7')}
                         </p>
-                        <p className="text-xl xl:text-2xl">
+                        <p className="text-md xl:text-lg 2xl:text-xl">
                             {t('waves8')}
                         </p>
                     </div>

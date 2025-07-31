@@ -58,7 +58,7 @@ const News = () => {
                                 <p className='font-bold text-md xl:text-xl text-sky-700'>
                                     {article.date}
                                 </p>
-                                <p className='font-light text-md xl:text-xl '>
+                                <p className='font-light text-md xl:text-lg 2xl:text-xl  '>
                                     <Trans i18nKey={article.summary} components={[
                                         <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
                                         <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"  />,

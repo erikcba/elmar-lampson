@@ -88,7 +88,7 @@ const Home = () => {
                     <img src={vector2} alt="" className='sm:block hidden absolute  xl:-top-1/5 xl:left-1/7 left-1/5 opacity-65 z-10' />
                   </div>
                   <div className='xl:pl-20 2xl:pl-0 z-20'>
-                    <h1 data-aos="fade-up" className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl xl:ml-16 w-fit pl-4 xl:pt-3 pr-2 xl:pb-2 py-1 z-10'>
+                    <h1 data-aos="fade-up" className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl xl:ml-16 w-fit pl-4 xl:pt-3 pr-2 xl:pb-2 mb-2 py-1 z-10'>
                       About
                     </h1>
                     <p data-aos="fade-up" className='xl:text-2xl 2xl:text-3xl text-xl font-light z-20'>

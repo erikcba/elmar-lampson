@@ -8,7 +8,7 @@ import instagram from "../assets/instagramIcon.png"
 const Footer = () => {
     return (
         <footer id='contact' className='bg-fuchsia-975 mt-auto sm:py-12 py-8 z-20 relative'>
-            <div className='container mx-auto flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-0'>
+            <div className='container mx-auto flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-20 2xl:px-0'>
                 <h1 className='xl:text-4xl sm:text-3xl text-xl font-medium text-white mx-auto lg:mx-0 tracking-widest md:pb-6'>
                     Contact
                 </h1>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                     <div className='relative pl-12 sm:pb-0 pb-16 w-fit'>
                         <img className='md:w-3/5 lg:w-3/4 2xl:w-full' src={logoSky} alt="" />
-                        <div className='flex flex-row items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit absolute bottom-0 right-1/4 sm:top-5 sm:right-0 md:top-0 md:right-1/4 lg:right-0 xl:right-17 xl:top-2 lg:-top-2 2xl:right-0 2xl:top-5'>
+                        <div className='flex flex-row items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit absolute bottom-0 right-1/4 sm:top-5 sm:right-0 md:top-0 md:right-1/4 lg:right-0 xl:right-10 xl:top-0 lg:-top-2 2xl:-right-10 2xl:top-5'>
                             <a href="https://www.instagram.com/elmarlampson/" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
                                <img src={instagram} alt="" />
                             </a>
