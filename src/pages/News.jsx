@@ -32,9 +32,9 @@ const News = () => {
             <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
             <section id='hero' className='bg-hero-news relative '>
                 <img src={vectorNews} className='absolute bottom-25 xl:w-fit w-1/2' alt="" />
-                <div className='px-6 xl:pt-16 2xl:pt-32'>
-                    <Navbar menuColor={'white'} theme={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
-                    <div className='container mx-auto'>
+                <div className='container mx-auto'>
+                    <div className='px-6 xl:pt-16 2xl:pt-32 2xl:px-0 xl:px-20 '>
+                        <Navbar menuColor={'white'} theme={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
                         <h1 className='text-white  text-5xl font-bold absolute bottom-10'>
                             News
                         </h1>
@@ -61,14 +61,14 @@ const News = () => {
                                 <p className='font-light text-md xl:text-lg 2xl:text-xl  '>
                                     <Trans i18nKey={article.summary} components={[
                                         <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                        <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"  />,
-                                        <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"/>,
-                                        <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words"/>,
+                                        <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                        <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                        <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
                                     ]} >
 
                                     </Trans>
                                 </p>
-                                
+
                             </div>
                         </div>
                     </div>

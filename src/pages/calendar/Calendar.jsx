@@ -18,11 +18,13 @@ const Calendar = () => {
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
             <section >
                 <div className=' xl:pt-16 2xl:pt-32 pt-0'>
-                    <div className='relative px-6 xl:px-0'>
-                        <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+                    <div className='container mx-auto px-6 2xl:px-0 xl:px-20'>
+                        <div className='relative  '>
+                            <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+                        </div>
                     </div>
                     <div className='relative z-10  md:pb-12  pt-12 xl:px-0'>
-                        <div  className=' flex flex-col md:gap-8 gap-4 z-10'>
+                        <div className=' flex flex-col md:gap-8 gap-4 z-10'>
                             <h1 className='container mx-auto xl:pt-14 xl:px-20 2xl:px-0 px-6 text-sky md:text-5xl text-3xl font-bold'>
                                 Calendar
                             </h1>
