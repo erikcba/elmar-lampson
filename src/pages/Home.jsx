@@ -42,7 +42,7 @@ const Home = () => {
 
       <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
 
-      <section id='hero' className='bg-hero bg-hero-mobile xl:pt-32'>
+      <section id='hero' className='bg-hero bg-hero-mobile xl:pt-16 2xl:pt-32'>
         <div className='container mx-auto px-6 2xl:px-0 '>
           <div className='relative'>
             <Navbar toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />

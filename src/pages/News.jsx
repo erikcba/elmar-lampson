@@ -48,7 +48,7 @@ const News = () => {
                 </div>
 
                 {articles.map((article, index) => (
-                    <div key={index} className="flex xl:flex-row flex-col items-start gap-10 justify-start">
+                    <div data-aos="fade-up" key={index} className="flex xl:flex-row flex-col items-start gap-10 justify-start">
                         <div className='h-52 w-80 md:shrink-0'>
                             <img src={newsImages[index % newsImages.length]} alt="" />
                         </div>
