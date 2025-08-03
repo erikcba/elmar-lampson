@@ -29,7 +29,7 @@ function CarouselHome() {
                         <img
                             src={img}
                             alt={`Slide ${index + 1}`}
-                            className="object-cover w-full md:w-10/12 lg:w-11/12 mx-auto h-full shadow-md"
+                            className="object-contain w-full md:w-10/12 lg:w-11/12 mx-auto 2xl:h-full h-[600px]"
                         />
                     </SwiperSlide>
                 ))}
