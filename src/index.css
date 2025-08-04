@@ -79,6 +79,11 @@ body::selection {
   background-color: rgba(93, 123, 191, 1);
 }
 
+.btn-language:hover {
+  background-color: rgba(93, 123, 191, 1);
+  color: #fff;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #93278F !important;

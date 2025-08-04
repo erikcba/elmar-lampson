@@ -20,7 +20,7 @@ const Calendar = () => {
                 <div className=' xl:pt-16 2xl:pt-32 pt-0'>
                     <div className='container mx-auto px-6 2xl:px-0 xl:px-20'>
                         <div className='relative  '>
-                            <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+                            <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                         </div>
                     </div>
                     <div className='relative z-10  md:pb-12  pt-12 xl:px-0'>
