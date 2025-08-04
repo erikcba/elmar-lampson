@@ -44,22 +44,22 @@ const Menu = ({ isOpen, toggleMenu }) => {
                             <div className="w-1/2"></div>
                             <ul className="w-1/2 flex flex-col items-start justify-start md:pl-24 gap-6 md:pt-0 pt-12">
                                 <Link to="/news">
-                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out ">News</li>
+                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out "> {t('news')} </li>
                                 </Link>
                                 <Link to="/about">
-                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out">About</li>
+                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out"> {t('about')} </li>
                                 </Link>
                                 <Link to="/myMusic">
-                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out">My music</li>
+                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out"> {t('myMusic')} </li>
                                 </Link>
                                 <Link to="/media" target='_blank' rel='noreferrer' >
-                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out">Media</li>
+                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out" > {t('media')} </li>
                                 </Link>
                                 <Link to="/calendar">
-                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out">Calendar</li>
+                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out"> {t('calendar')} </li>
                                 </Link>
                                 <a href='#contact' onClick={toggleMenu} >
-                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out">Contact</li>
+                                    <li className="text-4xl 2xl:text-6xl font-bold text-left text-sky cursor-pointer hover:scale-105 transition-all ease-in-out"> {t('contact')} </li>
                                 </a>
                             </ul>
                         </div>

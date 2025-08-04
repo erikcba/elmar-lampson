@@ -4,20 +4,22 @@ import logoSky from "../assets/logo-sky.png"
 import facebook from "../assets/facebookIcon.png"
 import youtube from "../assets/youtubeIcon.png"
 import instagram from "../assets/instagramIcon.png"
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer id='contact' className='bg-fuchsia-975 mt-auto sm:py-12 py-8 z-20 relative'>
             <div className='container mx-auto flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-20 2xl:px-0'>
                 <h1 className='xl:text-4xl sm:text-3xl text-xl font-medium text-white mx-auto lg:mx-0 tracking-widest md:pb-6'>
-                    Contact
+                    {t('contact')}
                 </h1>
                 <div className='flex lg:flex-row flex-col w-full justify-between lg:items-start items-center  lg:gap-8 gap-10'>
                     <div className='flex items-center justify-center'>
                         <img className='sm:w-full md:w-3/4 w-2/3' src={tybLogo} alt="" />
                     </div>
                     <div className='sm:text-left text-center'>
-                        <p className='text-white text-xl'>General Management</p>
+                        <p className='text-white text-xl'>{t('generalMagnament')} </p>
                         <p className='font-medium text-white text-xl'>Thomas Yaksic Beckdorf</p>
                     </div>
                     <div className='sm:text-left text-center'>

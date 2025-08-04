@@ -84,6 +84,10 @@ body::selection {
   color: #fff;
 }
 
+.btn-buy:hover{
+  background-color: #321E3A;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #93278F !important;

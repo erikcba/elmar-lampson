@@ -17,6 +17,9 @@ import VanillaTilt from 'vanilla-tilt'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import CarouselHome from '../components/Carousel'
+import { Trans, useTranslation } from 'react-i18next'
+import i18n from '../i18n'
+
 
 const Home = () => {
 
@@ -25,6 +28,9 @@ const Home = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
+  const { t } = useTranslation()
+  const currentLang = i18n.language
 
   useEffect(() => {
     const tiltElements = document.querySelectorAll('.tilt')
@@ -53,8 +59,8 @@ const Home = () => {
         <div className='bg-news bg-news-mobile xl:px-0 px-6 xl:pt-32 pt-12 '>
           <div data-aos="fade-up" className='container flex xl:flex-row flex-col justify-start mx-auto pl-0 xl:pl-12'>
             <div className="relative w-3xs">
-              <h1 className='bg-fuchsia-975-80 zilla-slab-regular flex items-center justify-center w-fit h-fit text-gray-300 xl:pb-2 xl:pt-2 py-1 xl:pl-10 pl-4 font-normal xl:text-6xl text-3xl relative z-10'>
-                News
+              <h1 className={`bg-fuchsia-975-80 zilla-slab-regular flex items-center  justify-center w-fit h-fit text-gray-300 xl:pb-2 xl:pt-2 py-1 xl:pl-10 pl-4 font-normal xl:text-6xl text-3xl relative z-10`}>
+                {t('news')}
               </h1>
               <img
                 className=' absolute xl:left-1/2 xl:top-4 left-24 top-5 -translate-x-1/2 mt-[-30px] z-0 xl:w-max w-36 h-16 xl:h-max '
@@ -62,16 +68,15 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <p className='font-bold xl:text-2xl 2xl:text-3xl text-xl xl:w-1/3 w-full text-fuchsia-975 xl:ml-4 ml-0 xl:mt-0 mt-6'>
-              Waves <br />
-              A new opera by Elmar Lampson
-              with a libretto by Julia Spinola after
-              Eduard von Keyserling
+            <p className={`font-bold xl:text-2xl 2xl:text-3xl text-xl xl:w-1/3 w-full text-fuchsia-975  ${currentLang === 'en' ? 'xl:ml-5' : 'xl:ml-12'} xl:mt-0 mt-6`}>
+              <Trans i18nKey={'wavesHome'} components={[
+                <br key="0" />
+              ]} />
             </p>
             <Link to="/news" className='group bounce-y-hover font-normal text-2xl text-fuchsia-975 xl:self-center self-end flex flex-row items-center justify-start gap-2 pt-10'>
               <img src={arrowDown} alt="" className=' bounce-y transition-all ease-in-out' />
               <span className=" group-hover:scale-105 transition-all ease-in-out">
-                Read more
+                {t('readMore')}
               </span>
             </Link>
           </div>
@@ -89,18 +94,17 @@ const Home = () => {
                   </div>
                   <div className='xl:pl-20 2xl:pl-0 z-20'>
                     <h1 data-aos="fade-up" className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal 2xl:text-6xl text-4xl xl:ml-16 w-fit pl-4 xl:pt-3 pr-2 pb-2 mb-4 py-1 z-10'>
-                      About
+                      {t('about')}
                     </h1>
                     <p data-aos="fade-up" className='xl:text-xl 2xl:text-3xl 2xl:pb-0 pb-6 text-xl font-light z-20'>
-                      Born in Koblenz, Germany, Elmar Lampson is a renowned
-                      composer, conductor, and music educator.
+                      {t('aboutText')}
                     </p>
                   </div>
                 </div>
                 <div className='sm:block hidden sm:h-1/2 ml-auto '>
                   <Link to="/about" className='flex flex-row group bounce-y-hover justify-center items-start gap-2 text-2xl font-normal text-gray-900'>
                     <span className=" group-hover:scale-105 transition-all ease-in-out">
-                      Read more
+                      {t('readMore')}
                     </span>
                     <img className='h-fit bounce-y' src={arrowDown} alt="" />
                   </Link>
@@ -124,33 +128,36 @@ const Home = () => {
               <div className='lg:w-1/2 w-full flex flex-col items-start justify-center gap-10'>
                 <div data-aos="fade-up" className='flex flex-col gap-1 relative md:ml-24 xl:ml-32'>
                   <h1 className='bg-fuchsia-975 text-gray-100 zilla-slab-regular font-normal text-4xl 2xl:text-6xl w-fit py-2 pr-6 leading-none z-10'>
-                    My
+                    {t('my')}
                   </h1>
                   <div className='md:h-24 h-16 w-24 bg-sky-200/30 z-0 absolute md:top-1/4 md:-left-1/4 left-1/2 top-1/3 '>
                   </div>
                   <h1 className='bg-fuchsia-975 text-gray-100 zilla-slab-regular font-normal text-4xl 2xl:text-6xl w-fit py-2 px-4 ml-6 leading-none z-10'>
-                    Music
+                    {t('music')}
                   </h1>
                 </div>
                 <p data-aos="fade-up" className='xl:text-xl 2xl:text-3xl text-xl font-light w-full z-20'>
-                  The extensive catalogue of compositions by Elmar Lampson  includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music.
+                  {t('myMusicText')}
                 </p>
                 <Link to="/myMusic" className='flex flex-row text-xl font-normal relative group bounce-x-hover z-20'>
                   <span className='group-hover:scale-105 text-2xl transition-all ease-in-out '>
-                    Complete catalogue <br /> of works
+                    <Trans i18nKey={'musicMore'} components={[
+                      <br key="0" />
+                    ]} />
+
                   </span>
-                  <img src={arrowRight} alt="" className='w-fit h-fit self-end absolute left-1/2 bottom-1/12 bounce-x transition-all ease-in-out' />
+                  <img src={arrowRight} alt="" className={`w-fit h-fit self-end absolute left-1/2  ${currentLang == 'en' ? 'bottom-1/12' : '-bottom-5 '} bounce-x transition-all ease-in-out`} />
                 </Link>
               </div>
             </div>
             <div className='flex xl:flex-row flex-col items-center xl:self-end relative  xl:w-auto w-full'>
               <Link to={"/media"} target='_blank' className='absolute xl:block hidden -left-1/8 cursor-pointer bounce-x-hover group z-20'>
                 <p className='text-2xl font-normal group-hover:scale-105 transition-all ease-in-out'>
-                  Listen now <br />
-                  on your <br />
-                  favorite platform
+                  <Trans i18nKey={'listen'} components={[
+                    <br key="0" />
+                  ]} />
                 </p>
-                <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5 bounce-x transition-all ease-in-out' />
+                <img src={arrowRight} alt="" className={`w-2/3 h-fit self-end absolute left-1/2 ${currentLang == 'en' ? 'bottom-2/5' : '-bottom-5 '}  bounce-x transition-all ease-in-out`} />
               </Link>
               <div className='bg-white w-full xl:py-6 py-12 xl:pr-6 px-8 xl:pl-24'>
                 <img src={albums} alt="" className='xl:block hidden' />
@@ -159,11 +166,11 @@ const Home = () => {
                   <img src={album2Mobile} alt="" className='w-full h-fit z-20' />
                   <Link to={"/media"} target='_blank' className='relative self-start cursor-pointer bounce-x-hover group z-20'>
                     <p className='text-2xl font-normal group-hover:scale-105 transition-all ease-in-out '>
-                      Listen now <br />
-                      on your <br />
-                      favorite platform
+                      <Trans i18nKey={'listen'} components={[
+                        <br key="0" />
+                      ]} />
                     </p>
-                    <img src={arrowRight} alt="" className='w-2/3 h-fit self-end absolute left-1/2 bottom-2/5 bounce-x transition-all ease-in-out' />
+                    <img src={arrowRight} alt="" className={`w-2/3 h-fit self-end absolute left-1/2 ${currentLang == 'en' ? 'bottom-2/5' : '-bottom-5 '} bounce-x transition-all ease-in-out `}/>
                   </Link>
                 </div>
               </div>
@@ -176,7 +183,7 @@ const Home = () => {
         <section id='media' className='py-12 bg-gray-100 z-20 relative'>
           <div className='container mx-auto flex flex-col justify-center items-center gap-10 px-6 xl:px-0 h-full'>
             <h1 className='bg-fuchsia-975-80 text-gray-100 zilla-slab-regular font-normal xl:text-6xl text-3xl w-fit px-4 py-2 self-start xl:ml-24'>
-              Media
+              {t('media')}
             </h1>
             <CarouselHome />
           </div>

@@ -39,7 +39,7 @@ const Tickets = ({ date, place, title, subtitle, director, description, musicDir
           }
         </div>
       </div>
-      <button className='bg-sky-100 font-bold text-center w-fit px-5 py-2 rounded-md hover:cursor-pointer hover:bg-sky-200 transition-colors duration-300'>
+      <button className='bg-sky-100 font-bold text-center w-fit px-5 py-2 rounded-md hover:cursor-pointer btn-buy hover:text-white transition-colors duration-300'>
         Buy tickets
       </button>
     </div>
