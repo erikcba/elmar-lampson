@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Menu from '../../components/Menu'
 import Navbar from '../../components/Navbar'
 import MenuIcon from '../../components/icons/MenuIcon'
@@ -6,13 +6,61 @@ import divisor1 from '../../assets/divisor-mymusic1.png'
 import divisor2 from '../../assets/divisor-mymusic2.png'
 import TicketsCard from './TicketsCard'
 import Footer from '../../components/Footer'
+import axios from 'axios'
+import ICAL from 'ical.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Calendar = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [events, setEvents] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/ical-feed', { responseType: 'arraybuffer' })
+            .then(response => {
+                const decoder = new TextDecoder('utf-8')
+                const icsText = decoder.decode(response.data)
+
+                const jcalData = ICAL.parse(icsText)
+                const comp = new ICAL.Component(jcalData)
+
+                const vevents = comp.getAllSubcomponents('vevent')
+                console.log('Cantidad de eventos:', vevents.length)
+
+                const parsedEvents = vevents.map(event => {
+                    const e = new ICAL.Event(event);
+
+                    // Manejar fechas de día completo (sin hora)
+                    let start = e.startDate ? e.startDate.toJSDate() : null;
+                    let end = e.endDate ? e.endDate.toJSDate() : null;
+
+                    return {
+                        summary: e.summary,
+                        start,
+                        end,
+                        location: e.location || '',
+                        description: e.description || '',
+                    }
+
+                })
+                setEvents(parsedEvents)
+                setLoading(false)
+            })
+            .catch(err => console.error(err))
+    }, [])
+
+    useEffect(() => {
+        if (!loading) {
+            AOS.refresh()
+        }
+    }, [loading])
+
+
     return (
         <div>
             <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
@@ -32,7 +80,34 @@ const Calendar = () => {
                             <p data-aos="fade-up" className='font-bold md:text-4xl px-6 text-2xl relative z-10 container mx-auto xl:px-20 2xl:px-0'>
                                 Upcoming Concerts
                             </p>
-                            <div data-aos="fade-up" className='flex flex-col gap-8 pt-2 px-6 container mx-auto xl:px-20 2xl:px-0'>
+                            {
+                                loading ? (
+                                    <div data-aos="fade-up" className='flex justify-center items-center h-64'>
+                                        <p className='text-lg font-semibold'>
+                                            Loading events...
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <div data-aos="fade-in" className='flex flex-col gap-8 pt-2 px-6 container mx-auto xl:px-20 2xl:px-0'>
+                                        {events.map((ev, index) => (
+                                            <TicketsCard
+
+                                                key={index}
+                                                date={ev.start ? ev.start.toLocaleDateString('de-DE', {
+                                                    day: 'numeric',
+                                                    month: 'short',
+                                                    year: 'numeric'
+                                                }) : ''}
+                                                place={ev.location}
+                                                title={ev.summary}
+                                                subtitle={''}
+                                                director={''}
+                                                description={ev.description}
+                                                musicDirector={''}
+                                                stageDirector={''}
+                                            />
+                                        ))}
+                                        {/*  
                                 <TicketsCard date={'24 May 2025'} place={'Theater Bremen'} title={'Premiere of the opera Wellen'} subtitle={'Comissioned by Theater Bremen'} director={'Opera by Elmar Lampson'} description={'Text by Julia Spinola after Eduard von Keyserling, In German with German surtitles'} musicDirector={'Yoel Gamzou'} stageDirector={'Philipp Rosendahl'} />
                                 <TicketsCard date={'27 May 2025, 7:00PM'} place={'Theater Bremen'} title={'Wellen'} />
                                 <TicketsCard date={'5 June 2025, 7:00PM'} place={'Theater Bremen'} title={'Wellen'} />
@@ -42,7 +117,10 @@ const Calendar = () => {
                                 <TicketsCard date={'18 June 2025, 7:00PM'} place={'Theater Bremen'} title={'Wellen'} />
                                 <TicketsCard date={'8 October 2025'} place={'Schenzhen Concert Hal'} title={'Chamber and ensemble works'} />
                                 <TicketsCard date={'Summer 2026'} place={'Schenzhen Concert Hal'} title={'World Premiere: Sea Symphony Parts I, II and II'} subtitle={'Commissioned by Theater Bremen'} />
-                            </div>
+                                */}
+                                    </div>
+                                )}
+
                         </div>
                     </div>
                     <div data-aos="fade-up" className='md:py-6 2xl:py-10 py-12 relative'>

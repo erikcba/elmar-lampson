@@ -4,12 +4,8 @@ import MediaCard from '../components/MediaCard'
 import apple from '../assets/apple.png'
 import spotify from '../assets/spotify.png'
 import youtube from '../assets/youtube.png'
-import soundcloud from '../assets/soundcloud.png'
-import deezer from '../assets/deezer.png'
 import youtubeMusic from '../assets/youtubeMusic.png'
 import amazon from '../assets/amazonMedia.png'
-import itunes from '../assets/itunes.png'
-import pandora from '../assets/pandora.png'
 import tidal from '../assets/tidal.png'
 
 const Media = () => {
@@ -21,29 +17,9 @@ const Media = () => {
             link: 'https://classical.music.apple.com/gb/artist/83224972'
         },
         {
-            action: 'Soon',
+            action: 'Listen',
             logoPlatform: amazon,
-            link: ''
-        },
-        {
-            action: 'Soon',
-            logoPlatform: deezer,
-            link: ''
-        },
-        {
-            action: 'Soon',
-            logoPlatform: itunes,
-            link: ''
-        },
-        {
-            action: 'Soon',
-            logoPlatform: pandora,
-            link: ''
-        },
-        {
-            action: 'Soon',
-            logoPlatform: soundcloud,
-            link: ''
+            link: 'https://music.amazon.co.uk/search/elmar+lampson?filter=IsLibrary%7Cfalse&sc=none'
         },
         {
             action: 'Listen',
@@ -51,24 +27,19 @@ const Media = () => {
             link: 'https://open.spotify.com/artist/0aVVCnadWDlwvkETQTzHAE'
         },
         {
-            action: 'Soon',
+            action: 'Listen',
             logoPlatform: tidal,
-            link: ''
+            link: 'https://tidal.com/browse/artist/4181657'
         },
         {
-            action: 'Soon',
-            logoPlatform: youtubeMusic,
-            link: ''
-        },
-        {
-            action: 'Soon',
+            action: 'Watch',
             logoPlatform: youtube,
-            link: ''
+            link: 'https://www.youtube.com/channel/UCQMtR1Zbzn0hS5fY_Lhf3bg'
         }
     ]
 
     return (
-        <div className='bg-violet-100 py-16'>
+        <div className='bg-violet-100 h-svh py-16'>
             <div className='container mx-auto px-4 py-8 flex items-center justify-center'>
                 <div className='flex flex-col items-center justify-center w-full sm:w-1/3'>
                     <div>

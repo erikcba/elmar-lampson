@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import imgMusic from '../assets/myMusic-img.png'
 import arrowDown from '../assets/arrow-down.png'
 import newsVector from '../assets/newsFondo.png'
@@ -19,7 +19,8 @@ import Navbar from '../components/Navbar'
 import CarouselHome from '../components/Carousel'
 import { Trans, useTranslation } from 'react-i18next'
 import i18n from '../i18n'
-
+import video from '../assets/video.mp4'
+import PlayIcon from '../components/icons/PlayIcon'
 
 const Home = () => {
 
@@ -32,6 +33,14 @@ const Home = () => {
   const { t } = useTranslation()
   const currentLang = i18n.language
 
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  const handleVideoClick = () => {
+    setIsPlaying(!isPlaying)
+  }
+
+  const videoRef = useRef(null)
+
   useEffect(() => {
     const tiltElements = document.querySelectorAll('.tilt')
     VanillaTilt.init(tiltElements, {
@@ -42,6 +51,12 @@ const Home = () => {
       "max-glare": 0.2,
     });
   }, [])
+
+  useEffect(() => {
+    if (isPlaying && videoRef.current) {
+      videoRef.current.play();
+    }
+  }, [isPlaying])
 
   return (
     <div className=''>
@@ -170,15 +185,29 @@ const Home = () => {
                         <br key="0" />
                       ]} />
                     </p>
-                    <img src={arrowRight} alt="" className={`w-2/3 h-fit self-end absolute left-1/2 ${currentLang == 'en' ? 'bottom-2/5' : '-bottom-5 '} bounce-x transition-all ease-in-out `}/>
+                    <img src={arrowRight} alt="" className={`w-2/3 h-fit self-end absolute left-1/2 ${currentLang == 'en' ? 'bottom-2/5' : '-bottom-5 '} bounce-x transition-all ease-in-out `} />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className='flex'>
-          <img data-aos="fade-up" src={imgMusic} alt="" className='z-20' />
+        <section className='flex relative'>
+          <img
+            data-aos="fade-up"
+            src={imgMusic}
+            alt=""
+            className={`z-20 ${isPlaying ? 'hidden' : 'block'} cursor-pointer `}
+            onClick={handleVideoClick}
+            />
+            <PlayIcon data-aos="fade-up" onClick={handleVideoClick} className={`absolute ${isPlaying ? 'hidden' : 'block'} top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 z-30 text-white cursor-pointer`} />
+          <video
+            ref={videoRef}
+            autoPlay={isPlaying}
+            controls={true}
+            className={`z-20 ${isPlaying ? 'block' : 'hidden'} w-full h-full object-cover`}
+            src={video}
+          />
         </section>
         <section id='media' className='py-12 bg-gray-100 z-20 relative'>
           <div className='container mx-auto flex flex-col justify-center items-center gap-10 px-6 xl:px-0 h-full'>
