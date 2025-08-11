@@ -21,6 +21,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import i18n from '../i18n'
 import video from '../assets/video.mp4'
 import PlayIcon from '../components/icons/PlayIcon'
+import XIcon from '../components/icons/CloseWhite'
 
 const Home = () => {
 
@@ -34,12 +35,18 @@ const Home = () => {
   const currentLang = i18n.language
 
   const [isPlaying, setIsPlaying] = useState(false)
-
-  const handleVideoClick = () => {
-    setIsPlaying(!isPlaying)
-  }
-
   const videoRef = useRef(null)
+
+  const startVideo = () => {
+    setIsPlaying(true);
+    videoRef.current?.play();
+  };
+
+  const closeVideo = () => {
+    setIsPlaying(false);
+    videoRef.current?.pause();
+    videoRef.current.currentTime = 0; // opcional, reinicia el video
+  }
 
   useEffect(() => {
     const tiltElements = document.querySelectorAll('.tilt')
@@ -193,21 +200,38 @@ const Home = () => {
           </div>
         </section>
         <section className='flex relative'>
-          <img
-            data-aos="fade-up"
-            src={imgMusic}
-            alt=""
-            className={`z-20 ${isPlaying ? 'hidden' : 'block'} cursor-pointer `}
-            onClick={handleVideoClick}
-            />
-            <PlayIcon data-aos="fade-up" onClick={handleVideoClick} className={`absolute ${isPlaying ? 'hidden' : 'block'} top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 z-30 text-white cursor-pointer`} />
-          <video
-            ref={videoRef}
-            autoPlay={isPlaying}
-            controls={true}
-            className={`z-20 ${isPlaying ? 'block' : 'hidden'} w-full h-full object-cover`}
-            src={video}
-          />
+          {!isPlaying && (
+            <>
+              <img
+                data-aos="fade-up"
+                src={imgMusic}
+                alt=""
+                className="z-30 cursor-pointer"
+                onClick={startVideo}
+              />
+              <PlayIcon
+                data-aos="fade-up"
+                onClick={startVideo}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 z-40 text-white cursor-pointer"
+              />
+            </>
+          )}
+
+          {isPlaying && (
+            <>
+              <video
+                ref={videoRef}
+                autoPlay
+                controls
+                className="z-20 w-full h-full object-cover relative"
+                src={video}
+              />
+              <XIcon
+                onClick={closeVideo}
+                className="absolute top-0 right-0 w-24 h-24 z-50 text-white hover:scale-75 hover:rotate-180 duration-500 transition-all ease-in-out cursor-pointer"
+              />
+            </>
+          )}
         </section>
         <section id='media' className='py-12 bg-gray-100 z-20 relative'>
           <div className='container mx-auto flex flex-col justify-center items-center gap-10 px-6 xl:px-0 h-full'>

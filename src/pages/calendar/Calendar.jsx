@@ -21,7 +21,7 @@ const Calendar = () => {
     }
 
     useEffect(() => {
-        axios.get('http://localhost:3001/ical-feed', { responseType: 'arraybuffer' })
+        axios.get('https://starlit-gaufre-2657cf.netlify.app/.netlify/functions/server', { responseType: 'arraybuffer' })
             .then(response => {
                 const decoder = new TextDecoder('utf-8')
                 const icsText = decoder.decode(response.data)
