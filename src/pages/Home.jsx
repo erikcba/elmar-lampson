@@ -219,7 +219,7 @@ const Home = () => {
 
           {isPlaying && (
             <div className='h-svh w-full bg-black/90 flex items-center justify-center z-30'>
-              <div className=' flex items-center justify-center 2xl:h-full lg:h-[80vh] h-full px-6 2xl:px-0'>
+              <div className=' flex items-center justify-center h-[80vh] px-6 2xl:px-0'>
                 <video
                   ref={videoRef}
                   autoPlay
