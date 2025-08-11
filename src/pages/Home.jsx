@@ -21,7 +21,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import i18n from '../i18n'
 import video from '../assets/video.mp4'
 import PlayIcon from '../components/icons/PlayIcon'
-import XIcon from '../components/icons/CloseWhite'
+import CloseWhite from '../components/icons/CloseWhite'
 
 const Home = () => {
 
@@ -206,7 +206,7 @@ const Home = () => {
                 data-aos="fade-up"
                 src={imgMusic}
                 alt=""
-                className="z-30 cursor-pointer"
+                className="z-30 cursor-pointer "
                 onClick={startVideo}
               />
               <PlayIcon
@@ -218,19 +218,21 @@ const Home = () => {
           )}
 
           {isPlaying && (
-            <>
-              <video
-                ref={videoRef}
-                autoPlay
-                controls
-                className="z-20 w-full h-full object-cover relative"
-                src={video}
-              />
-              <XIcon
-                onClick={closeVideo}
-                className="absolute top-0 right-0 w-24 h-24 z-50 text-white hover:scale-75 hover:rotate-180 duration-500 transition-all ease-in-out cursor-pointer"
-              />
-            </>
+            <div className='h-svh w-full bg-black/90 flex items-center justify-center z-30'>
+              <div className=' flex items-center justify-center 2xl:h-full lg:h-[80vh] h-full px-6 2xl:px-0'>
+                <video
+                  ref={videoRef}
+                  autoPlay
+                  controls
+                  className="z-20 w-full h-fit lg:h-11/12 2xl:w-full 2xl:h-full object-fill 2xl:object-cover relative"
+                  src={video}
+                />
+                <CloseWhite
+                  onClick={closeVideo}
+                  className={"absolute top-10 lg:right-20 xl:right-68 2xl:right-20 w-10 h-10 z-50 text-white hover:scale-75 hover:rotate-180 duration-500 transition-all ease-in-out cursor-pointer"}
+                />
+              </div>
+            </div>
           )}
         </section>
         <section id='media' className='py-12 bg-gray-100 z-20 relative'>
