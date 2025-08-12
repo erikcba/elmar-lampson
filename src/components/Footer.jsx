@@ -43,7 +43,7 @@ const Footer = () => {
                             <img src={facebook} alt="" />
                         </a>
 
-                        <a href="https://www.youtube.com/channel/UCQMtR1Zbzn0hS5fY_Lhf3bg" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
+                        <a href="https://www.youtube.com/@ElmarLampsonComposer/videos" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
                             <img src={youtube} alt="" />
                         </a>
                         <a href="https://www.linkedin.com/in/elmar-lampson-054403301/" target="_blank" rel="noreferrer" className='p-1 leading-0 rounded-full h-fit bg-white'>

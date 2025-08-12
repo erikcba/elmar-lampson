@@ -34,7 +34,7 @@ const Media = () => {
         {
             action: 'Watch',
             logoPlatform: youtube,
-            link: 'https://www.youtube.com/channel/UCQMtR1Zbzn0hS5fY_Lhf3bg'
+            link: 'https://www.youtube.com/@ElmarLampsonComposer/videos'
         }
     ]
 
