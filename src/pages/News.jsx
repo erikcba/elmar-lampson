@@ -24,6 +24,18 @@ const News = () => {
         setIsOpen(!isOpen)
     }
 
+    function italicizeTag(text) {
+        return text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
+    }
+
+    function processSummary(text, link) {
+        // Convierte <I>...</I> en cursiva
+        let html = text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
+        // Convierte <0>...</0> en un enlace
+        html = html.replace(/<0>(.*?)<\/0>/g, `<a href="${link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline break-words">$1</a>`);
+        return html;
+    }
+
     const { t } = useTranslation()
     const articles = t('pressArticles', { returnObjects: true });
 
@@ -53,30 +65,34 @@ const News = () => {
                             <img src={newsImages[index % newsImages.length]} alt="" />
                         </div>
                         <div className='flex flex-col w-full gap-2'>
-                            <h2 className="font-bold text-xl">
-                                <Trans
-                                    i18nKey={`pressArticles.${index}.title`}
-                                    components={[
-                                        <span key="4" className="italic" />
-                                    ]}
-                                />
-                            </h2>
+                            <h2
+                                className="font-bold text-xl"
+                                dangerouslySetInnerHTML={{ __html: italicizeTag(article.title) }}
+                            />
                             <div className='flex flex-col gap-2'>
                                 <p className='font-bold text-md xl:text-xl text-sky-700'>
                                     {article.date}
                                 </p>
-                                <p className='font-light text-md xl:text-lg 2xl:text-xl  '>
-                                    <Trans
-                                        i18nKey={`pressArticles.${index}.summary`}
-                                        components={[
-                                            <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                            <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
-                                            <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
-                                            <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                            <span key="4" className="italic" />,
-                                        ]}
+                                {/* Si el summary tiene <I>...</I> y <0>...</0> */}
+                                {article.summary.includes('<I>') ? (
+                                    <p
+                                        className='font-light text-md xl:text-lg 2xl:text-xl'
+                                        dangerouslySetInnerHTML={{ __html: processSummary(article.summary, article.link1) }}
                                     />
-                                </p>
+                                ) : (
+                                    <p className='font-light text-md xl:text-lg 2xl:text-xl'>
+                                        <Trans
+                                            i18nKey={`pressArticles.${index}.summary`}
+                                            components={[
+                                                <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                                <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
+                                                <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
+                                                <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                                <span key="4" className="italic" />,
+                                            ]}
+                                        />
+                                    </p>
+                                )}
                             </div>
                         </div>
                     </div>

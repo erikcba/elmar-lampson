@@ -54,7 +54,8 @@
         {
             "title": "Die Kritiken sind da!",
             "date": "4.06.2025",
-            "summary": "Die Premiere von Elmar Lampsons neuester Oper <4>Wellen</4> wurde sowohl von Kritikern als auch vom Publikum warm aufgenommen. Rezensenten lobten die „schillernde Partitur“ (Andreas Schnell, <0>Kreiszeitung</0>) mit „Passagen von überirdischer Schönheit“ (Wolfgang Denker, <1>Der Opernfreund</1>). „Die Musik von Elmar Lampson bleibt immer im Fluss und trägt … die Handlung“ (Christine Gorny, <2>Bremen Zwei</2>) — „Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen. Mitreißend die an beiden Seiten postierten Schlagzeugformationen“ (Ute Schalz-Laurenze, Neue Musikzeitung). Die Oper wird im Theater Bremen noch bis zum 18. Juni aufgeführt — sichern Sie sich hier Ihre <3>Tickets</3>, damit Sie es nicht verpassen!",
+            "summary": "Die Premiere von Elmar Lampsons neuester Oper <4>Wellen</4> wurde sowohl von Kritikern als auch vom Publikum warm aufgenommen. Rezensenten lobten die „schillernde Partitur“ (Andreas Schnell, <0>Kreiszeitung</0>) mit „Passagen von überirdischer Schönheit“ (Wolfgang Denker, <1>Der Opernfreund</1>). „Die Musik von Elmar Lampson bleibt immer im Fluss und trägt … die Handlung“ (Christine Gorny, <2>Bremen Zwei</2>) — „Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen. Mitreißend die an beiden Seiten postierten Schlagzeugformationen“ (Ute Schalz-Laurenze, <4>Neue Musikzeitung</4>). Die Oper wird im Theater Bremen noch bis zum 18. Juni aufgeführt — sichern Sie sich hier Ihre <3>Tickets</3>, damit Sie es nicht verpassen!",
+            "link0": "https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html",
             "link1": "https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html",
             "link2": "https://deropernfreund.de/theater-bremen/bremen-wellen-elmar-lampson/",
             "link3": "https://www.bremenzwei.de/themen/oper-wellen-theater-bremen-100.html",
@@ -67,7 +68,7 @@
             "link1": "https://www.bremenzwei.de/audios/elmar-lampson-komponist-wellen-oper-theater-bremen-100.html"
         },
         {
-            "title": "<4>Wellen</4> feiert Uraufführung am Theater Bremen",
+            "title": "<I>Wellen</I> feiert Uraufführung am Theater Bremen",
             "date": "20.05.2025",
             "summary": "Elmar Lampsons neue Oper, mit einem Libretto von Julia Spinola nach dem Roman von Eduard von Keyserling, feiert Premiere im Theater am Goetheplatz in Bremen – dem Auftraggeber des Werks. Die Inszenierung unter der Regie von Philipp Rosendahl und der musikalischen Leitung von Yoel Gamzou läuft vom 24. Mai bis zum 18. Juni.<4> Wellen</4> spielt in einem Ostseebad am Vorabend des Ersten Weltkriegs und beleuchtet den Zusammenbruch utopischer Ideale durch Keyserlings ironische Gesellschaftskritik. <0>Zum Programm auf der Website des Theater Bremen.</0>",
             "link1": "https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events"
@@ -87,7 +88,7 @@
         {
             "title": "Hochschule für Musik und Theater Hamburg eröffnet modernisierten Campus",
             "date": "15.10.2017",
-            "summary": "Elmar Lampson spricht über die Wiedereröffnung des modernisierten Campus der Hochschule für Musik und Theater Hamburg. Dabei hebt er neue Initiativen wie das Projekt „Stage_2.0: Alsterphilharmonie“ hervor, das auf die Entwicklung interaktiver Bühnenräume und internationaler Kooperationen abzielt, um die Hochschule als führende Institution für innovative Musik- und Theaterausbildung zu positionieren. <0>Zum Artikel in Die Welt</0>.",
+            "summary": "Elmar Lampson spricht über die Wiedereröffnung des modernisierten Campus der Hochschule für Musik und Theater Hamburg. Dabei hebt er neue Initiativen wie das Projekt „Stage_2.0: Alsterphilharmonie“ hervor, das auf die Entwicklung interaktiver Bühnenräume und internationaler Kooperationen abzielt, um die Hochschule als führende Institution für innovative Musik- und Theaterausbildung zu positionieren. <0>Zum Artikel in <I>Die Welt</I></0>.",
             "link1": "https://www.welt.de/regionales/hamburg/article169646409/Das-groesste-kulturelle-Ereignis-seit-Eroeffnung-der-Elbphilharmonie.html"
         },
         {
@@ -99,7 +100,7 @@
         {
             "title": "„Wie klingt eine Untertasse?“",
             "date": "18.06.2003",
-            "summary": "Elmar Lampsons innovativer Zugang zur Musikpädagogik wurde in <4>Die Zeit</4> porträtiert. Professor Lampson fordert seine Studierenden dazu auf, ihre Hörwahrnehmung neu zu denken – und setzt dabei auch unkonventionelle Mittel wie eine Kantinen-Untertasse ein. Seine Methoden spiegeln sein dauerhaftes Engagement für ein erfahrungsorientiertes und philosophisches Musikverständnis wider. <0>Zum vollständigen Interview in <4>Die Zeit</4></0>.",
+            "summary": "Elmar Lampsons innovativer Zugang zur Musikpädagogik wurde in <4>Die Zeit</4> porträtiert. Professor Lampson fordert seine Studierenden dazu auf, ihre Hörwahrnehmung neu zu denken – und setzt dabei auch unkonventionelle Mittel wie eine Kantinen-Untertasse ein. Seine Methoden spiegeln sein dauerhaftes Engagement für ein erfahrungsorientiertes und philosophisches Musikverständnis wider. <0>Zum vollständigen Interview in <I>Die Zeit</I></0>.",
             "link1": "https://www.zeit.de/2003/26/P-Lampson"
         }
     ]
