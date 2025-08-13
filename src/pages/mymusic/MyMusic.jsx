@@ -38,7 +38,7 @@ const MyMusic = () => {
                     <div className='relative container mx-auto px-6 2xl:px-0 xl:px-20 '>
                         <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>
-                    <div className='flex flex-col gap-6 md:pt-24 pt-12 px-6 xl:px-20 2xl:px-0'>
+                    <div className='flex flex-col xl:gap-10 gap-6 md:pt-24 pt-12 px-6 xl:px-20 2xl:px-0'>
                         <h1 className='text-sky md:text-5xl text-4xl font-bold'>
                             My music
                         </h1>

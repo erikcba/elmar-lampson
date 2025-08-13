@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import img1 from '../assets/elmar_lampson.jpg'
 import img2 from '../assets/about_music.png'
 import img3 from '../assets/img4-about.png'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import VanillaTilt from 'vanilla-tilt'
@@ -39,20 +39,25 @@ const About = () => {
             <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-20 2xl:px-0 relative'>
                 <div className='w-2/5 self-baseline'>
                     <h1 className='ml-auto w-fit text-sky text-5xl font-bold'>
-                        <span>{t('waves1')} </span>
+                        <span className='italic' >{t('waves1')} </span>
                         <span className='italic'> {t('waves2')}</span>
                     </h1>
                 </div>
                 <div className='absolute xl:left-4/11 right-1/3 xl:-translate-x-2  top-8 xl:top-12'>
                     <img src={vectorAbout} alt="" className='xl:h-5/6 h-40' />
                 </div>
-                <div className='xl:w-3/5 w-full flex flex-col gap-6'>
+                <div className='xl:w-3/5 w-full flex flex-col xl:gap-10 gap-6'>
                     <div >
                         <p className='font-semibold text-md xl:text-lg 2xl:text-xl'>
+
                             {t('waves3')}
                         </p>
                         <p className="text-md xl:text-lg 2xl:text-xl">
-                            {t('waves4')}
+                            <Trans i18nKey={'waves4'}
+                                components={[
+                                    <span className='italic' key="0" />
+                                ]}
+                            />
                         </p>
                     </div>
                     <div>
@@ -60,7 +65,11 @@ const About = () => {
                             {t('waves5')}
                         </p>
                         <p className="text-md xl:text-lg 2xl:text-xl">
-                            {t('waves6')}
+                            <Trans i18nKey={'waves6'}
+                                components={[
+                                    <span className='italic' key="0" />
+                                ]}
+                            />
                         </p>
                     </div>
                     <div>
@@ -68,7 +77,11 @@ const About = () => {
                             {t('waves7')}
                         </p>
                         <p className="text-md xl:text-lg 2xl:text-xl">
-                            {t('waves8')}
+                            <Trans i18nKey={'waves8'}
+                                components={[
+                                    <span className='italic' key="0" />
+                                ]}
+                            />
                         </p>
                     </div>
                 </div>

@@ -53,22 +53,30 @@ const News = () => {
                             <img src={newsImages[index % newsImages.length]} alt="" />
                         </div>
                         <div className='flex flex-col w-full gap-2'>
-                            <h2 className="font-bold text-xl">{article.title}</h2>
+                            <h2 className="font-bold text-xl">
+                                <Trans
+                                    i18nKey={`pressArticles.${index}.title`}
+                                    components={[
+                                        <span key="4" className="italic" />
+                                    ]}
+                                />
+                            </h2>
                             <div className='flex flex-col gap-2'>
                                 <p className='font-bold text-md xl:text-xl text-sky-700'>
                                     {article.date}
                                 </p>
                                 <p className='font-light text-md xl:text-lg 2xl:text-xl  '>
-                                    <Trans i18nKey={article.summary} components={[
-                                        <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                        <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                        <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                        <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                    ]} >
-
-                                    </Trans>
+                                    <Trans
+                                        i18nKey={`pressArticles.${index}.summary`}
+                                        components={[
+                                            <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                            <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
+                                            <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
+                                            <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
+                                            <span key="4" className="italic" />,
+                                        ]}
+                                    />
                                 </p>
-
                             </div>
                         </div>
                     </div>

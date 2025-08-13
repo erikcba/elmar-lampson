@@ -30,11 +30,11 @@
     "waves1": "Zu",
     "waves2": "»Wellen«",
     "waves3": "„hat Passagen von überirdischer Schönheit“ ",
-    "waves4": "(Wolfgang Denker, Der Opernfreund)",
+    "waves4": "(Wolfgang Denker, <0> Der Opernfreund </0>)",
     "waves5": "eine „schillernde Partitur“ ",
-    "waves6": "(Andreas Schnell, Kreiszeitung)",
+    "waves6": "(Andreas Schnell, <0>Kreiszeitung</0>)",
     "waves7": "„Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen: mitreißend die an beiden Seiten postierten Schlagzeugformationen“ ",
-    "waves8": "(Ute Schalz-Laurenze, Neue Musikzeitung).",
+    "waves8": "(Ute Schalz-Laurenze, <0> Neue Musikzeitung</0>).",
     "news": "Aktuelles",
     "about": "Über",
     "myMusic": "Meine Musik",
@@ -54,7 +54,7 @@
         {
             "title": "Die Kritiken sind da!",
             "date": "4.06.2025",
-            "summary": "Die Premiere von Elmar Lampsons neuester Oper Wellen wurde sowohl von Kritikern als auch vom Publikum warm aufgenommen. Rezensenten lobten die „schillernde Partitur“ (Andreas Schnell, Kreiszeitung <0>https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html</0>) mit „Passagen von überirdischer Schönheit“ (Wolfgang Denker, Der Opernfreund <1>https://deropernfreund.de/theater-bremen/bremen-wellen-elmar-lampson/</1>). „Die Musik von Elmar Lampson bleibt immer im Fluss und trägt … die Handlung“ (Christine Gorny, Bremen Zwei, <2>https://www.bremenzwei.de/themen/oper-wellen-theater-bremen-100.html</2>) — „Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen. Mitreißend die an beiden Seiten postierten Schlagzeugformationen“ (Ute Schalz-Laurenze, Neue Musikzeitung). Die Oper wird im Theater Bremen noch bis zum 18. Juni aufgeführt — sichern Sie sich hier Ihre Tickets, damit Sie es nicht verpassen! <3>https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events</3>",
+            "summary": "Die Premiere von Elmar Lampsons neuester Oper <4>Wellen</4> wurde sowohl von Kritikern als auch vom Publikum warm aufgenommen. Rezensenten lobten die „schillernde Partitur“ (Andreas Schnell, <0>Kreiszeitung</0>) mit „Passagen von überirdischer Schönheit“ (Wolfgang Denker, <1>Der Opernfreund</1>). „Die Musik von Elmar Lampson bleibt immer im Fluss und trägt … die Handlung“ (Christine Gorny, <2>Bremen Zwei</2>) — „Die Musik von Lampson scheut vor nichts zurück: sie geht zwischen wild und zart, zwischen Dur und Moll mit zahlreichen pentatonischen Anklängen und riesig anspruchsvollen Gesangspartien …, ist aber immer wieder in der Lage, völlig unerwartete Konstellationen und Konfrontationen herzustellen. Mitreißend die an beiden Seiten postierten Schlagzeugformationen“ (Ute Schalz-Laurenze, Neue Musikzeitung). Die Oper wird im Theater Bremen noch bis zum 18. Juni aufgeführt — sichern Sie sich hier Ihre <3>Tickets</3>, damit Sie es nicht verpassen!",
             "link1": "https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html",
             "link2": "https://deropernfreund.de/theater-bremen/bremen-wellen-elmar-lampson/",
             "link3": "https://www.bremenzwei.de/themen/oper-wellen-theater-bremen-100.html",
@@ -63,31 +63,31 @@
         {
             "title": "Für Elmar Lampson fühlt sich das Komponieren nicht wie Arbeit an",
             "date": "23.05.2025",
-            "summary": "Der Komponist spricht in einem exklusiven Interview mit Bremen Zwei über seine neueste Oper. <0>Zum Interview</0> ",
+            "summary": "Der Komponist spricht in einem exklusiven <0>Interview mit Bremen Zwei</0> über seine neueste Oper. ",
             "link1": "https://www.bremenzwei.de/audios/elmar-lampson-komponist-wellen-oper-theater-bremen-100.html"
         },
         {
-            "title": "Wellen feiert Uraufführung am Theater Bremen",
+            "title": "<4>Wellen</4> feiert Uraufführung am Theater Bremen",
             "date": "20.05.2025",
-            "summary": "Elmar Lampsons neue Oper, mit einem Libretto von Julia Spinola nach dem Roman von Eduard von Keyserling, feiert Premiere im Theater am Goetheplatz in Bremen – dem Auftraggeber des Werks. Die Inszenierung unter der Regie von Philipp Rosendahl und der musikalischen Leitung von Yoel Gamzou läuft vom 24. Mai bis zum 18. Juni. Wellen spielt in einem Ostseebad am Vorabend des Ersten Weltkriegs und beleuchtet den Zusammenbruch utopischer Ideale durch Keyserlings ironische Gesellschaftskritik. <0>Zum Programm auf der Website des Theater Bremen.</0></0>",
+            "summary": "Elmar Lampsons neue Oper, mit einem Libretto von Julia Spinola nach dem Roman von Eduard von Keyserling, feiert Premiere im Theater am Goetheplatz in Bremen – dem Auftraggeber des Werks. Die Inszenierung unter der Regie von Philipp Rosendahl und der musikalischen Leitung von Yoel Gamzou läuft vom 24. Mai bis zum 18. Juni.<4> Wellen</4> spielt in einem Ostseebad am Vorabend des Ersten Weltkriegs und beleuchtet den Zusammenbruch utopischer Ideale durch Keyserlings ironische Gesellschaftskritik. <0>Zum Programm auf der Website des Theater Bremen.</0>",
             "link1": "https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events"
         },
         {
             "title": "SZSO bringt neues Werk von Elmar Lampson zur Uraufführung",
             "date": "23.10.2024",
-            "summary": "Das Shenzhen Symphony Orchestra unter der Leitung von Lin Daye bringt Elmar Lampsons „Stormy Sea No. 2“ im Shenzhen Concert Hall zur Uraufführung. Diese neue Sinfonie wurde vom Orchester in Auftrag gegeben und folgt auf den ersten Teil „Stormy Sea“, der im Dezember 2023 debütierte. Während das ursprüngliche Werk die rohe Kraft des Ozeans einfing, widmet sich die Fortsetzung den introspektiven Gefühlen von Strandbesuchern bei Sonnenaufgang. <0>Zur Meldung</0>",
+            "summary": "Das Shenzhen Symphony Orchestra unter der Leitung von Lin Daye bringt Elmar Lampsons „Stormy Sea No. 2“ im Shenzhen Concert Hall zur Uraufführung. Diese neue Sinfonie wurde vom Orchester in Auftrag gegeben und folgt auf den ersten Teil „Stormy Sea“, der im Dezember 2023 debütierte. Während das ursprüngliche Werk die rohe Kraft des Ozeans einfing, widmet sich die Fortsetzung den introspektiven Gefühlen von Strandbesuchern bei Sonnenaufgang. <0>Zur Meldung</0>.",
             "link1": "https://www.eyeshenzhen.com/content/2024-10/23/content_31290169.htm"
         },
         {
             "title": "Präsident der HfMT Hamburg feierlich verabschiedet",
             "date": "4.10.2022",
-            "summary": "Professor Elmar Lampson wurde in einer feierlichen Zeremonie für seine 18-jährige Amtszeit als Präsident der Hochschule für Musik und Theater Hamburg (HfMT) geehrt. Unter seiner Leitung seit 2004 erlebte die Hochschule tiefgreifende Veränderungen, darunter die Gründung der JazzHall und neue Einrichtungen für die Theaterakademie sowie das Institut für Kultur- und Medienmanagement. Die Abschiedsfeier umfasste Beiträge prominenter Persönlichkeiten wie Kent Nagano und die Uraufführung eines eigens komponierten Harfenkonzerts. <0>Zur Nachricht auf MIZ</0>",
+            "summary": "Professor Elmar Lampson wurde in einer feierlichen Zeremonie für seine 18-jährige Amtszeit als Präsident der Hochschule für Musik und Theater Hamburg (HfMT) geehrt. Unter seiner Leitung seit 2004 erlebte die Hochschule tiefgreifende Veränderungen, darunter die Gründung der JazzHall und neue Einrichtungen für die Theaterakademie sowie das Institut für Kultur- und Medienmanagement. Die Abschiedsfeier umfasste Beiträge prominenter Persönlichkeiten wie Kent Nagano und die Uraufführung eines eigens komponierten Harfenkonzerts. <0>Zur Nachricht auf MIZ</0>.",
             "link1": "https://miz.org/de/nachrichten/praesident-der-hfmt-hamburg-elmar-lampson-wurde-feierlich-verabschiedet"
         },
         {
             "title": "Hochschule für Musik und Theater Hamburg eröffnet modernisierten Campus",
             "date": "15.10.2017",
-            "summary": "Elmar Lampson spricht über die Wiedereröffnung des modernisierten Campus der Hochschule für Musik und Theater Hamburg. Dabei hebt er neue Initiativen wie das Projekt „Stage_2.0: Alsterphilharmonie“ hervor, das auf die Entwicklung interaktiver Bühnenräume und internationaler Kooperationen abzielt, um die Hochschule als führende Institution für innovative Musik- und Theaterausbildung zu positionieren. <0>Zum Artikel in Die Welt</0>",
+            "summary": "Elmar Lampson spricht über die Wiedereröffnung des modernisierten Campus der Hochschule für Musik und Theater Hamburg. Dabei hebt er neue Initiativen wie das Projekt „Stage_2.0: Alsterphilharmonie“ hervor, das auf die Entwicklung interaktiver Bühnenräume und internationaler Kooperationen abzielt, um die Hochschule als führende Institution für innovative Musik- und Theaterausbildung zu positionieren. <0>Zum Artikel in Die Welt</0>.",
             "link1": "https://www.welt.de/regionales/hamburg/article169646409/Das-groesste-kulturelle-Ereignis-seit-Eroeffnung-der-Elbphilharmonie.html"
         },
         {
@@ -99,7 +99,7 @@
         {
             "title": "„Wie klingt eine Untertasse?“",
             "date": "18.06.2003",
-            "summary": "Elmar Lampsons innovativer Zugang zur Musikpädagogik wurde in Die Zeit porträtiert. Professor Lampson fordert seine Studierenden dazu auf, ihre Hörwahrnehmung neu zu denken – und setzt dabei auch unkonventionelle Mittel wie eine Kantinen-Untertasse ein. Seine Methoden spiegeln sein dauerhaftes Engagement für ein erfahrungsorientiertes und philosophisches Musikverständnis wider. <0>Zum vollständigen Interview in Die Zeit</0>",
+            "summary": "Elmar Lampsons innovativer Zugang zur Musikpädagogik wurde in <4>Die Zeit</4> porträtiert. Professor Lampson fordert seine Studierenden dazu auf, ihre Hörwahrnehmung neu zu denken – und setzt dabei auch unkonventionelle Mittel wie eine Kantinen-Untertasse ein. Seine Methoden spiegeln sein dauerhaftes Engagement für ein erfahrungsorientiertes und philosophisches Musikverständnis wider. <0>Zum vollständigen Interview in <4>Die Zeit</4></0>.",
             "link1": "https://www.zeit.de/2003/26/P-Lampson"
         }
     ]
