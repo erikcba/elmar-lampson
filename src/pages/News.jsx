@@ -24,15 +24,39 @@ const News = () => {
         setIsOpen(!isOpen)
     }
 
-    function italicizeTag(text) {
-        return text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
+    // function italicizeTag(text) {
+    //     return text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
+    // }
+
+    // function processSummary(text, link) {
+    //     // Convierte <I>...</I> en cursiva
+    //     let html = text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
+    //     // Convierte <0>...</0> en un enlace
+    //     html = html.replace(/<0>(.*?)<\/0>/g, `<a href="${link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline break-words">$1</a>`);
+    //     return html;
+    // }
+
+    function processSummary(text, links) {
+        // Convierte *texto* en cursiva
+        let html = text.replace(/\*(.*?)\*/g, '<span class="italic">$1</span>');
+        // Convierte <I>...</I> en cursiva (por si acaso)
+        html = html.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
+        // Convierte <n>...</n> en enlaces, para n = 0,1,2,3,4
+        for (let i = 0; i < 5; i++) {
+            const link = links[`link${i}`];
+            if (link) {
+                const regex = new RegExp(`<${i}>(.*?)<\/${i}>`, 'g');
+                html = html.replace(regex, `<a href="${link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline break-words">$1</a>`);
+            }
+        }
+        return html;
     }
 
-    function processSummary(text, link) {
-        // Convierte <I>...</I> en cursiva
-        let html = text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
-        // Convierte <0>...</0> en un enlace
-        html = html.replace(/<0>(.*?)<\/0>/g, `<a href="${link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline break-words">$1</a>`);
+        function processTitle(text) {
+        // Convierte *texto* en cursiva
+        let html = text.replace(/\*(.*?)\*/g, '<span class="italic">$1</span>');
+        // Convierte <I>...</I> en cursiva (por si acaso)
+        html = html.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
         return html;
     }
 
@@ -67,32 +91,18 @@ const News = () => {
                         <div className='flex flex-col w-full gap-2'>
                             <h2
                                 className="font-bold text-xl"
-                                dangerouslySetInnerHTML={{ __html: italicizeTag(article.title) }}
+                                dangerouslySetInnerHTML={{ __html: processTitle(article.title) }}
                             />
                             <div className='flex flex-col gap-2'>
                                 <p className='font-bold text-md xl:text-xl text-sky-700'>
                                     {article.date}
                                 </p>
-                                {/* Si el summary tiene <I>...</I> y <0>...</0> */}
-                                {article.summary.includes('<I>') ? (
-                                    <p
-                                        className='font-light text-md xl:text-lg 2xl:text-xl'
-                                        dangerouslySetInnerHTML={{ __html: processSummary(article.summary, article.link1) }}
-                                    />
-                                ) : (
-                                    <p className='font-light text-md xl:text-lg 2xl:text-xl'>
-                                        <Trans
-                                            i18nKey={`pressArticles.${index}.summary`}
-                                            components={[
-                                                <a key="0" href={article.link1} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                                <a key="1" href={article.link2} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
-                                                <a key="2" href={article.link3} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words italic" />,
-                                                <a key="3" href={article.link4} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-words" />,
-                                                <span key="4" className="italic" />,
-                                            ]}
-                                        />
-                                    </p>
-                                )}
+
+                                <p
+                                    className='font-light text-md xl:text-lg 2xl:text-xl'
+                                    dangerouslySetInnerHTML={{ __html: processSummary(article.summary, article) }}
+                                />
+
                             </div>
                         </div>
                     </div>

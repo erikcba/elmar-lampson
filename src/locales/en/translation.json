@@ -30,11 +30,11 @@
     "waves1": "On",
     "waves2": "Waves",
     "waves3": "“contains passages of unearthly beauty”",
-    "waves4": "(Wolfgang Denker, <0> Der Opernfreund </0>)",
+    "waves4": "(Wolfgang Denker, <1> Der Opernfreund </1>)",
     "waves5": "an “iridescent score”",
-    "waves6": "(Andreas Schnell, <0>Kreiszeitung</0>)",
+    "waves6": "(Andreas Schnell, <1>Kreiszeitung</1>)",
     "waves7": "“Lampson’s music holds nothing back: it moves between wild and tender, between major and minor, with numerous pentatonic touches and hugely demanding ensemble sections... it repeatedly manages to create completely unexpected constellations and confrontations. The percussion formations positioned on both sides of the stage are thrilling.”",
-    "waves8": "(Ute Schalz-Laurenze, <0>Neue Musikzeitung</0>)",
+    "waves8": "(Ute Schalz-Laurenze, <1>Neue Musikzeitung</1>)",
     "news": "News",
     "about": "About",
     "myMusic": "My music",
@@ -42,20 +42,20 @@
     "media": "Media",
     "calendar": "Calendar",
     "contact": "Contact",
-    "wavesHome": "Waves <0></0> A new opera by Elmar Lampson with a libretto by Julia Spinola after Eduard von Keyserling",
+    "wavesHome": "Waves <1></1> A new opera by Elmar Lampson with a libretto by Julia Spinola after Eduard von Keyserling",
     "readMore": "Read more",
     "aboutText": "Born in Koblenz, Germany, Elmar Lampson is a renowned composer, conductor, and music educator",
     "my": "My",
     "music": "Music",
     "myMusicText": "The extensive catalogue of compositions by Elmar Lampson includes a wide range of works across various genres, including orchestral works, chamber orchestra and ensemble pieces, chamber music and solo compositions, vocal music, as well as music opera, theatre and stage music",
-    "musicMore": "Complete catalogue <0></0> of works",
-    "listen":"Listen now <0></0> on your <0></0> favourite platform",
+    "musicMore": "Complete catalogue <1></1> of works",
+    "listen":"Listen now <1></1> on your <1></1> favourite platform",
     "generalManagement": "General Management",
     "pressArticles": [
         {
             "title": "The Reviews Are In!",
             "date": "4.06.2025",
-            "summary": "The premiere of Elmar Lampson’s newest opera, <4>Wellen</4>, was warmly received by both critics and audiences. Reviewers praised the “iridescent score” (Andreas Schnell, <0>Kreiszeitung</0>), with “passages of unearthly beauty” (Wolfgang Denker, <1>Der Opernfreund</1>). “Elmar Lampson’s music remains constantly in flow, carrying the action forward” (Christine Gorny, <2>Bremen Zwei,</2>)—“Lampson’s music holds nothing back: it moves between wild and tender, between major and minor, with numerous pentatonic touches and hugely demanding ensemble sections. . . . it repeatedly manages to create completely unexpected constellations and confrontations. The percussion formations positioned on both sides of the stage are thrilling” (Ute Schalz-Laurenze, Neue Musikzeitung).  The opera is playing at Theater Bremen until June 18—get your <3>tickets here</3> so you don’t miss out! ",
+            "summary": "The premiere of Elmar Lampson’s newest opera, *Wellen*, was warmly received by both critics and audiences. Reviewers praised the “iridescent score” (Andreas Schnell, <1>*Kreiszeitung*</1>), with “passages of unearthly beauty” (Wolfgang Denker, <2>*Der Opernfreund*</2>). “Elmar Lampson’s music remains constantly in flow, carrying the action forward” (Christine Gorny, <3>*Bremen Zwei,*</3>)—“Lampson’s music holds nothing back: it moves between wild and tender, between major and minor, with numerous pentatonic touches and hugely demanding ensemble sections. . . . it repeatedly manages to create completely unexpected constellations and confrontations. The percussion formations positioned on both sides of the stage are thrilling” (Ute Schalz-Laurenze, *Neue Musikzeitung*).  The opera is playing at Theater Bremen until June 18—get your <4>tickets here</4> so you don’t miss out! ",
             "link1": "https://www.kreiszeitung.de/kultur/der-untergang-wellen-in-bremen-93755869.html",
             "link2": "https://deropernfreund.de/theater-bremen/bremen-wellen-elmar-lampson/",
             "link3": "https://www.bremenzwei.de/themen/oper-wellen-theater-bremen-100.html",
@@ -64,43 +64,43 @@
         {
             "title": "For Elmar Lampson, Composing Doesn’t Feel Like Work",
             "date": "23.05.2025",
-            "summary": "The composer delves into his most recent opera in an <0>exclusive interview for <I>Bremen Zwei</I> </0>",
+            "summary": "The composer delves into his most recent opera in an <1>exclusive interview for *Bremen Zwei* </1>",
             "link1": "https://www.bremenzwei.de/audios/elmar-lampson-komponist-wellen-oper-theater-bremen-100.html"
         },
         {
-            "title": "<I>Waves</I> to Receive Its World Premiere at Theater Bremen",
+            "title": "*Waves* to Receive Its World Premiere at Theater Bremen",
             "date": "20.05.2025",
-            "summary": "Elmar Lampson’s new opera, with a libretto by Julia Spinola based on Eduard von Keyserling’s novel, premieres at Theater am Goetheplatz in Bremen—the venue that commissioned the work. The production runs from May 24 to June 18, directed by Philipp Rosendahl with musical direction by Yoel Gamzou. Set in a Baltic Sea resort on the eve of World War I, <4>Waves</4> explores the collapse of utopian ideals through Keyserling’s ironic lens of social critique. Check out the programme at Theater Bremen’s <0>website.</0>",
+            "summary": "Elmar Lampson’s new opera, with a libretto by Julia Spinola based on Eduard von Keyserling’s novel, premieres at Theater am Goetheplatz in Bremen—the venue that commissioned the work. The production runs from May 24 to June 18, directed by Philipp Rosendahl with musical direction by Yoel Gamzou. Set in a Baltic Sea resort on the eve of World War I, *Waves* explores the collapse of utopian ideals through Keyserling’s ironic lens of social critique. Check out the programme at Theater Bremen’s <1>website.</1>",
             "link1": "https://www.theaterbremen.de/de_DE/programm/wellen.1303395#events"
         },
         {
             "title": "SZSO to Premiere Elmar Lampson’s Work",
             "date": "23.10.2024",
-            "summary": "The Shenzhen Symphony Orchestra, under the baton of Lin Daye, will premiere Elmar Lampson’s “Stormy Sea No. 2” at the Shenzhen Concert Hall. This new symphony, commissioned by the orchestra, follows the debut of the first “Stormy Sea” instalment in December 2023. While the original piece captured the ocean’s raw power, this sequel explores the introspective emotions of beachgoers at sunrise. Click <0>here</0> for more info.",
+            "summary": "The Shenzhen Symphony Orchestra, under the baton of Lin Daye, will premiere Elmar Lampson’s “Stormy Sea No. 2” at the Shenzhen Concert Hall. This new symphony, commissioned by the orchestra, follows the debut of the first “Stormy Sea” instalment in December 2023. While the original piece captured the ocean’s raw power, this sequel explores the introspective emotions of beachgoers at sunrise. Click <1>here</1> for more info.",
             "link1": "https://www.eyeshenzhen.com/content/2024-10/23/content_31290169.htm"
         },
         {
             "title": "President of the Hamburg University of Music and Drama Given Ceremonial Farewell",
             "date": "4.10.2022",
-            "summary": "Professor Elmar Lampson was formally honoured at a ceremony marking the end of his 18-year tenure as President of the Hochschule für Musik und Theater Hamburg (HfMT). Under his leadership since 2004, the university underwent significant transformation, including the establishment of the Jazz Hall and new facilities for the Theatre Academy and the Institute for Culture and Media Management. The <0>farewell</0> event featured tributes from prominent figures such as Kent Nagano and included the premiere of a harp concerto composed for the occasion.",
+            "summary": "Professor Elmar Lampson was formally honoured at a ceremony marking the end of his 18-year tenure as President of the Hochschule für Musik und Theater Hamburg (HfMT). Under his leadership since 2004, the university underwent significant transformation, including the establishment of the Jazz Hall and new facilities for the Theatre Academy and the Institute for Culture and Media Management. The <1>farewell event</1> featured tributes from prominent figures such as Kent Nagano and included the premiere of a harp concerto composed for the occasion.",
             "link1": "https://miz.org/de/nachrichten/praesident-der-hfmt-hamburg-elmar-lampson-wurde-feierlich-verabschiedet"
         },
         {
             "title": "Hochschule für Musik und Theater Hamburg Reopens with Renovated Campus",
             "date": "15.10.2017",
-            "summary": "Elmar Lampson <0>discusses</0> the reopening of the Hochschule für Musik und Theater Hamburg’s renovated campus, highlighting new initiatives like the “Stage 2.0: Alsterphilharmonie” project, which focuses on developing interactive performance spaces and fostering international collaborations to position the institution as a leader in innovative music and theatre education.",
+            "summary": "Elmar Lampson <1>discusses</1> the reopening of the Hochschule für Musik und Theater Hamburg’s renovated campus, highlighting new initiatives like the “Stage 2.0: Alsterphilharmonie” project, which focuses on developing interactive performance spaces and fostering international collaborations to position the institution as a leader in innovative music and theatre education.",
             "link1": "https://www.welt.de/regionales/hamburg/article169646409/Das-groesste-kulturelle-Ereignis-seit-Eroeffnung-der-Elbphilharmonie.html"
         },
         {
             "title": "HfMT Hamburg and Beijing Conservatory Launch Academic Partnership",
             "date": "30.04.2013",
-            "summary": "The Hochschule für Musik und Theater Hamburg (HfMT) has signed a cooperation agreement with the Central Conservatory of Music in Beijing. The partnership, formalized by Presidents Elmar Lampson and Wang Cizhao at Hamburg City Hall, includes student and faculty exchanges, mutual recognition of coursework, and joint projects. More info in the <0>link.</0>",
+            "summary": "The Hochschule für Musik und Theater Hamburg (HfMT) has signed a cooperation agreement with the Central Conservatory of Music in Beijing. The partnership, formalized by Presidents Elmar Lampson and Wang Cizhao at Hamburg City Hall, includes student and faculty exchanges, mutual recognition of coursework, and joint projects. More info in the <1>link.</1>",
             "link1": "https://www.musik-heute.de/4932/hfmt-hamburg-kooperiert-mit-musikhochschule-peking/"
         },
         {
             "title": "What Does a Saucer Sound Like?",
             "date": "18.06.2003",
-            "summary": "Elmar Lampson’s innovative approach to music education was profiled in <4>Die Zeit</4>. Professor Lampson challenges his students to rethink how they listen—even using unexpected tools like a cafeteria saucer to sharpen auditory perception. Lampson’s methods reflect his enduring commitment to a deeply experiential and philosophical understanding of music. Read the whole interview <0>here</0>.",
+            "summary": "Elmar Lampson’s innovative approach to music education was profiled in *Die Zeit*. Professor Lampson challenges his students to rethink how they listen—even using unexpected tools like a cafeteria saucer to sharpen auditory perception. Lampson’s methods reflect his enduring commitment to a deeply experiential and philosophical understanding of music. Read the whole interview <1>here</1>.",
             "link1": "https://www.zeit.de/2003/26/P-Lampson"
         }
     ]
