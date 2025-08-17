@@ -25,14 +25,38 @@ import CloseWhite from '../components/icons/CloseWhite'
 
 const Home = () => {
 
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
-
   const { t } = useTranslation()
   const currentLang = i18n.language
+
+  const [isOpen, setIsOpen] = useState(false)
+  const [contactOpen, setContactOpen] = useState(false)
+  const [menuClosing, setMenuClosing] = useState(false)
+  const [contactAnimating, setContactAnimating] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuClosing(true)
+    setTimeout(() => {
+      setIsOpen(false)
+      setMenuClosing(false)
+      setContactOpen(false)
+    }, 200)
+  }
+
+  const openContact = () => {
+    setContactAnimating(true)
+    setContactOpen(true)
+    setTimeout(() => setContactAnimating(false), 500)
+  }
+
+  const closeContact = () => {
+    setContactOpen(false)
+    setIsOpen(false)
+  }
+
+  const openMenu = () => {
+    setIsOpen(true)
+    setContactOpen(false)
+  }
 
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
@@ -45,7 +69,7 @@ const Home = () => {
   const closeVideo = () => {
     setIsPlaying(false);
     videoRef.current?.pause();
-    videoRef.current.currentTime = 0; // opcional, reinicia el video
+    videoRef.current.currentTime = 0; 
   }
 
   useEffect(() => {
@@ -68,12 +92,20 @@ const Home = () => {
   return (
     <div className=''>
 
-      <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
+      <Menu
+        isOpen={isOpen}
+        toggleMenu={toggleMenu}
+        contactOpen={contactOpen}
+        openContact={openContact}
+        menuClosing={menuClosing}
+        contactAnimating={contactAnimating}
+        closeContact={closeContact}
+      />
 
       <section id='hero' className='bg-hero bg-hero-mobile xl:pt-16 2xl:pt-32'>
         <div className='container mx-auto px-6 2xl:px-0 xl:px-20 '>
           <div className='relative'>
-            <Navbar toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
+            <Navbar toggleMenu={openMenu} bgLang={'bg-white text-black'} bgColor='bg-fuchsia-975 mix-blend-multiply text-white' />
           </div>
         </div>
       </section>

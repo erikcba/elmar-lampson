@@ -10,7 +10,7 @@ import LinkedinIcon from './icons/LinkedinIcon'
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <footer id='contact' className='bg-fuchsia-975 mt-auto sm:py-8 py-6 z-20 relative'>
+        <footer className='bg-fuchsia-975 mt-auto sm:py-8 py-6 z-20 relative'>
             <div className='flex flex-row justify-between items-start container mx-auto' >
                 <div className=' flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-10 2xl:px-0 w-3/5'>
                     <h1 className='xl:text-3xl sm:text-2xl text-xl font-medium text-white mx-auto lg:mx-0 tracking-widest md:pb-6'>
