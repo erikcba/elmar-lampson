@@ -35,36 +35,36 @@ const Contact = ({ isOpen, toggleMenu }) => {
                             <Navbar toggleMenu={toggleMenu} hide={'hidden'} bgLang={'bg-white text-black'} isOpen={isOpen} bgColor='bg-sky-elmar mix-blend-lighten text-black' />
                             <span
                                 onClick={toggleLanguage}
-                                className={`btn-language transition-all ease-in-out absolute md:left-2/7 lg:left-50 xl:left-75 xl:top-2 md:translate-x-20 md:top-3 md:mt-0 mt-12 left-53 2xl:top-8 2xl:left-100 bg-white top-14 md:text-2xl text-xl w-fit font-bold rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
+                                className={`btn-language transition-all ease-in-out absolute md:left-2/7 lg:left-50 xl:left-75 xl:top-2 md:translate-x-20 md:top-15 md:mt-0 left-53 2xl:top-8 2xl:left-100 bg-white top-14 md:text-2xl text-xl w-fit font-bold rounded-full py-3 px-2 leading-none cursor-pointer select-none`}
                             >
                                 {t('language')}
                             </span>
                         </div>
-                        <div className='flex flex-row justify-center gap-10 items-start h-fit mt-10 ml-auto w-fit'>
+                        <div className='flex flex-col md:flex-row justify-center gap-10 items-start h-fit mt-10 mx-auto md:ml-auto md:mr-20 w-fit'>
                             <div>
                                 <h2 className='text-4xl md:text-5xl 2xl:text-6xl font-bold text-center pt-6 text-sky'>
                                     {t('contact')}
                                 </h2>
                             </div>
-                            <div className='h-78 2xl:h-fit'>
+                            <div className='h-78 2xl:h-fit hidden md:block'>
                                 <img className='2xl:h-fit h-full' src={vector} alt="" />
                             </div>
-                            <div className='flex flex-col my-auto justify-between lg:items-start items-center 2xl:gap-8 lg:gap-6 gap-8'>
-                                <div className='flex w-fit'>
+                            <div className='flex flex-col my-auto justify-between items-start 2xl:gap-8 lg:gap-6 gap-8'>
+                                <div className='flex w-fit '>
                                     <img className='sm:w-full md:w-3/4 w-2/3' src={tybLogo} alt="" />
                                 </div>
-                                <div className='sm:text-left text-center'>
+                                <div className='text-left md:text-center'>
                                     <p className='text-white 2xl:text-xl text-md'>{t('generalManagement')} </p>
                                     <p className='font-medium text-white 2xl:text-xl text-md'>Thomas Yaksic Beckdorf</p>
                                 </div>
-                                <div className='sm:text-left text-center'>
+                                <div className='text-left md:text-center'>
                                     <a href="mailto:contact@tybarts.com" className='text-white 2xl:text-xl text-md'>contact@tybarts.com</a>
                                     <p className='text-white 2xl:text-xl text-md'>+44 20 3535 5611</p>
                                     <a href="https://www.tybarts.com" target="_blank" rel="noreferrer" className='text-white 2xl:text-xl text-md'>www.tybarts.com </a>
                                 </div>
                             </div>
                             <div className=' w-fit my-auto'>
-                                <div className='flex flex-col items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit '>
+                                <div className='flex flex-row md:flex-col items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit '>
                                     <a href="https://www.instagram.com/elmarlampson/" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
                                         <img src={instagram} alt="" />
                                     </a>
