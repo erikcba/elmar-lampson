@@ -3,21 +3,21 @@ import React from 'react'
 const Tickets = ({ date, place, title, subtitle, director, description, musicDirector, stageDirector, link }) => {
   return (
     <div className='flex flex-col gap-0'>
-      <div className='flex flex-col mb-3'>
+      <div className='flex flex-col mb-4'>
+        <h1 className='xl:text-3xl text-2xl font-bold'>
+          {title}
+        </h1>
         <h3 className='xl:text-2xl text-xl font-semibold'>
           {date}
         </h3>
         <p className='text-sm font-light'>
           {place}
         </p>
-        <h1 className='xl:text-3xl text-2xl font-bold'>
-          {title}
-        </h1>
         <p className='text-sm font-light'>
           {subtitle}
         </p>
       </div>
-      <div className='flex flex-col gap-0 mb-2'>
+      <div className='flex flex-col gap-0 mb-6'>
         <p className='text-md font-semibold'>
           {director}
         </p>
