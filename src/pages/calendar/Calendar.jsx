@@ -16,9 +16,35 @@ const Calendar = () => {
     const [events, setEvents] = useState([])
     const [loading, setLoading] = useState(true)
 
+    const [contactOpen, setContactOpen] = useState(false)
+    const [menuClosing, setMenuClosing] = useState(false)
+    const [contactAnimating, setContactAnimating] = useState(false)
+
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        setMenuClosing(true)
+        setTimeout(() => {
+            setIsOpen(false)
+            setMenuClosing(false)
+            setContactOpen(false)
+        }, 200)
     }
+
+    const openContact = () => {
+        setContactAnimating(true)
+        setContactOpen(true)
+        setTimeout(() => setContactAnimating(false), 500)
+    }
+
+    const closeContact = () => {
+        setContactOpen(false)
+        setIsOpen(false)
+    }
+
+    const openMenu = () => {
+        setIsOpen(true)
+        setContactOpen(false)
+    }
+
 
     useEffect(() => {
         axios.get('https://starlit-gaufre-2657cf.netlify.app/.netlify/functions/server', { responseType: 'arraybuffer' })
@@ -63,12 +89,20 @@ const Calendar = () => {
 
     return (
         <div>
-            <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
+            <Menu
+                isOpen={isOpen}
+                toggleMenu={toggleMenu}
+                contactOpen={contactOpen}
+                openContact={openContact}
+                menuClosing={menuClosing}
+                contactAnimating={contactAnimating}
+                closeContact={closeContact}
+            />
             <section >
                 <div className=' xl:pt-16 2xl:pt-32 pt-0'>
                     <div className='container mx-auto px-6 2xl:px-0 xl:px-20'>
                         <div className='relative  '>
-                            <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+                            <Navbar toggleMenu={openMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                         </div>
                     </div>
                     <div className='relative z-10  md:pb-12  pt-12 xl:px-0'>

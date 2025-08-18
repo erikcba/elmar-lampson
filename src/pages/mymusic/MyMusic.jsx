@@ -21,22 +21,55 @@ const MyMusic = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
+    const [contactOpen, setContactOpen] = useState(false)
+    const [menuClosing, setMenuClosing] = useState(false)
+    const [contactAnimating, setContactAnimating] = useState(false)
+
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        setMenuClosing(true)
+        setTimeout(() => {
+            setIsOpen(false)
+            setMenuClosing(false)
+            setContactOpen(false)
+        }, 200)
+    }
+
+    const openContact = () => {
+        setContactAnimating(true)
+        setContactOpen(true)
+        setTimeout(() => setContactAnimating(false), 500)
+    }
+
+    const closeContact = () => {
+        setContactOpen(false)
+        setIsOpen(false)
+    }
+
+    const openMenu = () => {
+        setIsOpen(true)
+        setContactOpen(false)
     }
 
     const mitad = Math.ceil(data.chamberWorks.length / 2);
     const primeraColumna = data.chamberWorks.slice(0, mitad - 1);
-    const segundaColumna = data.chamberWorks.slice(mitad - 1 );
+    const segundaColumna = data.chamberWorks.slice(mitad - 1);
 
 
     return (
         <div className=''>
-            <Menu toggleMenu={toggleMenu} isOpen={isOpen} />
+            <Menu
+                isOpen={isOpen}
+                toggleMenu={toggleMenu}
+                contactOpen={contactOpen}
+                openContact={openContact}
+                menuClosing={menuClosing}
+                contactAnimating={contactAnimating}
+                closeContact={closeContact}
+            />
             <section className='xl:px-0 xl:pt-16 2xl:pt-32'>
                 <div className='container mx-auto'>
                     <div className='relative container mx-auto px-6 2xl:px-0 xl:px-20 '>
-                        <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+                        <Navbar toggleMenu={openMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                     </div>
                     <div className='flex flex-col xl:gap-10 gap-6 md:pt-24 pt-12 px-6 xl:px-20 2xl:px-0'>
                         <h1 className='text-sky md:text-5xl text-4xl font-bold'>

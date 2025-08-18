@@ -53,11 +53,11 @@ const Contact = ({ isOpen, toggleMenu }) => {
                                 <div className='flex w-fit '>
                                     <img className='sm:w-full md:w-3/4 w-2/3' src={tybLogo} alt="" />
                                 </div>
-                                <div className='text-left md:text-center'>
+                                <div className='text-left'>
                                     <p className='text-white 2xl:text-xl text-md'>{t('generalManagement')} </p>
                                     <p className='font-medium text-white 2xl:text-xl text-md'>Thomas Yaksic Beckdorf</p>
                                 </div>
-                                <div className='text-left md:text-center'>
+                                <div className='text-left '>
                                     <a href="mailto:contact@tybarts.com" className='text-white 2xl:text-xl text-md'>contact@tybarts.com</a>
                                     <p className='text-white 2xl:text-xl text-md'>+44 20 3535 5611</p>
                                     <a href="https://www.tybarts.com" target="_blank" rel="noreferrer" className='text-white 2xl:text-xl text-md'>www.tybarts.com </a>

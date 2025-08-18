@@ -11,8 +11,33 @@ import vectorAbout from '../assets/vector-about.png'
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [contactOpen, setContactOpen] = useState(false)
+    const [menuClosing, setMenuClosing] = useState(false)
+    const [contactAnimating, setContactAnimating] = useState(false)
+
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        setMenuClosing(true)
+        setTimeout(() => {
+            setIsOpen(false)
+            setMenuClosing(false)
+            setContactOpen(false)
+        }, 200)
+    }
+
+    const openContact = () => {
+        setContactAnimating(true)
+        setContactOpen(true)
+        setTimeout(() => setContactAnimating(false), 500)
+    }
+
+    const closeContact = () => {
+        setContactOpen(false)
+        setIsOpen(false)
+    }
+
+    const openMenu = () => {
+        setIsOpen(true)
+        setContactOpen(false)
     }
 
     const { t } = useTranslation()
@@ -30,10 +55,18 @@ const About = () => {
 
     return (
         <div className='bg-white '>
-            <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
+             <Menu
+                isOpen={isOpen}
+                toggleMenu={toggleMenu}
+                contactOpen={contactOpen}
+                openContact={openContact}
+                menuClosing={menuClosing}
+                contactAnimating={contactAnimating}
+                closeContact={closeContact}
+            />
             <div className='container mx-auto'>
                 <div className='px-6 2xl:px-0 xl:px-20  xl:pt-16 2xl:pt-32'>
-                    <Navbar toggleMenu={toggleMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
+                    <Navbar toggleMenu={openMenu} bgLang={'bg-sky-elmar text-white hover:bg-gray-100! hover:text-black!'} bgColor='bg-sky-elmar mix-blend-multiply text-white' />
                 </div>
             </div>
             <div className='container mx-auto flex xl:flex-row flex-col items-center justify-center xl:gap-24 gap-18 xl:py-20 py-10 px-6 xl:px-20 2xl:px-0 relative'>

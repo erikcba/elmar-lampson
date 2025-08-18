@@ -20,21 +20,34 @@ const News = () => {
 
     const [isOpen, setIsOpen] = useState(false)
     const newsImages = [img1, img2, img3, img4, img5, img6, img7, img8]
+    const [contactOpen, setContactOpen] = useState(false)
+    const [menuClosing, setMenuClosing] = useState(false)
+    const [contactAnimating, setContactAnimating] = useState(false)
+
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        setMenuClosing(true)
+        setTimeout(() => {
+            setIsOpen(false)
+            setMenuClosing(false)
+            setContactOpen(false)
+        }, 200)
     }
 
-    // function italicizeTag(text) {
-    //     return text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
-    // }
+    const openContact = () => {
+        setContactAnimating(true)
+        setContactOpen(true)
+        setTimeout(() => setContactAnimating(false), 500)
+    }
 
-    // function processSummary(text, link) {
-    //     // Convierte <I>...</I> en cursiva
-    //     let html = text.replace(/<I>(.*?)<\/I>/g, '<span class="italic">$1</span>');
-    //     // Convierte <0>...</0> en un enlace
-    //     html = html.replace(/<0>(.*?)<\/0>/g, `<a href="${link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline break-words">$1</a>`);
-    //     return html;
-    // }
+    const closeContact = () => {
+        setContactOpen(false)
+        setIsOpen(false)
+    }
+
+    const openMenu = () => {
+        setIsOpen(true)
+        setContactOpen(false)
+    }
 
     function processSummary(text, links) {
         // Convierte *texto* en cursiva
@@ -52,7 +65,7 @@ const News = () => {
         return html;
     }
 
-        function processTitle(text) {
+    function processTitle(text) {
         // Convierte *texto* en cursiva
         let html = text.replace(/\*(.*?)\*/g, '<span class="italic">$1</span>');
         // Convierte <I>...</I> en cursiva (por si acaso)
@@ -65,12 +78,20 @@ const News = () => {
 
     return (
         <div className='overflow-hidden'>
-            <Menu isOpen={isOpen} toggleMenu={toggleMenu} />
+            <Menu
+                isOpen={isOpen}
+                toggleMenu={toggleMenu}
+                contactOpen={contactOpen}
+                openContact={openContact}
+                menuClosing={menuClosing}
+                contactAnimating={contactAnimating}
+                closeContact={closeContact}
+            />
             <section id='hero' className='bg-hero-news relative '>
                 <img src={vectorNews} className='absolute bottom-25 xl:w-fit w-1/2' alt="" />
                 <div className='container mx-auto'>
                     <div className='px-6 xl:pt-16 2xl:pt-32 2xl:px-0 xl:px-20 '>
-                        <Navbar menuColor={'white'} theme={'white'} toggleMenu={toggleMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
+                        <Navbar menuColor={'white'} theme={'white'} toggleMenu={openMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
                         <h1 className='text-white  text-5xl font-bold absolute bottom-10'>
                             News
                         </h1>
