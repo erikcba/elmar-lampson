@@ -50,37 +50,30 @@ const Calendar = () => {
 
 
     useEffect(() => {
-        axios.get('https://starlit-gaufre-2657cf.netlify.app/.netlify/functions/server', { responseType: 'arraybuffer' })
+        axios.get('https://starlit-gaufre-2657cf.netlify.app/.netlify/functions/server')
             .then(response => {
-                const decoder = new TextDecoder('utf-8')
-                const icsText = decoder.decode(response.data)
+                const jsonData = response.data;
+                console.log('Datos recibidos:', jsonData);
 
-                const jcalData = ICAL.parse(icsText)
-                const comp = new ICAL.Component(jcalData)
-
-                const vevents = comp.getAllSubcomponents('vevent')
-                console.log('Cantidad de eventos:', vevents.length)
-
-                const parsedEvents = vevents.map(event => {
-                    const e = new ICAL.Event(event);
-
-                    // Manejar fechas de día completo (sin hora)
-                    let start = e.startDate ? e.startDate.toJSDate() : null;
-                    let end = e.endDate ? e.endDate.toJSDate() : null;
-
+                // Procesar los eventos del JSON
+                // Ajusta esta lógica según la estructura real de tu JSON
+                const parsedEvents = jsonData.map(event => {
                     return {
-                        summary: e.summary,
-                        start,
-                        end,
-                        location: e.location || '',
-                        description: e.description || '',
+                        summary: event.title || event.name || 'Sin título',
+                        start: new Date(event.startDate || event.start),
+                        end: new Date(event.endDate || event.end),
+                        location: event.location || event.venue || '',
+                        description: event.description || event.summary || '',
                     }
+                });
 
-                })
-                setEvents(parsedEvents)
-                setLoading(false)
+                setEvents(parsedEvents);
+                setLoading(false);
             })
-            .catch(err => console.error(err))
+            .catch(err => {
+                console.error('Error:', err);
+                setLoading(false);
+            });
     }, [])
 
     useEffect(() => {
