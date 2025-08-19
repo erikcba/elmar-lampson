@@ -93,7 +93,7 @@ const News = () => {
                     <div className='px-6 xl:pt-16 2xl:pt-32 2xl:px-0 xl:px-20 '>
                         <Navbar menuColor={'white'} theme={'white'} toggleMenu={openMenu} bgLang={'bg-white text-black'} bgColor='bg-white mix-blend-lighten text-black' />
                         <h1 className='text-white  text-5xl font-bold absolute bottom-10'>
-                            News
+                            {t('news')}
                         </h1>
                     </div>
                 </div>

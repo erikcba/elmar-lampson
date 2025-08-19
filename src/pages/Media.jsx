@@ -4,7 +4,6 @@ import MediaCard from '../components/MediaCard'
 import apple from '../assets/apple.png'
 import spotify from '../assets/spotify.png'
 import youtube from '../assets/youtube.png'
-import youtubeMusic from '../assets/youtubeMusic.png'
 import amazon from '../assets/amazonMedia.png'
 import tidal from '../assets/tidal.png'
 
@@ -39,9 +38,9 @@ const Media = () => {
     ]
 
     return (
-        <div className='bg-violet-100 h-svh py-16'>
+        <div className='bg-violet-100 2xl:h-svh h-full py-16'>
             <div className='container mx-auto px-4 py-8 flex items-center justify-center'>
-                <div className='flex flex-col items-center justify-center w-full sm:w-1/3'>
+                <div className='flex flex-col items-center justify-center w-full lg:w-1/3'>
                     <div>
                         <img src={imgAlbum} alt="" />
                         <h1 className='text-2xl text-center font-bold mt-4'>

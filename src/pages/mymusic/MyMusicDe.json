@@ -1,0 +1,300 @@
+{
+    "orchestralWorks": [
+        {
+            "titulo": "Sea Symphony Part II – 1. Dreams and Inklings, 2. Eerie Morning (2024)",
+            "integrantes": [
+                "2-2-2-3, 4-1-3-1, Perc. (3) Harp, Piano, Strings",
+                "Auftragswerk des Shenzhen Symphony Orchestra",
+                "UA: 26. November 2024",
+                "Shenzhen Concert Hall",
+                "Shenzhen Symphony Orchestra",
+                "Dirigent: Daye Lin"
+            ]
+        },
+        {
+            "titulo": "Sea Symphony Part I – The Stormy Sea (2020–2023)",
+            "integrantes": [
+                "2-2-2-3, 4-1-3-1, Perc. (3) Harp, Piano, Strings",
+                "Auftragswerk des Shenzhen Symphony Orchestra",
+                "UA: 8. Dezember 2023",
+                "Shenzhen Concert Hall",
+                "Shenzhen Symphony Orchestra",
+                "Dirigent: Daye Lin"
+            ]
+        },
+        {
+            "titulo": "Musik für Sankt Michaelis (2022)",
+            "integrantes": [
+                "Trompete, 3 Soloviolinen, Schlaginstrumente (3 Spieler)",
+                "2 Streichoktette (jeweils 3 Vl, 2 Va, 2 Vc, Kb)",
+                "Auftragswerk des Philharmonischen Staatsorchesters Hamburg",
+                "UA: 2. September 2022",
+                "Hauptkirche St. Michaelis",
+                "Philharmonisches Staatsorchester Hamburg",
+                "Dirigent: Kent Nagano"
+            ]
+        },
+        {
+            "titulo": "Konzert für Violine und Orchester",
+            "integrantes": [
+                "2-2-2-2, 4-2-3, Timp, Perc. (2), Harp, Piano, Str.",
+                "Auftragswerk des Kasseler Staatsorchesters",
+                "UA: 10. März 2012 Stadthalle Kassel",
+                "Staatsorchester Kassel",
+                "Solist: Afonso Fesch",
+                "Dirigent: Yoel Gamzou"
+            ]
+        },
+        {
+            "titulo": "3. Symphonie (2008–2011)",
+            "integrantes": [
+                "3-3-3-3, 4-3-3-1, Timp., Perc. (3), Str.",
+                "Auftragswerk der Symphoniker Hamburg",
+                "UA: 19. April 2011",
+                "Hamburg, Laeiszhalle",
+                "Symphoniker Hamburg",
+                "Dirigent: Yoel Gamzou"
+            ]
+        },
+        {
+            "titulo": "Cantus für Flöte und Orchester (2009)",
+            "integrantes": [
+                "Auftragswerk der Symphoniker Hamburg",
+                "3-3-3-3, 4-3-3-1, Timp., Perc. (3), Str.",
+                "UA: 18. März 2009",
+                "Hamburg, Laeiszhalle",
+                "Hamburger Symphoniker",
+                "Flöte: Susanne Barner"
+            ]
+        },
+        {
+            "titulo": "Passacaglia für großes Orchester (2008)",
+            "integrantes": [
+                "3-3-3-3, 4-3-3-1, Timp., Perc. (3), Str.",
+                "Auftragswerk der Philharmonie der Nationen",
+                "UA: 20. Oktober 2008",
+                "Las Palmas, Auditorio Alfredo Kraus",
+                "Philharmonie der Nationen",
+                "Dirigent: Justus Frantz"
+            ]
+        },
+        {
+            "titulo": "2. Symphonie – Gesang des Marsyas (2004/06)",
+            "integrantes": [
+                "3-3-3-3, 4-3-3-1, Timp., Perc (4), Str.",
+                "Auftragswerk der Niederrheinischen Symphoniker",
+                "UA: 27. April 2006, Mönchengladbach, Kaiser Friedrich Halle",
+                "Niederrheinische Sinfoniker",
+                "Dirigent: Graham Jackson"
+            ]
+        },
+        {
+            "titulo": "Musik für großes Orchester (2004/05)",
+            "integrantes": [
+                "3-3-3-3, 4-3-3-1, Timp., Perc (4), Str.",
+                "Auftragswerk der Philharmonie der Nationen",
+                "UA: 1. Oktober 2005, Bad Wörishofen",
+                "Philharmonie der Nationen",
+                "Dirigent: Justus Frantz"
+            ]
+        },
+        {
+            "titulo": "Musik für Klavier, Streicher und Schlaginstrumente (1996)",
+            "integrantes": [
+                "UA: 16. März 1996, Flensburg",
+                "Ulrike Bauer-Wirth, Klavier",
+                "Orchester-Akademie Hamburg",
+                "Leitung: Elmar Lampson"
+            ]
+        },
+        {
+            "titulo": "Symphonie in zwei Sätzen – Das Traumlied des Olaf Åsteson (1991/92)",
+            "integrantes": [
+                "1. Satz: Fl, Pno, Timp, 2 Vl, Vla, Vc und Str.",
+                "2. Satz: 3-3-3-3, 4-3-3-1, Hrf, Cel, Pno, Timp, Perc (5), Str.",
+                "UA des 1. Satzes: April 1991, Irkutsk",
+                "Sinfonieorchester Irkutsk",
+                "Dirigent: Elmar Lampson",
+                "UA des Gesamtwerkes: Oktober 1992, Vidaråsen, Norwegen",
+                "Orchester-Akademie Hamburg",
+                "Dirigent: Elmar Lampson"
+            ]
+        },
+        {
+            "titulo": "Drei Orchesterstücke (1984/85, Neufassung 1987)",
+            "integrantes": [
+                "2-2-2-2, 2-2-2-1, Timp, Perc. (3), Str.",
+                "UA der Neufassung: 30. September 1988",
+                "Große Musikhalle Hamburg",
+                "Orchester-Akademie Hamburg",
+                "Leitung: Zuohuang Chen"
+            ]
+        }
+    ],
+    "chamberWorks": [
+        {
+            "titulo": "Mysterienszenen",
+            "integrantes": [
+                "Suite für Streichquintett, Flöten (Piccolo, Flöte, Altflöte – ein Spieler),",
+                "Schlaginstrumente (zwei Spieler)",
+                "UA: 26. November 2011",
+                "Berlin, Literaturhaus",
+                "Solistenensemble des International Mahler Orchestra",
+                "Dirigent: Yoel Gamzou"
+            ]
+        },
+        {
+            "titulo": "Stimmen des Herbstes",
+            "integrantes": [
+                "Elegie für drei Piccoloflöten, zwei Kontrafagotte,",
+                "vier Kontrabässe und Schlaginstrumente (zwei Spieler)",
+                "UA: 26. November 2011",
+                "Berlin, Literaturhaus",
+                "Solistenensemble des International Mahler Orchestra",
+                "Dirigent: Yoel Gamzou"
+            ]
+        },
+        {
+            "titulo": "Concerto für Kammerorchester (2009/10)",
+            "integrantes": [
+                "Streichorchester, Altflöte,",
+                "Schlaginstrumente (zwei Spieler)",
+                "Auftragswerk zum 345. Geburtstag der Handelskammer Hamburg",
+                "UA: 18. Januar 2010 Börsensaal Hamburg",
+                "Symphoniker Hamburg",
+                "Dirigent: Elmar Lampson",
+                "André Roshka, Altflöte"
+            ]
+        },
+        {
+            "titulo": "Musik für 15 Solostreicher (2004/05)",
+            "integrantes": [
+                "UA: 8. Oktober 2005, Flensburg",
+                "Kammerorchester Minsk",
+                "Dirigent: Elmar Lampson"
+            ]
+        },
+        {
+            "titulo": "Konzert für Klavier und Schlaginstrumente (1995/96)",
+            "integrantes": [
+                "UA: Februar 1996, Kassel",
+                "Ulrike Bauer-Wirth, Klavier",
+                "Michael Kiedaisch und Markus Hauke, Schlagzeug"
+            ]
+        },
+        {
+            "titulo": "Suite der Substanzen (1993/94)",
+            "integrantes": [
+                "für 2 Klaviere, Schlaginstrumente (2) und tiefe Streicher (3 Va, 1 Vc, 1 Kb)",
+                "UA: September 1994, Goetheanum Dornach",
+                "Solistenensemble der Orchester-Akademie Hamburg",
+                "Dirigent: Elmar Lampson"
+            ]
+        },
+        {
+            "titulo": "Sinfonietta für Solistenensemble (1988)",
+            "integrantes": [
+                "Ob, EH, Kl, Baßkl, Fg, Kfg, Hr, Trp, Vib,",
+                "Mar, Timp, Perc, Pno, Hrf, Vl, Vc, 4 Kb",
+                "UA: Juni 1989, Große Musikhalle Hamburg",
+                "Orchester-Akademie Hamburg",
+                "Dirigent: Elmar Lampson"
+            ]
+        }
+    ],
+    "vocalMusic": [
+        {
+            "titulo": "Gebete am Meer (2017-2020)",
+            "integrantes": [
+                "für Chor und Schlaginstrumente (2)",
+                "Text: Elmar Lampson",
+                "UA: 4. Oktober 2020 Lausitzfestival",
+                "Europa Chorakademie Görlitz",
+                "Schlagzeuger des Klangforum Wien",
+                "Dirigent: Sylvian Cambreling",
+                "Transfiguration (1995)",
+                "für gemischten Chor a cappella"
+            ]
+        },
+        {
+            "titulo": "Von der Auferstehung (1979)",
+            "integrantes": [
+                "für gemischten Chor (SSAATTBB) a cappella",
+                "1. Brief des Paulus an die Korinther Kapitel 15,",
+                "Vers 39-44",
+                "UA: Januar 1980, Hannover",
+                "Kammerchor der Musikhochschule Hannover",
+                "Dirigent: Heinz Hennig"
+            ]
+        }
+    ],
+    "musicTheatreAndOpera": [
+        {
+            "titulo": "Wellen – (2020–2025)",
+            "integrantes": [
+                "Oper nach einem Roman von Eduard von Keyserling",
+                "Libretto: Julia Spinola",
+                "Auftragswerk für das Theater Bremen",
+                "Premiere geplant: 24. Mai 2025",
+                "Personen:",
+                "Doralice Köhne-Jasky – Sopran",
+                "Hans Grill, Maler – Bariton",
+                "Generalin von Palinkow – hoher Sopran",
+                "Bella Buttlär, Tochter der Generalin – Sopran",
+                "Lolo, Bella Buttlärs Tochter und Verlobte von Hilmar Hamm – hoher Sopran",
+                "Nini, Bella Buttlärs Tochter (ca. 11 Jahre alt) – Mädchenstimme*",
+                "Wedig, Bella Buttlärs Sohn (ca. 8 Jahre alt) – Knabenstimme*",
+                "Malwine Bork, Bedienstete der Generalin – Sopran",
+                "Hilmar Hamm, Lolos Verlobter – Tenor",
+                "Dr. Knospelius, pensionierter Nervenarzt – Bariton",
+                "Agnes, Hans Grills Haushälterin – Schauspielerin",
+                "Rolf Buttlär, Bellas Mann – Statist (kleine Sprechrolle)",
+                "Fischer Stibbe (Chorsolist)",
+                "Chor der Fischer und Fischerinnen",
+                "1 Chorsolistin",
+                "1 Chorsolist",
+                "S-A-T-B, mindestens 12 Frauen und 12 Männerstimmen",
+                "*Die Kinderstimmen können alternativ auch aus dem Chor besetzt werden."
+            ]
+        },
+        {
+            "titulo": "Bühnenmusik zur Euphoriumszene aus Goethes Faust II (2020)",
+            "integrantes": [
+                "UA",
+                "Personen:",
+                "Euphorion – Countertenor",
+                "Helena – Sopran",
+                "Faust – Bariton",
+                "Sprechchor",
+                "Instrumentalensemble:",
+                "Klarinette in B",
+                "2 Violoncelli",
+                "Schlaginstrumente (1 Spieler)",
+                "Celesta",
+                "Bühnenmusiken zu den vier Mysteriendramen Rudolf Steiners (2009–2010)",
+                "für Streichquintett, Flöten (Piccolo, Flöte, Altflöte – ein Spieler),",
+                "Schlaginstrumente (zwei Spieler)",
+                "UA: 2010 Goetheanum Dornach",
+                "Orchestre Symphonique du Jura",
+                "Dirigent: Facundo Agudin",
+                "Sand – (1994)",
+                "Oper für 9 Instrumentalisten, 3 Sänger, 1 Schauspieler, 3 Eurythmisten und 12stimmig gemischten Chor",
+                "nach einem Text von Reinhart Moritzen (1994)",
+                "UA: 11. Mai 1994, Forum Theater Stuttgart"
+            ]
+        }
+    ],
+    "writings": [
+        "Lampson, E./Flender R., (Hrsg.) Copyright – Musik im Internet, Kulturverlag Kadmos Berlin (2001).",
+        "Lampson, E./Baecker, D. Mitherausgeber. Copyrights. Kulturverlag Kadmos, Berlin (2001).",
+        "'Lampson, E., Flender R., „Ist der Geist zu teuer geworden?,” in Copyright – Musik im Internet, Kulturverlag Kadmos Berlin 2001, S. 133-137.",
+        "Lampson, E., Landkammer, J., „Swinegel-Kompetenzen” in ZHWinfo, 1/2001.",
+        "Lampson, E., Landkammer, J., „Beratungsgespräch und Kulturdialog: Das Modell des Studium fundamentale in der beruflichen Weiterbildung von Finanzberatern”, in Finanzberatung Persönlichkeit und Know-how für die umfassende Kundenbetreuung, (Reinhard Carl und Marc Letzing Hrsg.), Schäffer-Poeschel Verlag, Stuttgart 2002, S. 121-130.",
+        "Lampson, E., van den Berg, K., „Mehr als Dienstleistung an bestehenden Verhältnissen: Das Studium fundamentale an der Universität Witten/Herdecke als Bildungsmodell” in Kultur in Nordrhein-Westfalen, (Ute Canaris und Jörn Rüsen Hrsg.), K. W. Kohlhammer Stuttgart, 2001, S. 114-118.",
+        "Lampson, E., „Bildlichkeit im musikalischen Prozess” in Bildlichkeit, Wittener kulturwissenschaftliche Schriften Bd. II, (Angela Martini und Dirk Rustemeyer, Hrsg.), Königshausen und Neumann, Würzburg 2003.",
+        "Lampson, E., „Wozu brauchen wir Dirigenten?” in PERSONALFÜHRUNG 11/2004.",
+        "Lampson, E., „Die Formen der Hörfelder” in Formfelder: Genealogien von Ordnung, Wittener kulturwissenschaftliche Schriften Bd. V, (Angela Martini und Dirk Rustemeyer, Hrsg.), Königshausen und Neumann, Würzburg 2006.",
+        "Lampson, E., „Schöpferisches Zuhören” in Musik zwischen Spätbarock und Wiener Klassik und Eine Schriftenreihe der Hochschule für Musik und Theater Hamburg, (Hanns-Werner Heister / Wolfgang Hochstein, Hrsg.), Weidler Buchverlag, Berlin 2005.",
+        "Lampson, E., „Spiegelungen der Stille: Zwischen Denken und Hören” in Journal Phänomenologie 33/2010."
+    ]
+}

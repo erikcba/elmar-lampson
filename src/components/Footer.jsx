@@ -11,14 +11,14 @@ const Footer = () => {
     const { t } = useTranslation();
     return (
         <footer className='bg-fuchsia-975 mt-auto sm:py-8 py-6 z-20 relative'>
-            <div className='flex flex-row justify-between items-start container mx-auto' >
-                <div className=' flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-10 2xl:px-0 w-3/5'>
+            <div className='flex sm:flex-row flex-col justify-between sm:items-start items-center container mx-auto' >
+                <div className=' flex flex-col sm:items-start items-center sm:gap-4 gap-8 px-10 xl:px-10 2xl:px-0 w-full md:w-3/5'>
                     <h1 className='xl:text-3xl sm:text-2xl text-xl font-medium text-white mx-auto lg:mx-0 tracking-widest md:pb-6'>
                         {t('contact')}
                     </h1>
                     <div className='flex lg:flex-row flex-col w-full justify-between lg:items-start items-center lg:gap-8 gap-10'>
                         <div className='flex w-fit'>
-                            <img className='sm:w-full md:w-3/4 w-2/3' src={tybLogo} alt="" />
+                            <img className='sm:w-full md:w-3/4 w-2/3 mx-auto' src={tybLogo} alt="" />
                         </div>
                         <div className='sm:text-left text-center'>
                             <p className='text-white 2xl:text-xl text-md'>{t('generalManagement')} </p>
@@ -32,9 +32,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative pl-12 sm:pb-0 pb-16 w-fit my-auto'>
+                <div className='relative pl-12 sm:pb-0 pb-16 sm:w-fit w-2/3 my-auto'>
                     <img className='md:w-3/5 lg:w-3/4 2xl:w-full' src={logoSky} alt="" />
-                    <div className='flex flex-row items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit absolute bottom-0 right-1/4 sm:top-5 sm:right-0 md:top-0 md:right-1/4 lg:right-0 xl:right-10 xl:top-0 lg:-top-2 2xl:-right-10 2xl:top-5'>
+                    <div className='flex flex-row items-center gap-2 md:gap-0 xl:gap-2 pt-4 h-fit absolute bottom-0 right-10 sm:top-5 sm:right-0 md:-top-4 md:right-7 lg:right-10 xl:right-10 xl:top-0 lg:-top-0 2xl:-right-10 2xl:top-5'>
                         <a href="https://www.instagram.com/elmarlampson/" target="_blank" rel="noreferrer" className='p-2 rounded-full h-fit '>
                             <img src={instagram} alt="" />
                         </a>
