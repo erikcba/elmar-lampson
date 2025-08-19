@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export async function handler(event, context) {
   const url =
-    'https://feeds.overturehq.com/calendar/feed/1794/20199892,/all/aa23ea26d9dd8faa3b3d765e32d78d557287d221.ics';
+    'https://feeds.overturehq.com/feeds/463b9a8f/20199892/6/performances.json';
 
   try {
     const response = await axios.get(url);
