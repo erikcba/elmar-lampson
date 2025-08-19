@@ -52,26 +52,75 @@ const Calendar = () => {
     useEffect(() => {
         axios.get('https://starlit-gaufre-2657cf.netlify.app/.netlify/functions/server')
             .then(response => {
-                const jsonData = response.data;
-                console.log('Datos recibidos:', jsonData);
+                console.log('Respuesta completa del servidor:', response.data);
 
-                // Procesar los eventos del JSON
-                // Ajusta esta lógica según la estructura real de tu JSON
-                const parsedEvents = jsonData.map(event => {
-                    return {
-                        summary: event.title || event.name || 'Sin título',
-                        start: new Date(event.startDate || event.start),
-                        end: new Date(event.endDate || event.end),
-                        location: event.location || event.venue || '',
-                        description: event.description || event.summary || '',
+                // Si estamos recibiendo la respuesta de debug
+                if (response.data.success !== undefined) {
+                    console.log('Tipo de datos:', response.data.dataType);
+                    console.log('Es array:', response.data.isArray);
+                    console.log('Longitud:', response.data.dataLength);
+                    console.log('Datos reales:', response.data.data);
+
+                    const actualData = response.data.data;
+
+                    // Procesar según la estructura real
+                    if (Array.isArray(actualData) && actualData.length > 0) {
+                        const parsedEvents = actualData.map((event, index) => {
+                            console.log(`Evento ${index}:`, event);
+                            return {
+                                summary: event.title || event.name || event.summary || `Evento ${index + 1}`,
+                                start: new Date(event.startDate || event.start || event.date),
+                                end: new Date(event.endDate || event.end || event.date),
+                                location: event.location || event.venue || event.address || '',
+                                description: event.description || event.summary || event.notes || '',
+                            }
+                        });
+                        setEvents(parsedEvents);
+                    } else if (typeof actualData === 'object' && actualData !== null) {
+                        // Si no es un array, pero es un objeto, podría tener los datos en alguna propiedad
+                        console.log('Propiedades del objeto:', Object.keys(actualData));
+
+                        // Buscar propiedades que podrían contener los eventos
+                        const possibleArrays = Object.keys(actualData).filter(key =>
+                            Array.isArray(actualData[key])
+                        );
+                        console.log('Posibles arrays encontrados:', possibleArrays);
+
+                        if (possibleArrays.length > 0) {
+                            const eventsArray = actualData[possibleArrays[0]];
+                            const parsedEvents = eventsArray.map((event, index) => ({
+                                summary: event.title || event.name || event.summary || `Evento ${index + 1}`,
+                                start: new Date(event.startDate || event.start || event.date),
+                                end: new Date(event.endDate || event.end || event.date),
+                                location: event.location || event.venue || '',
+                                description: event.description || event.summary || '',
+                            }));
+                            setEvents(parsedEvents);
+                        }
                     }
-                });
+                } else {
+                    // Respuesta directa (sin debug wrapper)
+                    const jsonData = response.data;
+                    console.log('Datos directos:', jsonData);
 
-                setEvents(parsedEvents);
+                    if (Array.isArray(jsonData) && jsonData.length > 0) {
+                        const parsedEvents = jsonData.map((event, index) => ({
+                            summary: event.title || event.name || event.summary || `Evento ${index + 1}`,
+                            start: new Date(event.startDate || event.start || event.date),
+                            end: new Date(event.endDate || event.end || event.date),
+                            location: event.location || event.venue || '',
+                            description: event.description || event.summary || '',
+                        }));
+                        setEvents(parsedEvents);
+                    }
+                }
+
                 setLoading(false);
             })
             .catch(err => {
-                console.error('Error:', err);
+                console.error('Error completo:', err);
+                console.error('Response data:', err.response?.data);
+                console.error('Response status:', err.response?.status);
                 setLoading(false);
             });
     }, [])
